@@ -126,9 +126,15 @@ require = function r(s, a, l) {
 
 
 // get the current language by going up one directory
-var languageCodeFromURL = window.location.href.split("/");
-languageCodeFromURL = languageCodeFromURL[7]; // should be returning the language code (en, de, etc)
-//console.log("current code from URL " + languageCodeFromURL);
+var URLList = window.location.href.split("/");
+var languageCodeFromURL = 'en'; //default to english
+for (var section = 0; section < URLList.length; section++) {
+    languages = ['bn', 'ca', 'cs', 'da', 'de', 'en', 'es', 'et', 'eu', 'fa', 'fi', 'fr', 'he', 'hr', 'hu', 'id', 'it',  'ja', 'ko', 'lt', 'lv', 'mk', 'nb_NO', 'ne', 'nl', 'pl', 'pt_BR', 'pt_PT', 'ru', 'si', 'sk', 'sv', 'tr', 'uk_UA', 'vi', 'zh_CN', 'zh_TW'];
+    if (languages.indexOf(URLList[section]) > 0) {
+        languageCodeFromURL = URLList[section];
+    }
+} // should be returning the language code (en, de, etc)
+console.log("current code from URL " + languageCodeFromURL);
 
 
 // language selection change. Swap out the URL to the different language location directory
@@ -165,7 +171,7 @@ $( "select#language-selector-container" ).change(function() {
 		var url = window.location.toString();
 		window.location = url.replace("/" + languageCodeFromURL + "/", "/" + selectedLanguage + "/");
 
-		var locationChangeLocation = 
+		var locationChangeLocation = window.location;
 		console.log("new location: " + locationChangeLocation);
 	}
 

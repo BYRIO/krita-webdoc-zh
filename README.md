@@ -68,11 +68,28 @@ This will take everything inside the locale directory and create MO files from t
 
 Build out changes to language  (en and de)
 -------------------------------
+
+
 To build out a specific language we need to specify which language to output and then build. This can be done with the following commands: 
 
-`set currentLanguage=de`
-`set SPHINXOPTS=-D language="%currentLanguage%"`
-`make.bat html`
+On Windows:
+
+```
+set currentLanguage = 'de'
+set SPHINXOPTS=-D language="%currentLanguage%"
+make.bat html
+```
+
+or
+
+```
+set SPHINXOPTS=-D language="de"
+.\make.bat html
+```
+
+On Linux:
+
+`make -e SPHINXOPTS="-D language='de'" html`
 
 In this example we changed the language to German and built out HTML files. Everything in the _build directory should be using the German translations.
 
@@ -82,10 +99,20 @@ Using multiple languages at once
 --------------------------------
 To be able to have multiple langauges at once, we will start to use a "dist" folder. The basic ideas is that after Sphinx builds out the documentation for a language, it will copy the files out to a new location that is in its language code. 
 
-To copy the files to the dist folder use the following command: `robocopy ./_build/html ./dist/%currentLanguage%/ /E`
+To copy the files to the dist folder use the following command:
+
+Windows:
+
+`robocopy ./_build/html ./dist/%currentLanguage%/ /E`
+
+Linux:
+```
+mkdir dist
+mkdir dist/de/
+cp -R _build/html dist/de/
+```
 
 You should see all the documentation files in the dist folder inside its language folder. We only need the stuff inside the html folder as the other folder are for helping with translation. Change the language like in the above step and do the same process for all languages.
-
 
 Switching languages for the site
 --------------------------------
@@ -93,8 +120,7 @@ The theme has a built-in language switcher. It works by looking at the URL for t
 
 You will need to update the theme file to include all the languages you support. This is in the Theme > layout.html file. If you do a search for `language-selector-container` you should find out how this list is populated. Themes cannot be translated, so whatever text is used will appear for all languages.
 
-You will need to output all the languages again to see the updated langauge selector
-
+You will need to output all the languages again to see the updated language selector
 
 # Theme notes
 The theme is a customized version of the rtd theme. You can change out the logo image from the Theme > static > images folder. The custom language switcher logic is also custom. That is found in the Theme > static > js > theme.js file at the bottom.
