@@ -22,13 +22,15 @@
 project = 'Krita Manual'
 propername = 'Krita Manual'
 description = 'The official Krita Documentation'
-copyright = '2018'
+copyright = 'licensed under the GNU Free Documentation License 1.3+ unless stated otherwise'
 author = 'Krita Foundation'
+
+import os
 
 # The short X.Y version
 version = '4.0'
 # The full version, including alpha/beta/rc tags
-release = '4.0.1'
+release = '4.0.3'
 
 
 # -- General configuration ---------------------------------------------------
@@ -203,6 +205,11 @@ html_static_path = ['theme/static']
 
 html_title = project + " version " + release
 
+html_context = {
+    'build_id': os.getenv('BUILD_NUMBER', 'ID'),
+    'build_url': os.getenv('BUILD_URL', 'URL')
+}
+
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
@@ -271,23 +278,30 @@ texinfo_documents = [
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = project
+epub_title = project+" "+version
 epub_author = author
 epub_publisher = author
 epub_copyright = copyright
+epub_description = description
+
+epub_cover = ('_static/images/manual_cover.png', '')
 
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
 #
-# epub_identifier = ''
+epub_identifier = 'https://krita.org/'
+
+epub_scheme = 'URL'
 
 # A unique identification for the text.
-#
-# epub_uid = ''
+# This currently uses the git hash preceded by the project name.
+
+epub_uid = 'krita_manual_build'+os.getenv('BUILD_ID', 'URL')
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
+epub_tocscope = 'includehidden'
 
 # -- Extension configuration -------------------------------------------------
 
