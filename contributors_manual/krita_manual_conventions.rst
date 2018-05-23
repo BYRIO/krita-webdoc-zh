@@ -138,19 +138,28 @@ Images
 
 Use the image directive for images without captions::
 
-    .. image:: /images/en/path_to_image
+    .. image:: /images/en/sample.png
        :width: 800
        :align: center
        :alt: an image.
 
 And figure directives for images with captions::
 
-    .. figure:: /images/en/path_to_image
+    .. figure:: /images/en/sample.png
        :figwidth: 800
        :align: center
        :alt: an image.
 
        A caption --  notice how the first letter is aligned with the :figwidth: option.
+
+The latter gives:
+
+ .. figure:: /images/en/sample.png
+    :figwidth: 800
+    :align: center
+    :alt: an image.
+
+    A caption --  notice how the first letter is aligned with the :figwidth: option.
 
 Images should go into the ``/images/en`` folder. By using ``/images`` instead of ``images``, sphinx will know the filepath isn't relative.
 

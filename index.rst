@@ -49,6 +49,5 @@ As you learn about Krita, keep in mind that it is not intended as a replacement 
    tutorials
    KritaFAQ
    contributors_manual
-   resources_page.rst
-   changes
+   resources_page
 
