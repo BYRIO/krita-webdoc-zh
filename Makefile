@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = sphinxTest2
+SPHINXPROJ    = kritaManual
 SOURCEDIR     = .
 BUILDDIR      = _build
 
