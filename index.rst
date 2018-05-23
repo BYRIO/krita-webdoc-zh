@@ -1,8 +1,8 @@
 
 
-=========================================
+#########################################
   Welcome to the Krita |version| Manual!
-=========================================
+#########################################
 
 Welcome to Krita's documentation page. Krita is a sketching and painting program designed for digital artists.
 

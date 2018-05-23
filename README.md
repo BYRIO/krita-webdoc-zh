@@ -141,13 +141,35 @@ Sphinx cannot export out to PDF, but it can output an intermediate format called
 
 A new latex folder will be created in your _build directory that has the content in latex format.
 
+We need to download another program now to convert those files to PDF.
 
-We need to download another program now to convert those files to PDF. On Windows 10 I used MikTex (200MB): https://miktex.org/
+#### Windows:
+
+On Windows 10 I used MikTex (200MB): https://miktex.org/
 
 When you install that it will add a command line function. Open a command prompt and type this: `pdflatex --version`
 
 Mine says MiKTeX-pdfTeX 2.9.6642 (1.40.19). If you don't see it you either didn't install it or you need to open a new command prompt window for Windows to see the newly installed tool.
 
-Still in your command prompt, go into your _build directory, then the latex folder. Run this command to generate the PDF: `pdflatex --outuput-directory=./output projectName.tex'
+Still in your command prompt, go into your _build directory, then the latex folder. Run this command to generate the PDF: `pdflatex --outuput-directory=./output kritaManual.tex'
 
-The "projectName.tex" is the file in your latex folder. Depending on what options you chose for installation, there might be a number of warnings about 'packages' needing to be installed. Those are just extra tools to help with the PDF conversion and are ok to install. After you hit confirm a number of times you should see the PDF in the output folder.
+The "kritaManual.tex" is the file in your latex folder.
+
+#### Linux:
+
+The linux latex installation requires 1 gb to be spend on latex... I kid you not.
+
+Kubuntu 17.10:
+```
+sudo apt-get install texlive-latex-recommended texlive-fonts-recommended  texlive-latex-extra latexmk texlive-luatex texlive-xetex
+mkdir _build/output
+
+make latexpdf
+```
+For quiet mode:
+
+`make latexpdf LATEXMKOPTS="-silent"`
+
+The latex packages do not like unicode characters, nor svgs, nor gifs. The manual is utterly unprepared for it...
+
+Depending on what options you chose for installation, there might be a number of warnings about 'packages' needing to be installed. Those are just extra tools to help with the PDF conversion and are ok to install. After you hit confirm a number of times you should see the PDF in the output folder.
