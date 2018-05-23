@@ -45,36 +45,32 @@ Import/Export
     Save Group Layers
         Saves the top-level group layers as single-layer images.
     Import Layer
-        --
+        Import an image as a layer into the current file.
     Import as...
-        Import an image as
-            --
-        Paint layer
-            --
-        Transparency Mask
-            --
-        Filter Mask
-            --
-        Selection Mask
-            --
+        Import an image as a specific layer type. The following layer types are supported:
+                
+            * Paint layer
+            * Transparency Mask
+            * Filter Mask
+            * Selection Mask
 
 Convert
     Organizes the following actions:
 
     Convert a layer to...
-        --
-    Convert to Paint Layer
-        Convert a mask or vector layer to a paint layer.
-    Transparency Mask
-        --
-    Filter Mask
-        --
-    Selection Mask
-        --
-    Convert Group to Animated Layer
-        This takes the images in the group layer and makes them into frames of an animated layer.
-    Convert Layer Color Space
-        This only converts the color space of the layer, not the image.
+
+        Convert to Paint Layer
+            Convert a mask or vector layer to a paint layer.
+        Transparency Mask
+            Convert a layer to a transparency mask. The image will be converted to grayscale first, and these grayscale values are used to drive the transparency.
+        Filter Mask
+            Convert a layer to a filter mask. The image will be converted to grayscale first, and these grayscale values are used to drive the filter effect area.
+        Selection Mask
+            Convert a layer to a selection mask. The image will be converted to grayscale first, and these grayscale values are used to drive the selected area.
+        Convert Group to Animated Layer
+            This takes the images in the group layer and makes them into frames of an animated layer.
+        Convert Layer Color Space
+            This only converts the color space of the layer, not the image.
 
 Select(3.0+):
     Organizes the following actions:
@@ -104,25 +100,25 @@ Transform
     Organizes the following actions:
 
     Mirror Layer Horizontally
-        --
+        Mirror the layer horizontally using the image center.
     Mirror Layer Vertically
-        --
+        Mirror the layer vertically using the image center.
     Rotate
-        --
+        Rotate the layer around the image center.
     Scale Layer
-        --
+        Scale the layer by the given amounts using the given interpolation filter.
     Shear Layer
-        --
+        Shear the layer pixels by the given X and Y angles.
     Offset Layer
-        --
+        Offset the layer pixels by a given amount.
 
 Split...
     Organizes the following actions:
 
     Split Alpha
-        --
+        Split the image transparency into a mask. This is useful when you wish to edit the transparency seperately.
     Split Layer
-        --
+        Split the layer into given color fields.
     Clones Array
         A complex bit of functionality to generate clone-layers for quick sprite making.
 
