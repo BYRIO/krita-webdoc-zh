@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en:
+   :description:
         The file formats category.
 
 .. metadata-placeholder
@@ -28,9 +28,9 @@ What we generally see is that formats that are small on disk either lose image q
 
 Vector file-formats like ``svg`` are a typical example of the latter. They are really small because the technology used to create them is based on mathematics, so it only stores maths-variables and can achieve a very high quality. The downside is that the computer needs to spend a lot of time thinking on how it should look, and sometimes different programs have different ways of interpreting the values. Furthermore, vector file-formats imply vector graphics, which is a very different way of working than Krita is specialised in.
 
-Lossy file formats, like ``jpg`` or ``webp`` are an example of small on disk, but lowering the quality, and are best used for very particular types of images. Lossy thus means that the file format plays fast and loose with describing your image to reduce filesize.
+:ref:`Lossy file formats <lossy_compression>`, like ``jpg`` or ``webp`` are an example of small on disk, but lowering the quality, and are best used for very particular types of images. Lossy thus means that the file format plays fast and loose with describing your image to reduce filesize.
 
-Non-lossy or lossless formats, like ``png``, ``gif`` or ``bmp`` are in contrast, much heavier on disk, but much more likely to retain quality.
+:ref:`Non-lossy or lossless formats <lossless_compression>`, like ``png``, ``gif`` or ``bmp`` are in contrast, much heavier on disk, but much more likely to retain quality.
 
 Then, there's proper working file formats like Krita's ``.kra``, Gimp's ``xcf``, Photoshop's ``psd``, but also interchange formats like ora and exr. These are the heaviest on the hard-drive and often require special programs to open them up, but on the other hand these are meant to keep your working enviroment in tact, and keep all the layers and guides in them.
 
@@ -52,7 +52,7 @@ Most formats are in-between, and thus there's also a matter of how widely suppor
 
 .. toctree::
    :maxdepth: 1
-   :caption: File Formats Krita can Open and Save to:
+   :caption: Contents:
    :glob:
    
    file_formats/*
