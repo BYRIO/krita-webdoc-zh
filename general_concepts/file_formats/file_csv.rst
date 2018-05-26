@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en:
+   :description:
         The CSV file format as exported by Krita.
 
 .. metadata-placeholder
@@ -7,6 +7,7 @@
    :authors: - Lazlo Fazekas
    :license: GNU free documentation license 1.3 or later.
 
+.. index:: *.csv, CSV, Comma Seperated Values
 .. _file_csv:
 
 ======
