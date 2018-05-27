@@ -86,7 +86,7 @@ Krita's API
 - `LibKis API Overview <https://api.kde.org/extragear-api/graphics-apidocs/krita/libs/libkis/html/index.html>`_
 - `Krita class documentation <https://api.kde.org/extragear-api/graphics-apidocs/krita/libs/libkis/html/classKrita.html>`_
 
-Those pages may look like a lot of jargon at first. This is because Krita's API documentation comes from the underlying C++ language that Krita is written in. The magic happens because of a Python tool called SIP, which makes it possible for python speak in C++ and talk to Krita. The end result is that when we <tt>import krita</tt> and call functions, we're actually using the C++ methods listed in that documentation. 
+Those pages may look like a lot of jargon at first. This is because Krita's API documentation comes from the underlying C++ language that Krita is written in. The magic happens because of a Python tool called SIP, which makes it possible for python speak in C++ and talk to Krita. The end result is that when we ``import krita`` and call functions, we're actually using the C++ methods listed in that documentation. 
 
 Let's see how this stuff works in more detail. Let's take a look at the second link, the `Krita class reference <https://api.kde.org/extragear-api/graphics-apidocs/krita/libs/libkis/html/classKrita.html#aa55507903d088013ced2df8c74f28a63>`_. There we can see all the functions available to the Krita instance. If you type dir(Krita.instance()) in Python, it should match this page very closely - you can view the documentation of the functions createDocument(), activeWindow(), and action() which we used above. 
 
