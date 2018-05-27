@@ -31,7 +31,7 @@ After the composition and a basic layout has been laid out the artists add as mu
 
 Artwork by David Revoy, licence : `CC-BY <http://creativecommons.org/licenses/by/3.0/>`_
 
-You can view the recorded speed painting demo for the above image `here <https://www.youtube.com/watch?v=93lMLEuxSLk>`_.
+You can view the recorded speed painting demo for the above image `on Youtube <https://www.youtube.com/watch?v=93lMLEuxSLk>`_.
 
 Colorizing Line Art
 -------------------
@@ -74,7 +74,7 @@ Now apply the color adjustment filter, yes we still have lots of blue on the art
 
 .. hint:: It is good to use non-photo-blue pencils to create the blue lines as those are easy to remove. If you are drawing digitally in blue lines use #A4DDED color as this is closer to non-photo-blue color.
 
-You can learn more about doing a sketch from blue sketch to digital painting `here <http://www.davidrevoy.com/article239/cleaning-blue-lines-sketch-in-krita>`_ in a tutorial by David Revoy.
+You can learn more about doing a sketch from blue sketch to digital painting `here in a tutorial by David Revoy <http://www.davidrevoy.com/article239/cleaning-blue-lines-sketch-in-krita>`_.
 
 After you have a clean black and white line-art you may need to erase the white color and keep only black line-art, to achieve that go to :menuselection:`Filters --> Color --> Color to Alpha`. Use the dialog box to turn all the white areas of the image transparent. The Color Picker is set to White by default. If you have imported scanned art and need to select another color for the paper color then you would do it here.
 
@@ -147,7 +147,7 @@ Now go to :menuselection:`Filter --> G'Mic --> Black & white --> Colorize[comics
     :alt: Colorise Interactive dialog and settings
 
 Press **Apply** and **Ok** to apply and exit the GMIC dialog. You'll now have flat colors beneath you lineart.
-More details about this technique can be found in the tutorial `here <http://timotheegiet.com/blog/comics/gmic-colorize-comics-working-in-krita.html>`_.
+More details about this technique can be found in the tutorial `at Timothée Giet's blog <http://timotheegiet.com/blog/comics/gmic-colorize-comics-working-in-krita.html>`_.
 
 Painting
 --------
