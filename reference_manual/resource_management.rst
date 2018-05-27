@@ -8,7 +8,7 @@
              - Scott Petrovic
    :license: GNU free documentation license 1.3 or later.
 
-.. index:: Resources
+.. index:: Resources, Bundles
 .. _resource_management:
 
 ===================
@@ -57,7 +57,7 @@ An incredibly quick way to save a group or brushes into a tag is to:
 Now, anytime you want to open up your "digital pencil box" and see what you have to work with all you have to do is use the pull-down and select '''Pencils'''.  The Resource Filter works the same way in other parts of Krita so be on the lookout for it!
 
 Resource Zooming
-    If you find the thumbnails of the resources such as color swatches brushes and pattern to be small you can make them bigger or '''zoom in'''. All resource selectors can be zoomed in and out of, by hovering over the selector and using <kbd>
+    If you find the thumbnails of the resources such as color swatches brushes and pattern to be small you can make them bigger or '''zoom in'''. All resource selectors can be zoomed in and out of, by hovering over the selector and using :kbd:`ctrl +` |mousescroll|
 
 Managing Resources
 ------------------
