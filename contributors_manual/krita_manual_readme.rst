@@ -87,10 +87,13 @@ If you are familiar with Git
 
    1. Login into `phabricator.kde.org <https://phabricator.kde.org/>`_ with your identity account.
    2. Go to differential.
-   3. Upper-right --> create new differential.
+   3. Upper-right --> "Star" menu --> Create Review Request
    4. Upload the diff you made, select the correct repository(``websites-docs-krita-org``).
    5. Confirm the file is correct.
-   6. Then in the next screen, add in name, tell us what you changed.
+   6. Then in the next screen:
+        1. Add in Title
+        2. Tell us what you changed in the Summary
+        3. (Optional) put your email in the comment if you want attribution
 
 General philosophy
 ------------------
