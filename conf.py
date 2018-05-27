@@ -315,7 +315,7 @@ epub_cover = ('_static/images/manual_cover.png', '')
 
 if os.getenv('BUILD_ID', None) is None:
     # There is no uniform resource name for git, but just randomly pasting a githash is bad form.
-    epub_identifier = 'git:'gitcommithash
+    epub_identifier = 'git:'+gitcommithash
     epub_uid = 'githash'
     if gitcommithash == release:
         epub_uid = 'release'
