@@ -26,6 +26,20 @@ copyright = 'licensed under the GNU Free Documentation License 1.3+ unless state
 author = 'Krita Foundation'
 
 import os
+import subprocess
+
+# Get the git description if possible, to put it in the footer.
+
+try:
+    gitcommitfriendly = subprocess.check_output(["git", "describe", "--always"]).decode("utf-8").strip()
+except subprocess.CalledProcessError as exc:
+    gitcommitfriendly = None
+
+# We use the full githash for the epub identifier, if not, use the release number.
+try:
+    gitcommithash = subprocess.check_output(['git', 'rev-parse', 'HEAD']).decode("utf-8").strip()
+except subprocess.CalledProcessError as exc:
+    gitcommithash = release
 
 # The short X.Y version
 version = '4.0'
@@ -206,8 +220,9 @@ html_static_path = ['theme/static']
 html_title = project + " version " + release
 
 html_context = {
-    'build_id': os.getenv('BUILD_NUMBER', 'ID'),
-    'build_url': os.getenv('BUILD_URL', 'URL')
+    'build_id': os.getenv('BUILD_NUMBER', None),
+    'build_url': os.getenv('BUILD_URL', None),
+    'commit' : gitcommitfriendly
 }
 
 
@@ -296,7 +311,7 @@ epub_scheme = 'URL'
 # A unique identification for the text.
 # This currently uses the git hash preceded by the project name.
 
-epub_uid = 'krita_manual_build'+os.getenv('BUILD_ID', 'URL')
+epub_uid = 'krita_manual_build_'+os.getenv('BUILD_ID', gitcommithash)
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
