@@ -27,6 +27,8 @@ General concept tutorials.
     We've found over the past two years that for certain of users, a reference manual, even with some examples, just isn't enough. The manual should provide fast and concise explanations for things, and provide a basic workflow for preparing an image for the web. But we also have found that certain concepts, such as color management and layer handling is far more advanced in Krita than that the average artist is used to. Krita is free and many of its users will not have formal training in digital artwork. So there's no pre-existing artist-focused knowledge on how to use color management or filter layers. In addition there are systems that are unique to Krita, for example the brush system, the transform masks, the alpha inheritance and the perspective assistants. Finally, there are users who aren't familiar with even standard painting workflows, and are not flexible enough to understand how to port a tutorial for Sai or Photoshop to Krita.
 A list of known tutorials and video tutorials
     Apparantly, one of the great things about Krita's team is how we connect with artists and acknowledge that they're doing cool stuff. The same should count for tutorials, especially because there's ways of using Krita and ways of approaching painting that are unique and we should encourage people to share their knowledge.
+Contributors Manual
+    Krita is (free) open source software, which makes us effectively a community project, with dozens of volunteers pitching in to make it better. That of course requires we keep track of manuals and howto's for new volunteers to come in and help us. The various places we've done this have been rather spread out, and are often under maintained. The contributor's manual is an attempt to solidify all the information. It is therefore very technical in places.
 krita.org tutorials
     There's been a bunch of tutorials on the krita.org and the krita-foundation.tumblr.com, the former focussing on explaining how to use a new feature and the later stimulated by user request.
 FAQ
@@ -37,36 +39,41 @@ For first timers
 
 Unlike Mediawiki, sphinx works more like how we create code.
 
-First things first, you would want to talk to us! For this you can either go to the IRC on krita.org, or, more importantly, make an account at identity.kde.org. The account you make at identity can be used to both access the forum as well as the phabricator, where we organise Krita development.
+First things first, you would want to talk to us! For this you can either go to the `IRC on krita.org (#krita on freenode.org) <https://krita.org/en/irc/>`_, or, more importantly, make an account at `identity.kde.org <https://identity.kde.org/>`_. The account you make at identity can be used to both access the forum as well as the phabricator, where we organise Krita development.
 
-If you have no idea where to begin, make a kde identity account and make a post on the forum.
+If you have no idea where to begin, make a kde identity account and make a post on `the forum <https://forum.kde.org/viewforum.php?f=136>`_.
 
-Sphinx works by writing simple text files with reStructuredText mark up, and then it takes those text files and turns them into the manual. We keep track of changes in the manual by putting them into a file management system not unsimilar to git.
+Sphinx works by writing simple text files with reStructuredText mark up, and then it takes those text files and turns them into the manual. We keep track of changes in the manual by putting them into a version control system called :program:`Git`.
 
 Making changes
 ~~~~~~~~~~~~~~
 
-Because we use git, there's only a few people who can put things into the git, so if you want to make changes you will need to put it up for review.
+Because we use Git, there's only a few people who can put things into the git, so if you want to make changes you will need to put it up for review.
 
-If you are not familiar with git
+If you are not familiar with Git
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Get the source text.
+
     Save a copy of the text as it existed originally.
+
 2. Modify it.
 3. Tools to check whether your modifications work.
+
+    You can use the `Online Sphinx Editor <https://livesphinx.herokuapp.com/>`_ to check if your changes don't break 
+
 4. Bundle up the items into a zip.
 
-    Put all the files you changed into a zip file, also add in the original files. This also includes the images if you're changing them.
+    Put all the files you changed into a zip file. This also includes the images if you're changing them.
     Try to keep the filenames the same, that's easier for us to copy over.
 5. Upload the zip on phabricator.
 
     1. First, go to phabricator.kde.org and log in with you identity account.
-    2. Go to the manual project board and there create a new task.
+    2. Go to the `manual project board <https://phabricator.kde.org/project/view/135/>`_ and there create a new task.
     3. Explain what you did and use drag and drop to move the zip file to the input textbox. That should upload it. We will also need the email address you associate with your kde identity account.
     4. Then, if the changes are accepted, someone with commit access will unpack those files into the manual folder and push the differences using the mail address.
 
-If you are familiar with git
+If you are familiar with Git
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. get the source.
@@ -78,10 +85,10 @@ If you are familiar with git
 
 5. Create a review request on phabricator
 
-   1. Login into phabricator.kde.org with your identity account.
+   1. Login into `phabricator.kde.org <https://phabricator.kde.org/>`_ with your identity account.
    2. Go to differential.
    3. Upper-right --> create new differential.
-   4. Upload the diff you made, select the correct repository.
+   4. Upload the diff you made, select the correct repository(``websites-docs-krita-org``).
    5. Confirm the file is correct.
    6. Then in the next screen, add in name, tell us what you changed.
 
