@@ -293,25 +293,40 @@ texinfo_documents = [
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
+# filename
+# epub_basename = project.replace(' ', '_') + '_' + language
 epub_title = project+" "+version
+epub_description = description
+
+# Technically speaking dublincore accepts multiple author and contributor elements, but
+# the sphinx builder only accepts one.
 epub_author = author
 epub_publisher = author
 epub_copyright = copyright
-epub_description = description
+
 
 epub_cover = ('_static/images/manual_cover.png', '')
 
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
-#
-epub_identifier = 'https://krita.org/'
+# The above is false and perhaps a mistake in sphinx' documentation.
+# epub_uid maps to id, which is the dc identifier id
+# which in turn should be the used scheme.
 
+if os.getenv('BUILD_ID', None) is None:
+    # There is no uniform resource name for git, but just randomly pasting a githash is bad form.
+    epub_identifier = 'git:'gitcommithash
+    epub_uid = 'githash'
+    if gitcommithash == release:
+        epub_uid = 'release'
+        # there's also no urn for releases, as technically some database thing should be used for that.
+        epub_identifier = '_'.join(['Krita_Manual_Build', language, release])
+else:
+    epub_uid = 'url'
+    epub_identifier = os.getenv('BUILD_URL', '')
+
+# Not actually used anywhere? Docs say that this should be what the epub uid is used for but...
 epub_scheme = 'URL'
-
-# A unique identification for the text.
-# This currently uses the git hash preceded by the project name.
-
-epub_uid = 'krita_manual_build_'+os.getenv('BUILD_ID', gitcommithash)
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
