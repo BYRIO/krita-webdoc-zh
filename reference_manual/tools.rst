@@ -28,7 +28,6 @@ The contents of the toolbox docker.
    tools/crop
    tools/move
    tools/transform
-   tools/measure
    tools/fill
    tools/gradient_draw
    tools/color_selector
@@ -37,6 +36,8 @@ The contents of the toolbox docker.
    tools/perspective_grid
    tools/smart_patch
    tools/assistant
+   tools/reference_images_tool
+   tools/measure
    tools/rectangular_select
    tools/elliptical_select
    tools/outline_select
