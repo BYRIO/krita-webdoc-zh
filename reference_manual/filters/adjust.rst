@@ -1,5 +1,5 @@
 .. meta::
-   :description lang:
+   :description:
         Overview of the adjust filters.
 
 .. metadata-placeholder
@@ -94,6 +94,7 @@ The default shortcut for this filter is :kbd:`Ctrl + B` .
 
 .. image:: /images/en/Color-balance.png
 .. index:: Saturation, Desaturation, Gray
+
 Desaturate
 ----------
 

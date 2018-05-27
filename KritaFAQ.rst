@@ -252,7 +252,9 @@ sequence, and then inputtng that into a video editor.
 How can I produce a backtrace on Windows?
 -----------------------------------------
 
-*See also: :ref:`Dr. Mingw debugger <dr_minw>` *
+.. seealso::
+
+    :ref:`Dr. Mingw debugger <dr_minw>`
 
 If you experience a crash on Windows, and can reproduce the crash, the
 bug report will be much more valuable if you can create a backtrace. A
@@ -341,8 +343,7 @@ problems. You can find a community curated list of tablets supported by
 krita :ref:`here <list_supported_tablets>`.
 
 If you're looking for information about tablets like the iPad or Android
-tablets, look
-:ref:`here <krita_android>`_.
+tablets, look :ref:`here <krita_android>`.
 
 What if your tablet is not recognized by Krita?
 -----------------------------------------------

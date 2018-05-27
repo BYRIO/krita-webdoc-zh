@@ -1,5 +1,5 @@
 .. meta::
-   :description lang:
+   :description:
         The tools menu in Krita.
 
 .. metadata-placeholder
