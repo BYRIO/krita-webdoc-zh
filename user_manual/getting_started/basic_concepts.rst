@@ -78,7 +78,6 @@ A view is the window onto your image. Krita allows you to have multiple views, a
 If you have trouble drawing certain curves you will enjoy using rotation for drawing, and of course there is zooming in and out for precision and rough work.
 
 .. figure:: /images/en/Krita_multiple_views.png
-   :figwidth: 800
    :align: center
    
    Multiple views of the same image in Krita
@@ -91,7 +90,6 @@ Dockers
 Dockers are little subwindows in :ref:`Krita's interface <navigation>`. They contain useful tools, like the color selector, layer stack, tool options etc.
 
 .. image:: /images/en/Dockers.png
-   :width: 800
    :align: center
 
 The image above shows some of the dockers in Krita
@@ -111,7 +109,6 @@ Krita allows you to have multiple windows via :menuselection:`window --> new win
 The image below shows an example of multiple windows in Krita.
 
 .. image:: /images/en/Multi-window.png
-   :width: 800
    :align: center
 
 Canvas in Krita 
@@ -121,7 +118,6 @@ When you create a new document in Krita for the first time you will see a rectan
 
 
 .. image:: /images/en/Canvas-krita.png
-   :width: 800
    :align: center
 
 When you save the painting as jpg , png etc or take a print out of the painting, only the content inside this area is taken into consideration. Anything beyond it is ignored. Krita does store information beyond this area, you just won't be able to see it.
@@ -192,7 +188,6 @@ Engine is a term programmers use to describe a complex interacting set of code t
 Krita has :ref:`a LOT of different brush engines <category_brush_engines>`, all with different effects.
 
 .. figure:: /images/en/Krita_example_differentbrushengines.png
-   :figwidth: 800
    :align: center
    
    **Left:** pixel brush, **Center:** color smudge brush, **Right:** sketch brush
@@ -214,7 +209,6 @@ Colors
 Humans can see a few million colors, which are combinations of electromagnetic waves (light) bouncing off a surface, where the surface absorbs some of it.
 
 .. figure:: /images/en/Krita_basics_primaries.png
-   :figwidth: 800
    :align: center
    
    Subtractive CMY colors on the left and additive RGB colors on the right. This difference means that printers benefit from color conversion before printing
@@ -227,8 +221,8 @@ A computer also uses three primaries and uses a specific amount of each primary 
 
 Per pixel, a computer then stores the value of each of these primaries, with the maximum depending on the bit-depth. These are called the **components** or **channels** depending on who you talk to.
 
-.. figure:: /images/en/Krita_basic_channel_rose.png 
-   :figwidth: 300
+.. figure:: /images/en/Krita_basic_channel_rose.png
+   :align: left
    
    This is the red-channel of an image of a red rose. As you can see, the petals are white here, indicating that those areas contain full red. The leaves are much darker, indicating a lack of red, which is to be expected, as they are green.
 
@@ -288,14 +282,12 @@ You can paint on masks with any of the brushes, or convert a normal paint-layer 
 For example, we have a white ghost lady here:
 
 .. image:: /images/en/Krita_ghostlady_1.png
-   :width: 800
    :align: center
 
 But you can't really tell whether she's a ghost lady or just really really white. If only we could give the idea that she floats...
 We right-click the layer and add a transparency mask. Then, we select that mask and draw with a black and white linear gradient so that the black is below.
 
 .. image:: /images/en/Krita_ghostlady_2.png
-   :width: 800
    :align: center
 
 Wherever the black is, there the lady now becomes transparent, turning her into a real ghost!
@@ -322,7 +314,6 @@ Color to Alpha
  A popular filter which makes all of the chosen color transparent.
 
 .. figure:: /images/en/Krita_basic_filter_brush.png
-   :figwidth: 300px
    :align: right
    
    Different filter brushes being used on different parts of the image.
@@ -350,7 +341,6 @@ Masks, on the other hand, can affect one single layer and are driven by a graysc
 We can use these filters to make our ghost lady look even more ethereal, by selecting the ghost lady's layer, and then creating a clone layer. We then right click and add a filter mask and use gaussian blur set to 10 or so pixels. The clone layer is then put behind the original layer, and set to the blending mode '**Color Dodge**', giving her a definite spooky glow. You can keep on painting on the original layer and everything will get updated automatically!
 
 .. image:: /images/en/Krita_ghostlady_3.png
-   :width: 800
    :align: center
 
 Layer Effects or Layer Styles are :program:`Photoshop's` unique brand of Filter Masks that are a little faster than regular masks, but not as versatile. They are available by right clicking a layer and selecting 'layer style'.
@@ -365,7 +355,6 @@ We also have the :ref:`crop_tool`, which only affects the canvas size, and the :
 However, if you want more control, Krita offers a :ref:`transform_tool`.
 
 .. image:: /images/en/Krita_transforms_free.png 
-   :width: 800
    :align: center
 
 With this tool you can rotate and resize on the canvas, or put it in perspective. Or you can use advanced transform tools, like the warp, cage and liquefy, which allow you to transform by drawing custom points or even by pretending it's a transforming brush.
@@ -376,7 +365,6 @@ With this tool you can rotate and resize on the canvas, or put it in perspective
 Like the filter brush engine, Krita also has a Deform Brush Engine, which allows you to transform with a brush. The deform is like a much faster version of the Liquefy transform tool mode, but in exchange, its results are of much lower quality.
 
 .. figure:: /images/en/Krita_transforms_deformvsliquefy.png
-   :figwidth: 600
    :align: center 
    
    Apple transformed into a pear with liquefy on the left and deform brush on the right.
@@ -406,7 +394,6 @@ Assistants, Grids and Guides
 With all this technical stuff, you might forget that Krita is a painting program. Like how a illustrator in real life can have all sorts of equipment to make drawing easier, Krita also offers a variety of tools:
 
 .. figure:: /images/en/Krita_basic_assistants.png
-   :figwidth: 800
    :align: center
    
    Krita's vanishing point assistants in action
