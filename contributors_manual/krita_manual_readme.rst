@@ -17,14 +17,18 @@ Krita Manual Contribution Guide
 
 Welcome to our new documentation!
 
-We're moving from userbase.kde.org to docs.krita.org, then we moved from Mediawiki to Sphinx. This latter change is because Sphinx allows us to handle translations much better than Mediawiki can.
+We've moved from userbase.kde.org to docs.krita.org, then we moved from Mediawiki to Sphinx. This latter change is because Sphinx allows us to handle translations much better than mediawiki can.
 
 The manual will include:
 
 A reference manual for Krita
     This one is probably what everyone is expecting when they type in docs.krita.org. Dry, basic, 'what does this button do' type of information.
 General concept tutorials.
-    We've found over the past two years that for certain types of users, a reference manual, even with some examples, just isn't enough. The manual should also provide fast and concise explanations for things, and provide a basic workflow for preparing an image for the web. We also have found that certain concepts, such as color management and layer handling are far more advanced in Krita than the average artist is used to. Krita is free and many of its users will not have formal training in digital artwork. So there is no pre-existing artist-focused knowledge on how to use color management or filter layers. In addition there are systems that are unique to Krita, for example the brush system, the transform masks, the alpha inheritance and the perspective assistants. Finally, there are users who aren't familiar with even standard painting workflows, and are not flexible enough to understand how to port a tutorial for Sai or Photoshop to Krita.
+    We've found over the past two years that for certain types of users, a reference manual, even with some examples, just isn't enough. The manual should also provide fast and concise explanations for things, and provide a basic workflow for preparing an image for the web.
+
+    We also have found that certain concepts, such as color management and layer handling are far more advanced in Krita than the average artist is used to. Krita is free and many of its users will not have formal training in digital artwork. So there is no pre-existing artist-focused knowledge on how to use color management or filter layers.
+
+    In addition there are systems that are unique to Krita, for example the brush system, the transform masks, the alpha inheritance and the perspective assistants. Finally, there are users who aren't familiar with even standard painting workflows, and are not flexible enough to understand how to port a tutorial for Sai or Photoshop to Krita.
 A list of known tutorials and video tutorials
     Apparently, one of the great things about Krita's team is how we connect with artists and acknowledge that they're doing cool stuff. The same should count for tutorials, especially because there are ways of using Krita and ways of approaching painting that are unique and we should encourage people to share their knowledge.
 Contributor's Manual
@@ -37,23 +41,25 @@ FAQ
 For first timers
 ----------------
 
-Unlike Mediawiki, Sphinx works more like how we create code.
+Unlike Mediawiki, Sphinx works more like how we write code for Krita.
 
-First things first, you will want to talk to us! For this you can either go to the `IRC on krita.org (#krita on freenode.org) <https://krita.org/en/irc/>`_, or, more importantly, make an account at `identity.kde.org <https://identity.kde.org/>`_. The account you make at identity can be used to both access the forum as well as the phabricator, where we organise Krita development.
+First things first, you will want to talk to us! For this you can either go to the `IRC on krita.org (#krita on freenode.org) <https://krita.org/en/irc/>`_, or, more importantly, make an account at `identity.kde.org <https://identity.kde.org/>`_. The account you make at identity can be used to both access the forum as well as the `phabricator`_, where we organise Krita development.
 
 If you have no idea where to begin, make a Kde identity account and make a post on `the forum <https://forum.kde.org/viewforum.php?f=136>`_.
 
 Sphinx works by writing simple text files with reStructuredText mark up, and then it takes those text files and turns them into the manual. We keep track of changes in the manual by putting them into a version control system called :program:`Git`.
 
+.. _making_changes_sphinx:
+
 Making changes
 ~~~~~~~~~~~~~~
 
-Because we use Git, there are only a few people who can put things into the git, so if you want to make changes you will need to put it up for review.
+Because we use Git, there's only a few people who can put things into the version control system, so if you want to make changes you will need to put it up for review.
 
 If you are not familiar with Git
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Get the source text.
+1. Get the source text from the `repository`_.
 
     Save a copy of the text as it existed originally.
 
@@ -69,14 +75,14 @@ If you are not familiar with Git
 5. Upload the zip on phabricator.
 
     1. First, go to phabricator.kde.org and log in with you identity account.
-    2. Go to the `manual project board <https://phabricator.kde.org/project/view/135/>`_ and there create a new task.
+    2. Go to the `Manual Project Workboard`_ and there create a new task.
     3. Explain what you did and use drag and drop to move the zip file to the input textbox. That should upload it. We will also need the email address you associate with your kde identity account.
     4. Then, if the changes are accepted, someone with commit access will unpack those files into the manual folder and push the differences using the mail address.
 
 If you are familiar with Git
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Get the source from `Krita.org Documentation Website <https://phabricator.kde.org/source/websites-docs-krita-org/>`_ using :program:`Git` clone
+1. Get the source from the `repository`_ using :program:`Git` clone
 2. Make changes
 3. Build locally (optional)
 4. Generate a git diff.
@@ -85,18 +91,22 @@ If you are familiar with Git
 
 5. Create a review request on phabricator
 
-   1. Login into `phabricator.kde.org <https://phabricator.kde.org/>`_ with your identity account.
+   1. Login into `phabricator`_ with your identity account.
    2. Go to differential.
-   3. Upper-right --> "Star" menu --> Create Review Request
-   4. Upload the diff you made, select the correct repository(``websites-docs-krita-org``).
+   3. Upper-right --> "Star" menu --> Create Review Request.
+   4. Upload the diff you made, select the correct repository(``websites-docs-krita-org``, easier to find with ``Krita.org Documentation Website``, *make sure you do not select docs-kde-org!*).
    5. Confirm the file is correct.
    6. Then in the next screen:
-        1. Add in Title
-        2. Tell us what you changed in the Summary
-        3. (Optional) put your email in the comment if you want attribution
+
+        1. Add in Title/Short Summary.
+        2. Tell us what you changed in the summary.
+        3. (Optional) put your email in the comment if you want attribution.
+        4. Phabricator has a system that automatically tags the review request with the Krita Manual team.
 
 General philosophy
 ------------------
+
+This is for determining what is an appropriate writing style. A writing style, whether we consider its practical or aesthetic qualities, is usually underpinned by a goal or general philosophy. What do we want to achieve with the manual, and for whom is the manual meant?
 
 Demographics and target audience(s)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -132,8 +142,8 @@ From these four groups...
 
 From that we can get the following rules:
 
-General
-~~~~~~~
+General Writing
+~~~~~~~~~~~~~~~
 
 Use American English if possible.
     We use American English in the manual, in accordance to Krita's UI being American English by default.
@@ -157,8 +167,126 @@ Regarding images in general
 * Avoid text in the images and use the caption instead. You can do this with the figure directive.
 * If you do need to use text, make either an SVG, so the text inside can be manipulated easier, or try to minimize the amount of text.
 * Try to make your images high quality/cute. Let's give people the idea that they are using a program for drawing!
+* Remember that the manual is licensed under GDPL 1.3, so images submitted will be licensed under that. In the case of CC-By-Sa/CC-By ensure that the file gets attributed appropriately through a figure caption. Needless to say, don't submit images that cannot be licensed under either license.
+
+Protocol
+--------
+
+So here we line out all the boring workflows.
+
+Tagging and Branches
+~~~~~~~~~~~~~~~~~~~~
+
+Adding and removing text will be done in the ``draft`` branch.
+
+Proofreading results for old pages will be considered as bugfixes and thus will go into the ``master`` branch and merged into the ``draft`` branch as necessary.
+
+Before the ``draft`` branch is merged for a given release:
+* the master branch will be tagged with the old version.
+* The draft branch is first double checked that it has updated version number and updated epub cover.
+
+The ``draft`` branch will not be merged until the day before a release to keep the pages in tact for long enough.
+
+Each release will have a version of the epub uploaded as part of the release process.
+.. Where do we get the POT files from? Even the translated versions?
+
+Removing Pages
+~~~~~~~~~~~~~~
+
+If a feature is removed in a certain version, the corresponding pages.
+
+1. Will first be marked deprecated.
+
+    This can be done as so::
+
+        .. deprecated:: version number
+
+            Text to indicate what the user should do without this feature.
+
+2. Will be linked on a page called 'deprecated'
+3. If the next version rolls around all the pages linked in the deprecated section will be removed.
+
+Adding Pages
+~~~~~~~~~~~~
+
+1. Ensure that it is located in the right place.
+2. Follow the :ref:`krita_markup_conventions` to ensure the page is formatted correctly.
+3. Add the page to the TOC.
+4. If the feature is new, add in versionadded::
+
+    .. versionadded:: version number
+
+        optional something or the other.
+
+As with images, don't add text that you do not have permission to add. This means that text is either written by you, or you have permission to port it from the original author. The manual is GDPL 1.3+ so the text will be relicensed under that.
+
+
+Changing Pages
+~~~~~~~~~~~~~~
+
+If you fully rewrite a page, as opossed to proofreading it, the resulting page should be reviewed.
+
+If you change a page because a feature has changed, and you have commit access, the change can be pushed without review(unless you feel more comfortable with a review), but you should add::
+
+    .. versionchanged:: version number
+
+        This and that changed.
+
+In all cases, check if you want to add yourself to the author field in the metadata section on top.
+
+Using deprecated, versionadded and versionchanged with the version number allows us to easily search the manual for these terms with grep:
+
+.. code:: bash
+
+    grep -d recurse versionadded * --exclude-dir={_build,locale}
+
+Faulty pages
+~~~~~~~~~~~~
+
+If a page slips through the cracks, either...
+
+* Make a review request per the :ref:`making_changes_sphinx` section.
+* Make a task at the `Manual Project Workboard`_.
+* Make a bug at `bugzilla`_ under the project Krita in the section 'documentation'.
+
+Proofreading
+~~~~~~~~~~~~
+
+There's two types of proofreading that needs to be done.
+
+The most important one is **reviewing changes people make**. You can do this on phabricator in two ways:
+
+1. Reviewing patches in differential.
+
+    Reviewing patches is done in differential. Patch reviewing is usually done by programmers to find mistakes in each other's code, but because programming code is text based just like regular text, we can use patch reviewing to check against typos as well!
+
+    A patch, or diff, is an amount of changes done in a document(added, removed) put into a machine readable file. When someone submits a review request(on system like gitlab or github this is a merge or pull request), people who maintain the original files will have to look them over and can make comments about things needing to change. This allows them to comment on things like typos, over-complicated writing but also things that are incorrect. After a patch has been accepted it can be pushed into the version control system.
+
+2. Auditing changes in the manual.
+
+    Auditing changes happens after the fact. You can audit a change by going to the commit message (from the repository page, go to history and then click on an entry), where you will be able to make comments on the changes made.
+
+In both cases, the interface consists of the difference being shown, with on the left the old version, and on the right the new version. Lines that have been added will be marked in green while lines that have been removed will be marked with red. You can click a line to add an 'inline' comment. Usually, when reviewing you go over the whole set of changes making comments where needed. To submit the inline comments, go to the bottom here you can add a general comment. When you submit the general comment all the inline comments will be submitted along side of it.
+
+The second major way the manual needs to be proofread is **over the whole file**. Many of the pages have only been checked for correctness but not for style and grammar.
+
+For this you will need to follow the :ref:`making_changes_sphinx` section, so that you can have full access to the pages and edit them.
+
+Translating
+~~~~~~~~~~~
+
+We are still trying to hash out a translation workflow. Please bear with us.
+
+.. Things that need to be decided: where do the POT files go, how do we decide which pages should not be translated, etc.
 
 Other
 -----
 
 For restructured text conventions, check :ref:`krita_markup_conventions`.
+
+.. Website shorthands. Sphinx/reStructuredText prefers it if you use shorthands when repeating websites.
+
+.. _phabricator : https://phabricator.kde.org
+.. _Manual Project Workboard : https://phabricator.kde.org/project/view/135/
+.. _repository : https://phabricator.kde.org/source/websites-docs-krita-org/
+.. _bugzilla : https://bugs.kde.org/
