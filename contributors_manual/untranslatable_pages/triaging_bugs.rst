@@ -88,7 +88,7 @@ Guidance for using Importance
 *If you encounter a bug that reports dataloss when loading a saved file, set it to critical.
 *If you encounter a bug that reports a crash or an assert but is not set to crash, set it to crash.
 *If you encounter a report that asks for functionality that is not currently present, set it to wish.
-*If you encounter a report that is a user request, check whether you can reply with a link to the faq (https://docs.krita.org/KritaFAQ), and maybe a canned answer, and change the status of the bug to INVALID.
+*If you encounter a report that is a user request, check whether you can reply with a link to the faq (https://docs.krita.org/en/KritaFAQ.html#), and maybe a canned answer, and change the status of the bug to INVALID.
 
 Asserts and Crashes
 ~~~~~~~~~~~~~~~~~~~
@@ -131,7 +131,8 @@ Broken Canvas
 
 This happens on Windows. Symptoms will be: the canvas is black, the canvas stays blank, the canvas only updates when the user clicks outside the canvas. Mark the bug as a duplicate of https://bugs.kde.org/show_bug.cgi?id=360601, and add the following text:
 
-* "You probably are using a Windows system with an Intel display chip. Please update to Krita 3.3.3, which enables the Direct3D (Angle) renderer by default. If you do not want to update, check  https://docs.krita.org/KritaFAQ#Krita_starts_with_a_black_or_blank_canvas_and_nothing_changes_when_you_try_to_draw.2Fshows_a_black_or_blank_screen_on_my_Windows_system_with_an_Intel_GPU ."
+* "You probably are using a Windows system with an Intel display chip. Please update to Krita 3.3.3, which enables the Direct3D (Angle) renderer by default. If you do not want to update, check 
+https://docs.krita.org/en/KritaFAQ.html#krita-starts-with-an-empty-canvas-and-nothing-changes-when-you-try-to-draw-or-krita-shows-a-black-or-blank-screen-or-krita-crashes-when-creating-a-document-or-krita-s-menubar-is-hidden-on-a-windows-system-with-an-intel-gpu "
 
 My stylus has an offset
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -156,7 +157,7 @@ The word "lag" is meaningless. Complaints about "lag" are not bug reports. Howev
 
 Mark the bug as NEEDSINFO/WAITINFORINFO and ask the user"
 
-* "Have you enabled the stabilizer? Check the tool options panel for the freehand tool. Also check the other possibilities mentioned here: https://docs.krita.org/KritaFAQ#Krita_is_slow"
+* "Have you enabled the stabilizer? Check the tool options panel for the freehand tool. Also check the other possibilities mentioned here: https://docs.krita.org/en/KritaFAQ.html#krita-is-slow"
 
 I cannot paint at all, in a particular document
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
