@@ -18,7 +18,7 @@ Dyna Brush Engine
 
 Dyna brush uses dynamic setting like mass and drag to draw strokes. The results are fun and random spinning strokes.To experiment more with this brush you can play with values in 'dynamic settings' section of the brush editor under Dyna Brush.
 
-.. warning::
+.. deprecated:: 4.0
     
     This brush engine has been removed in 4.0. This engine mostly had smoothing results that the dyna brush tool has in the toolbox. The stabilizer settings can also give you further smoothing options from the tool options.
 

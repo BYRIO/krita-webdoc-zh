@@ -16,7 +16,8 @@
 Chalk Brush Engine
 ==================
 
-.. warning::
+.. deprecated:: 4.0
+
     This brush engine has been removed in 4.0. There are other brush engines such as pixel that can do everything this can...plus more.
 
 Apparently, the Bristle brush engine is derived from this brush engine. Now, all of :program:`Krita's` brushes have a great variety of uses, so you must have tried out the Chalk brush and wondered what it is for. Is it nothing but a pixel brush with opacity and saturation fade options?

@@ -15,7 +15,7 @@
 Snap Settings
 =============
 
-.. warning::
+.. deprecated:: 3.0
     
     This docker has been removed in Krita 3.0. For more information on how to do this instead, consult the :ref:`snapping page <snapping>`.
 

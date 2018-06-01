@@ -17,7 +17,7 @@ Grid Tool
 
 |toolgrid|
 
-.. warning::
+.. deprecated:: 3.0
 
     Deprecated in 3.0, use the :ref:`grids_and_guides_docker` instead.
 

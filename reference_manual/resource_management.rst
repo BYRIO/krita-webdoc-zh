@@ -101,6 +101,8 @@ Deleting Imported Bundles
 
 In-case you wish to delete the bundles you have imported permanently click on the open resource folder button in the manage resources dialog . This will open the resource folder in your file manager / explorer. Go inside the bundles folder and delete the bundle file which you don't need any more. The next time you start Krita the bundle and its associated resources will not be loaded.
 
+Resource Types in Krita
+-----------------------
 
 .. toctree::
    :maxdepth: 1

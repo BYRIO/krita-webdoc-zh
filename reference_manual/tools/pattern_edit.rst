@@ -17,7 +17,7 @@ Pattern Editing Tool
 
 |toolpatternedit|
 
-.. warning::
+.. deprecated:: 4.0
 
     The pattern editing tool has been removed in 4.0, currently there's no way to edit pattern fills for vectors
 
