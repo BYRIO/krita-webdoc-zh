@@ -1,11 +1,12 @@
 ErrorDocument 404 /404.html
 
 # Old mediawiki pages redirects.
+RewriteBase /en
 
-Redirect 301 /Main_Page /en/index.html
+RewriteRule "^Main_Page" index.html [R=301]
 
-Redirect 301 /KritaFAQ /en/KritaFAQ.html
+RewriteRule "^KritaFAQ" KritaFAQ.html [R=301]
 
-Redirect 301 /Contributors_Readme /en/contributors_manual/krita_manual_readme.html
+RewriteRule "^Contributors_Readme" contributors_manual/krita_manual_readme.html [R=301]
 
-Redirect 301 /Resources /en/resources_page.html
+RewriteRule "^Resources" resources_page.html [R=301]
