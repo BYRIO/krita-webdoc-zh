@@ -330,7 +330,7 @@ else:
 epub_scheme = 'URL'
 
 # A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html', '.htaccess']
+epub_exclude_files = ['search.html', '.htaccess', '404.xhtml']
 
 epub_tocscope = 'includehidden'
 
