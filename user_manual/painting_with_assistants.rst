@@ -107,17 +107,22 @@ Vanishing Point
 ~~~~~~~~~~~~~~~
 
 This assistant allows you to create a vanishing point, typically used
-for a horizon line. A preview line is drawn and all your snapped lines
-are drawn to this line.
+for a horizon line. A preview line is drawn and all your snapped lines are drawn to this line.
 
 It is one point, with four helper points to align it to previously
 created perspective lines.
 
-They are made and manipulated with the Ruler Assistant Tool.
+They are made and manipulated with the :ref:`assistant_tool`.
 
 If you press shift while holding the center handle, they will snap to
 perfectly horizontal or vertical lines depending on the position of
 where it previously was.
+
+.. versionchanged:: 4.1
+
+    The vanishing point assistant also shows several general lines.
+
+    When you've just created, or when you've just moved a vanishing point assistant, it will be selected. This means you can modify the amount of lines shown in the tool options of the :ref:`assistant_tool`.
 
 .. _assistant_fish_eye:
 
