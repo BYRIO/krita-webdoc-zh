@@ -10,9 +10,9 @@
 
 .. _krita_markup_conventions:
 
-=========================================
-Mark-up conventions for the Krita Manual.
-=========================================
+========================================
+Mark-up conventions for the Krita Manual
+========================================
 
 This details the style conventions for using restructured text for the Krita Manual.
 
@@ -43,7 +43,7 @@ Each page should start with the following three things:
     This is a general description of the page. It will be converted to a html meta tag which will be used by search engines::
 
         .. meta::
-            :description lang=en:
+            :description:
                 Description.
 
 
@@ -56,7 +56,12 @@ Each page should start with the following three things:
                      - Author 2
            :license: GNU free documentation license 1.3 or later.
 
-3. A label.
+3. Indexing terms.
+    These are comma-seperated terms under which the page will be indexed in :ref:`genindex`. The generated index is quite useful for both pdf as well as people who are not sure what the exact name is of the term they are looking for. They are defined as following::
+
+        .. index:: Keyword, Keyword with Spaces, ! Main Definition Keyword
+
+4. A label.
     This is so we can easily link to the page using ``:ref:`label_name```. Try to make this a nice variable name::
 
         .. _label_name:
@@ -100,6 +105,8 @@ These conventions were more or less decided by pandoc's mediawiki to reStructure
 
 Sometimes you need to link to a subsection of a page, add a label above the heading in that case.
 
+Headers should not end with punctuation, as the header will be used as the link name when linking to a label.
+
 Linking
 -------
 
@@ -130,7 +137,7 @@ Here is a citation reference: [CIT2002]_.
 
 Citaton can also be referenced with `citation <CIT2002>`_
 
-We don't actually use footnotes in the manual due to the fact that it is a little bit too academical for our readers. However, we do collect documents and links that give a little bit more information on a topic at the end of a page. Sphinx has the ``.. seealso::`` directive for this, while reStructuredText suggests to use ``.. topic:: footnotes`` for specifically collecting footnotes as that plays nice with LaTeX.
+We don't actually use footnotes in the manual due to the fact that it is a little bit too academical for our readers. However, we do collect documents and links that give a little bit more information on a topic at the end of a page. Sphinx has the ``.. seealso::`` directive for linking to external links, while reStructuredText suggests to use ``.. rubic:: Footnotes`` for specifically collecting footnotes as that plays nice with LaTeX.
 
 
 Images
@@ -159,7 +166,7 @@ The latter gives:
     :align: center
     :alt: an image.
 
-    A caption --  notice how the first letter is aligned with the :figwidth: option.
+    A caption --  notice how the first letter of the caption in the directive is aligned with the :figwidth: option.
 
 Images should go into the ``/images/en`` folder. By using ``/images`` instead of ``images``, sphinx will know the filepath isn't relative.
 
@@ -171,7 +178,7 @@ You can make text *emphasized* and **strong** with a single asterisk and double 
     *emphasize*
     **strong**
 
-You cannot ***emphasized and strong***, so take a pick.
+You cannot do both ***emphasized and strong***, so take a pick.
 
 You can :sub:`subscript text` and :sup:`superscript text` by using ``:sub:`text``` and ``:sup:`text```
 
@@ -191,9 +198,16 @@ You can create a sort of shorthand for a piece of text or an image by doing::
 
     .. |shorthand| replace:: something or the other.
 
-which means that if you use ``|shorthand|``, in the text, it'll be replaced with 'something or the other'. This is useful for links, images and text that needs to be formatted in a complicated way, like in the case of LaTeX.
+which means that if you use ``|shorthand|``, in the text, it'll be replaced with 'something or the other'. This is useful for, images and text that needs to be formatted in a complicated way, like in the case of "LaTeX".
 
-The krita documentation has |mouseleft|, |mousemiddle|, |mousescroll| and |mouseright|, which'll turn into images. These are defined in the sphinx conf.py, and are appended to each rst file.
+The krita documentation has ``|mouseleft|``, ``|mousemiddle|``, ``|mousescroll|`` and ``|mouseright|``, which'll turn into |mouseleft|, |mousemiddle|, |mousescroll| and |mouseright| respectively. These are defined in the sphinx conf.py, and are appended to each rst file.
+
+For links, if you reuse the same link over and over, you can write something like the following at the end of the file::
+
+    .. _bugzilla: https://bugs.kde.org/
+    .. _Krita Manual: https://docs.krita.org/
+
+Then, when typing a link, you can just use ```bugzilla`_`` to link to bugzilla with "bugzilla" used as the text of the link. ```Krita Manual`_`` will in turn link to docs.krita.org with the text "Krita Manual".
 
 Lists
 -----
@@ -320,6 +334,7 @@ Done as follows::
     +-----------------+------------+
 
     .. list-table::
+       :header-rows: 1
 
        - * Purpose
          * Table Type
@@ -507,7 +522,11 @@ We don't actually use this anywhere in the manual.
 Glossaries, Terms and Index
 ---------------------------
 
-These are sphinx features, which we haven't decided upon whether we wish to use them.
+These are sphinx features.
+
+Index is used in the top section, right now only single index entries are used.
+
+Glossaries are used for some of the menu entry sections, but not all of them.
 
 Quotes
 ------
@@ -524,5 +543,6 @@ This becomes a blockquote.
 
     -- Wolthera
 
+We do actually use quotes in some places. Try to add a link to the name to define where it came from.
 
 
