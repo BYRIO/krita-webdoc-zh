@@ -16,7 +16,9 @@ Sensors
 =======
 
 Pressure
-    Uses the pressure input of your tablet.
+    Uses the pressure in and out values of your stylus.
+PressureIn
+    Uses only pressure in values of your stylus. Previous pressure level in same stroke is overwritten *only* by applying more pressure. Lessening the pressure doesn't affect PressureIn.
 X-tilt
     How much the brush is affected by stylus angle, if supported.
 Y-tilt
@@ -45,5 +47,3 @@ Perspective
     How much the brush is affected by the perspective assistant.
 Tangential Pressure
     How much the brush is affected by the wheel on airbrush-simulating stylii.
-
- 
