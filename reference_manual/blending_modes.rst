@@ -69,6 +69,9 @@ You first need to use modifiers :kbd:`alt + shift`, then use the following hotke
 * Next Blending Mode :kbd:`+`
 * Previous Blending Mode :kbd:`-`
 
+Available Blending Modes
+------------------------
+
 .. toctree::
    :maxdepth: 2
    :glob:
