@@ -21,9 +21,9 @@ Platform
 
 If the user has not entered the Platform correctly (i.e., it is "unspecified/Linux"), then ask which platform they are using. Mark the bug as ``NEEDDINFO/WAITINFORINFO``.
 
-.. topic:: Text To Paste:
+.. admonition:: Tell the user:
 
-    "Please indicate your operating system correctly. For Linux, select the distribution, appimage or compiled from sources and Linux, for Windows, select MS Windows/MS Windows, for OSX or macOS, select macports, disk images or homebrew and OSX."
+    Please indicate your operating system correctly. For Linux, select the distribution, appimage or compiled from sources and Linux, for Windows, select MS Windows/MS Windows, for OS X or macOS, select macports, disk images or homebrew and OS X.
 
 If the user has selected Windows CE for platform, set it to MS Windows without asking them.
 
@@ -31,16 +31,16 @@ Version
 ~~~~~~~
 If the user has not entered the version (i.e., the version is unspecified), ask them for the version and mark the bug as ``NEEDDINFO/WAITINFORINFO``.
 
-.. topic:: Text To Paste:
+.. admonition:: Tell the user:
 
-    "Please select the version of Krita you are using. You can find the version in Help/About Krita."
+    Please select the version of Krita you are using. You can find the version in Help/About Krita.
 
 
 Can Reproduce
 ~~~~~~~~~~~~~
 
-* If you can reproduce the bug, add a comment indicating you can reproduce it, maybe with clearer steps to reproduce and anything pertinent that you observed. If you have a backtrace, also add it. Set the bug status to CONFIRMED and add the 'triaged' keyword to the keywords.
-* If you can reproduce the bug, and want to go the extra mile, use an older version of Krita to see whether you could reproduce it there as well. If you couldn't, it's a _regression_, so add the regression keyword to the keywords and mark which version of Krita the latest was that did not have the bug.
+* If you can reproduce the bug, add a comment indicating you can reproduce it, maybe with clearer steps to reproduce and anything pertinent that you observed. If you have a backtrace, also add it. Set the bug status to ``CONFIRMED`` and add the ``triaged`` keyword to the keywords.
+* If you can reproduce the bug, and want to go the extra mile, use an older version of Krita to see whether you could reproduce it there as well. If you couldn't, it's a *regression*, so add the regression keyword to the keywords and mark which version of Krita the latest was that did not have the bug.
 
 Cannot Reproduce
 ~~~~~~~~~~~~~~~~
@@ -49,22 +49,26 @@ Cannot Reproduce
 
 * If there is not enough information, ask for more information. Depending on the report, the steps to reproduce might need to be described more clearly and/or a screenshot, a screen recording or the original files might be necessary. Set text (ask for what you think is needed):
 
-    "I am sorry, I cannot reproduce your issue. Could you specify the steps to reproduce more clearly, and maybe add a screen recording/screenshot/original file"
-    
+    .. admonition:: Ask the user:
+
+        I am sorry, I cannot reproduce your issue. Could you specify the steps to reproduce more clearly, and maybe add a screen recording/screenshot/original file
+
     * Mark the bug as ``NEEDINFO/WAITINGFORINFO``.
 * If the issue seems to be specific to the user's system, ask for the output of help/System information for bug reports as well. Set text:
 
-     "I am sorry, but I cannot reproduce the bug on my system. Please add the output of help/System Information for Bug reports as well."
-       
+     .. admonition:: Tell the user:
+
+        I am sorry, but I cannot reproduce the bug on my system. Please add the output of help/System Information for Bug reports as well.
+
     * Mark the bug as ``NEEDINFO/WAITINGFORINFO``.
 
 Importance
 ~~~~~~~~~~
 Importance is a tool for developers, not for bug reports. It's developers and triagers who decide what the importance is. If a bug reporter complains about a change in importance, use this text:
 
-.. topic:: Text To Paste:
+.. admonition:: Tell the user:
 
-    "I am sorry, but the importance field is a tool for the developers to work with. Please do not change the importance back."
+    I am sorry, but the importance field is a tool for the developers to work with. Please do not change the importance back.
 
 There are the following Importances:
 
@@ -89,7 +93,7 @@ The main difference is between Wish and the rest: Wishes are feature requests, a
 
 The rest are bugs, that is, problems in Krita that can be fixed by changing Krita's code.
 
-However, we also get many reports that are not bugs and not wishes: reports that are basically users asking for help because they do not understand Krita or their computer, or what a file is, or that Krita isn't the same application as Photoshop. Those reports need to be weeded out, and the status set to INVALID.
+However, we also get many reports that are not bugs and not wishes: reports that are basically users asking for help because they do not understand Krita or their computer, or what a file is, or that Krita isn't the same application as Photoshop. Those reports need to be weeded out, and the status set to ``INVALID``.
 
 Guidance for using Importance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,7 +101,7 @@ Guidance for using Importance
 * If you encounter a bug that reports dataloss when loading a saved file, set it to critical.
 * If you encounter a bug that reports a crash or an assert but is not set to crash, set it to crash.
 * If you encounter a report that asks for functionality that is not currently present, set it to wish.
-* If you encounter a report that is a user request, check whether you can reply with a link to the faq (https://docs.krita.org/en/KritaFAQ.html#), and maybe a canned answer, and change the status of the bug to INVALID.
+* If you encounter a report that is a user request, check whether you can reply with a link to the faq (https://docs.krita.org/en/KritaFAQ.html), and maybe a canned answer, and change the status of the bug to ``INVALID``.
 
 Asserts and Crashes
 ~~~~~~~~~~~~~~~~~~~
@@ -133,7 +137,9 @@ For instance:
 
 This happens most often on Windows, if the user has got any security software installed that doesn't come with Windows. Examples are Sandboxie, Totaldefender, or others. Mark the bug as ``NEEDSINFO/WAITINGFORINFO`` and add this text:
 
-* "Are you using Windows? If so, do you have any non-standard security software installed such as Total Defender, Sandboxie or XXX? Please make an exception for Krita in the settings, or uninstall this software. Since Windows 10, it is no longer necessary to have any security software installed other than what comes with Windows."
+.. admonition:: Ask the user:
+
+    Are you using Windows? If so, do you have any non-standard security software installed such as Total Defender, Sandboxie or XXX? Please make an exception for Krita in the settings, or uninstall this software. Since Windows 10, it is no longer necessary to have any security software installed other than what comes with Windows.
 
 If the user replies that they are using extra security software, close the bug as ``RESOLVED/INVALID``.
 
@@ -143,40 +149,46 @@ Broken Canvas
 
 This happens on Windows. Symptoms will be: the canvas is black, the canvas stays blank, the canvas only updates when the user clicks outside the canvas. Mark the bug as a duplicate of https://bugs.kde.org/show_bug.cgi?id=360601, and add the following text:
 
-.. topic:: Text To Paste:
+.. admonition:: Tell the user:
 
-    "You probably are using a Windows system with an Intel display chip. Please update to Krita 3.3.3, which enables the Direct3D (Angle) renderer by default. If you do not want to update, check https://docs.krita.org/en/KritaFAQ.html#krita-starts-with-an-empty-canvas-and-nothing-changes-when-you-try-to-draw-or-krita-shows-a-black-or-blank-screen-or-krita-crashes-when-creating-a-document-or-krita-s-menubar-is-hidden-on-a-windows-system-with-an-intel-gpu "
+    You probably are using a Windows system with an Intel display chip. Please update to Krita 3.3.3, which enables the Direct3D (Angle) renderer by default. If you do not want to update, check https://docs.krita.org/en/KritaFAQ.html#krita-starts-with-an-empty-canvas-and-nothing-changes-when-you-try-to-draw-or-krita-shows-a-black-or-blank-screen-or-krita-crashes-when-creating-a-document-or-krita-s-menubar-is-hidden-on-a-windows-system-with-an-intel-gpu
 
 My stylus has an offset
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 This happens on Windows. Symptoms will be: the user reports that the stylus cursor has an offset or moves the cursor on another screen. Usually, the user will have a misconfigured multi-monitor system. Mark the bug as ``NEEDSINFO/WAITINGFORINFO`` and ask the user:
 
-.. topic:: Text To Paste:
+.. admonition:: Ask the user:
 
-    "Do you have a multi-monitor setup? If so, this is a configuration issue. Please reset your tablet driver's configuration and Krita's configuration (https://docs.krita.org/en/KritaFAQ.html#resetting-krita-configuration). If you have a single-monitor setup, then please calibrate your tablet."
+    Do you have a multi-monitor setup? If so, this is a configuration issue. Please reset your tablet driver's configuration and Krita's configuration (https://docs.krita.org/en/KritaFAQ.html#resetting-krita-configuration). If you have a single-monitor setup, then please calibrate your tablet.
 
 If the user checks back and tells us the problems are solved, mark the bug as ``RESOLVED/UPSTREAM``.
 
 Other tablet issues
 ~~~~~~~~~~~~~~~~~~~
 
-Often, the user will tell you that their tablet will work perfectly with another application. This is not relevant. Tell the user:
+Often, the user will tell you that their tablet will work perfectly with another application. This is not relevant.
 
-* "Windows tablet drivers often have special code for different applications. Whether an application works or not depends on whether the programmers have tested their driver with an application or not. Tablet issues are almost always caused by the drivers being broken."
+.. admonition:: Tell the user:
+
+    Windows tablet drivers often have special code for different applications. Whether an application works or not depends on whether the programmers have tested their driver with an application or not. Tablet issues are almost always caused by the drivers being broken.
 
 Krita lags
 ~~~~~~~~~~
 
 The word "lag" is meaningless. Complaints about "lag" are not bug reports. However, we should help the complainer.
 
-Mark the bug as ``NEEDSINFO/WAITINGFORINFO`` and ask the user"
+Mark the bug as ``NEEDSINFO/WAITINGFORINFO`` and ask the user:
 
-* "Have you enabled the stabilizer? Check the tool options panel for the freehand tool. Also check the other possibilities mentioned here: https://docs.krita.org/en/KritaFAQ.html#krita-is-slow"
+.. admonition:: Ask the user:
+
+ Have you enabled the stabilizer? Check the tool options panel for the freehand tool. Also check the other possibilities mentioned here: https://docs.krita.org/en/KritaFAQ.html#krita-is-slow
 
 I cannot paint at all, in a particular document
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The user probably created, accidentally, a tiny selection, and saved that with the document. Mark as ``NEEDSINFO/WAITINGFORINFO`` and ask them:
 
-* "Do you have a selection saved with that document. Use select/deselect on your image and check whether you can paint again. If not, please attach the .kra document to this bug report or make it available."
+.. admonition:: Ask the user:
+
+     Do you have a selection saved with that document. Use select/deselect on your image and check whether you can paint again. If not, please attach the .kra document to this bug report or make it available.
