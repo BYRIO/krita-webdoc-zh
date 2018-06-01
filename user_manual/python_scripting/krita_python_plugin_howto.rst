@@ -51,7 +51,7 @@ ServiceTypes
 X-KDE-Library
  This should be the name of the plugin folder you just created.
 X-Python-2-Compatible
- Whether it is python compatible... we don't actually do anything with this.
+ Whether it is python 2 compatible. If Krita was build with python 2 instead of 3 (``-DENABLE_PYTHON_2=ON`` in the cmake configuration), then this plugin will not show up in the list.
 X-Krita-Manual
  An Optional Value that will point to the manual item. This is shown in the Python Plugin manager. If it's `a HTML file it'll be shown as rich text <https://doc.qt.io/qt-5/richtext-html-subset.html>`_, if not, it'll be shown as plain text.
 Name
@@ -82,11 +82,11 @@ In summary, if you want to create a script called *myplugin*:
 - in the *__init__.py* file put this code:
 
 .. code:: python
- 
+
     from .myplugin import *
 
 - in the desktop file put this code::
- 
+
     [Desktop Entry]
     Type=Service
     ServiceTypes=Krita/PythonPlugin

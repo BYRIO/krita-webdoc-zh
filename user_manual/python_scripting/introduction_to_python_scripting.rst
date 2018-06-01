@@ -55,7 +55,7 @@ Now we have a console that can run functions like print() from the Python enviro
 Running basic Krita commands
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To allow Python to communicate with Krita, we will use the Krita module. At the top of every script, we will write: ``from krita import *`` 
+To allow Python to communicate with Krita, we will use the Krita module. At the top of every script, we will write: ``from krita import *``
 
 This allows us to talk to Krita through ``Krita.instance()``. Let's try to double our coding abilities with Python.
 
@@ -69,7 +69,7 @@ You should see a second scripter window open. Pretty neat! Here is a slightly mo
 
 .. code:: python
 
-    from krita import * 
+    from krita import *
 
     d = Krita.instance().createDocument(512, 512, "Python test document", "RGBA", "U8", "", 120.0)
     Krita.instance().activeWindow().addView(d)
@@ -175,5 +175,16 @@ Technical Details
 
 .. Which version of python do we use, how to trouble shoot, etc.
 
+Python Scripting on Windows
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 To get Python scripting working on Windows 7/8/8.1, you will need to install the `Universal C Runtime from Microsoft's website <https://www.microsoft.com/en-us/download/details.aspx?id=48234>`_. (Windows 10 already comes with it.)
 
+Python 2 and 3
+~~~~~~~~~~~~~~
+
+By default Krita is compiled for python 3.
+
+However, it is possible to compile it with python 2. To do so, you will need to add the following to the cmake configuration line::
+
+    -DENABLE_PYTHON_2=ON
