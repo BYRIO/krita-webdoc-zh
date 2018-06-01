@@ -1,1 +1,323 @@
 ErrorDocument 404 /404.html
+
+# Old mediawiki pages redirects.
+
+Redirect 301 /Main_Page https://docs.krita.org/en/index.html
+
+Redirect 301 /KritaFAQ https://docs.krita.org/en/KritaFAQ.html
+
+Redirect 301 /Contributors_Readme https://docs.krita.org/en/contributors_manual/krita_manual_readme.html
+
+Redirect 301 /Resources https://docs.krita.org/en/resources_page.html
+
+# User Manual
+
+Redirect 301 /Category:User_Manual https://docs.krita.org/en/user_manual.html
+
+Redirect 301 /Drawing_Tablets https://docs.krita.org/en/user_manual/drawing_tablets.html
+Redirect 301 /Loading_and_Saving_Brushes https://docs.krita.org/en/user_manual/loading_saving_brushes.html
+Redirect 301 /On_Canvas_Brush_Editor https://docs.krita.org/en/user_manual/oncanvas_brush_editor.html
+Redirect 301 /Mirror_Tools https://docs.krita.org/en/user_manual/mirror_tools.html
+Redirect 301 /Painting_With_Assistants https://docs.krita.org/en/user_manual/painting_with_assistants.html
+Redirect 301 /Working_with_Images https://docs.krita.org/en/user_manual/working_with_images.html
+Redirect 301 /Templates https://docs.krita.org/en/user_manual/templates.html
+Redirect 301 /Introduction_to_Layers_and_Masks https://docs.krita.org/en/user_manual/layers_and_masks.html
+Redirect 301 /Selections https://docs.krita.org/en/user_manual/selections.html
+Redirect 301 /Tag_System https://docs.krita.org/en/user_manual/tag_management.html
+Redirect 301 /Soft_Proofing https://docs.krita.org/en/user_manual/soft_proofing.html
+Redirect 301 /Vector_Graphics https://docs.krita.org/en/user_manual/vector_graphics.html
+Redirect 301 /Snapping https://docs.krita.org/en/user_manual/snapping.html
+Redirect 301 /Animation https://docs.krita.org/en/user_manual/animation.html
+Redirect 301 /Japanese_Animation_Template_for_Krita https://docs.krita.org/en/user_manual/japanese_animation_template.html
+
+
+#    Getting started
+
+Redirect 301 /Category:Getting_Started https://docs.krita.org/en/user_manual/getting_started.html
+
+Redirect 301 /Installation https://docs.krita.org/en/user_manual/getting_started/installation.html
+Redirect 301 /Starting_Krita https://docs.krita.org/en/user_manual/getting_started/starting_krita.html
+Redirect 301 /Basic_Concepts https://docs.krita.org/en/user_manual/getting_started/basic_concepts.html
+Redirect 301 /Navigation https://docs.krita.org/en/user_manual/getting_started/navigation.html
+
+#   Introduction
+
+Redirect 301 /Category:Introduction_coming_from_other_software https://docs.krita.org/en/user_manual/introduction_from_other_software.html
+Redirect 301 /Introduction_to_Krita_coming_from_Photoshop https://docs.krita.org/en/user_manual/introduction_from_other_software/introduction_from_photoshop.html
+Redirect 301 /Introduction_to_Krita_coming_from_Painttool_Sai https://docs.krita.org/en/user_manual/introduction_from_other_software/introduction_from_sai.html
+
+#   Python Scripting
+
+Redirect 301 /Category:Python_Scripting https://docs.krita.org/en/user_manual/python_scripting.html
+Redirect 301 /Introduction_to_Python_Scripting https://docs.krita.org/en/user_manual/python_scripting/introduction_to_python_scripting.html
+Redirect 301 /How_to_make_a_Krita_Python_plugin https://docs.krita.org/en/user_manual/python_scripting/krita_python_plugin_howto.html
+
+# Reference Manual
+
+Redirect 301 /Category:Reference_Manual https://docs.krita.org/en/reference_manual.html
+
+Redirect 301 /Blending_Modes https://docs.krita.org/en/reference_manual/blending_modes.html
+Redirect 301 /Dr._Mingw_debugger https://docs.krita.org/en/reference_manual/dr_minw_debugger.html
+Redirect 301 /Instant_Preview https://docs.krita.org/en/reference_manual/instant_preview.html
+Redirect 301 /The_Krita_4_Preset_Bundle https://docs.krita.org/en/reference_manual/krita_4_preset_bundle.html
+Redirect 301 /Linux_Command_Line https://docs.krita.org/en/reference_manual/linux_command_line.html
+Redirect 301 /List_of_Tablets_Supported https://docs.krita.org/en/reference_manual/list_supported_tablets.html
+Redirect 301 /Maths_input https://docs.krita.org/en/reference_manual/maths_input.html
+Redirect 301 /Render_Animation https://docs.krita.org/en/reference_manual/render_animation.html
+Redirect 301 /Stroke_Selection https://docs.krita.org/en/reference_manual/stroke_selection.html
+
+#   Brushes
+
+Redirect 301 /Category:Brushes https://docs.krita.org/en/reference_manual/brushes.html
+#       Brush Engines
+Redirect 301 /Category:Brush_Engines https://docs.krita.org/en/reference_manual/brushes/brush_engines.html
+
+Redirect 301 /Bristle https://docs.krita.org/en/reference_manual/brushes/brush_engines/bristle_engine.html
+Redirect 301 /Chalk https://docs.krita.org/en/reference_manual/brushes/brush_engines/chalk_engine.html
+Redirect 301 /Clone https://docs.krita.org/en/reference_manual/brushes/brush_engines/clone_engine.html
+Redirect 301 /Color_Smudge https://docs.krita.org/en/reference_manual/brushes/brush_engines/color_smudge_engine.html
+Redirect 301 /Curve https://docs.krita.org/en/reference_manual/brushes/brush_engines/curve_engine.html
+Redirect 301 /Deform https://docs.krita.org/en/reference_manual/brushes/brush_engines/deform_brush_engine.html
+Redirect 301 /Dyna https://docs.krita.org/en/reference_manual/brushes/brush_engines/dyna_brush_engine.html
+Redirect 301 /Filter https://docs.krita.org/en/reference_manual/brushes/brush_engines/filter_brush_engine.html
+Redirect 301 /Grid https://docs.krita.org/en/reference_manual/brushes/brush_engines/grid_brush_engine.html
+Redirect 301 /Hatching https://docs.krita.org/en/reference_manual/brushes/brush_engines/hatching_brush_engine.html
+Redirect 301 /Particle https://docs.krita.org/en/reference_manual/brushes/brush_engines/particle_brush_engine.html
+Redirect 301 /Pixel https://docs.krita.org/en/reference_manual/brushes/brush_engines/pixel_brush_engine.html
+Redirect 301 /Quick_Brush https://docs.krita.org/en/reference_manual/brushes/brush_engines/quick_brush_engine.html
+Redirect 301 /Shape https://docs.krita.org/en/reference_manual/brushes/brush_engines/shape_brush_engine.html
+Redirect 301 /Sketch https://docs.krita.org/en/reference_manual/brushes/brush_engines/sketch_brush_engine.html
+Redirect 301 /Spray https://docs.krita.org/en/reference_manual/brushes/brush_engines/spray_brush_engine.html
+Redirect 301 /Tangent_Normal https://docs.krita.org/en/reference_manual/brushes/brush_engines/tangen_normal_brush_engine.html
+
+#       Brush Settings
+Redirect 301 /Category:Brush_Settings https://docs.krita.org/en/reference_manual/brushes/brush_settings.html
+
+Redirect 301 /Brush_Tips https://docs.krita.org/en/reference_manual/brushes/brush_settings/brush_tips.html
+Redirect 301 /Locked_Brush_Settings https://docs.krita.org/en/reference_manual/brushes/brush_settings/locked_brush_settings.html
+Redirect 301 /Masked_Brush https://docs.krita.org/en/reference_manual/brushes/brush_settings/masked_brush.html
+Redirect 301 /Opacity_&_Flow https://docs.krita.org/en/reference_manual/brushes/brush_settings/opacity_and_flow.html
+Redirect 301 /Parameters https://docs.krita.org/en/reference_manual/brushes/brush_settings/options.html
+Redirect 301 /Sensors https://docs.krita.org/en/reference_manual/brushes/brush_settings/tablet_sensors.html
+Redirect 301 /Texture https://docs.krita.org/en/reference_manual/brushes/brush_settings/texture.html
+
+#   Dockers
+
+Redirect 301 /Category:Dockers https://docs.krita.org/en/reference_manual/dockers.html
+
+Redirect 301 /Add_Shape https://docs.krita.org/en/reference_manual/dockers/add_shape.html
+Redirect 301 /Advanced_Color_Selector https://docs.krita.org/en/reference_manual/dockers/advanced_color_selector.html
+Redirect 301 /Animation_Curves https://docs.krita.org/en/reference_manual/dockers/animation_curve.html
+Redirect 301 /Animation_Docker https://docs.krita.org/en/reference_manual/dockers/animation_docker.html
+Redirect 301 /Artistic_Color_Selector https://docs.krita.org/en/reference_manual/dockers/artistic_color_selector.html
+Redirect 301 /Brush_Presets https://docs.krita.org/en/reference_manual/dockers/brush_preset_docker.html
+Redirect 301 /Channels https://docs.krita.org/en/reference_manual/dockers/channels_docker.html
+Redirect 301 /Color_Sliders https://docs.krita.org/en/reference_manual/dockers/color_sliders.html
+Redirect 301 /Compositions https://docs.krita.org/en/reference_manual/dockers/compositions.html
+Redirect 301 /Digital_Color_Mixer https://docs.krita.org/en/reference_manual/dockers/digital_color_mixer.html
+Redirect 301 /Grids_and_Guides https://docs.krita.org/en/reference_manual/dockers/grids_and_guides.html
+Redirect 301 /Histogram https://docs.krita.org/en/reference_manual/dockers/histogram_docker.html
+Redirect 301 /Layers https://docs.krita.org/en/reference_manual/dockers/layers.html
+Redirect 301 /LUT_Management https://docs.krita.org/en/reference_manual/dockers/lut_management.html
+Redirect 301 /Onion_Skin_Docker https://docs.krita.org/en/reference_manual/dockers/onion_skin.html
+Redirect 301 /Overview https://docs.krita.org/en/reference_manual/dockers/overview.html
+Redirect 301 /Palette https://docs.krita.org/en/reference_manual/dockers/palette_docker.html
+Redirect 301 /Patterns https://docs.krita.org/en/reference_manual/dockers/pattern_docker.html
+Redirect 301 /Reference_Images https://docs.krita.org/en/reference_manual/dockers/reference_images_docker.html
+Redirect 301 /Shape_Properties https://docs.krita.org/en/reference_manual/dockers/shape_properties_docker.html
+Redirect 301 /Small_Color_Selector https://docs.krita.org/en/reference_manual/dockers/small_color_selector.html
+Redirect 301 /Snap_Settings https://docs.krita.org/en/reference_manual/dockers/snap_settings_docker.html
+Redirect 301 /Specific_Color_Selector https://docs.krita.org/en/reference_manual/dockers/specific_color_selector.html
+Redirect 301 /Task_Sets https://docs.krita.org/en/reference_manual/dockers/task_sets.html
+Redirect 301 /Timeline_Docker https://docs.krita.org/en/reference_manual/dockers/timeline.html
+Redirect 301 /Touch_Docker https://docs.krita.org/en/reference_manual/dockers/touch_docker.html
+Redirect 301 /Undo_History https://docs.krita.org/en/reference_manual/dockers/undo_history.html
+Redirect 301 /Vector_Library_Docker https://docs.krita.org/en/reference_manual/dockers/vector_library.html
+
+#   Filters
+
+Redirect 301 /Category:Filters https://docs.krita.org/en/reference_manual/filters.html
+
+Redirect 301 /Adjust https://docs.krita.org/en/reference_manual/filters/adjust.html
+Redirect 301 /Artistic https://docs.krita.org/en/reference_manual/filters/artistic.html
+Redirect 301 /Blur https://docs.krita.org/en/reference_manual/filters/blur.html
+Redirect 301 /Colors https://docs.krita.org/en/reference_manual/filters/colors.html
+Redirect 301 /Edge_Detection https://docs.krita.org/en/reference_manual/filters/edge_detection.html
+Redirect 301 /Emboss https://docs.krita.org/en/reference_manual/filters/emboss.html
+Redirect 301 /Enhance https://docs.krita.org/en/reference_manual/filters/enhance.html
+Redirect 301 /Map https://docs.krita.org/en/reference_manual/filters/map.html
+Redirect 301 /Other_filters https://docs.krita.org/en/reference_manual/filters/other.html
+Redirect 301 /Wavelet_decompose https://docs.krita.org/en/reference_manual/filters/wavelet_decompose.html
+
+#   Layers
+
+Redirect 301 /Category:Layers_and_Masks https://docs.krita.org/en/reference_manual/layers_and_masks.html
+
+Redirect 301 /Clone_layers https://docs.krita.org/en/reference_manual/layers_and_masks/clone_layers.html
+Redirect 301 /File_Layers https://docs.krita.org/en/reference_manual/layers_and_masks/file_layers.html
+Redirect 301 /Fill_Layers https://docs.krita.org/en/reference_manual/layers_and_masks/fill_layers.html
+Redirect 301 /Filter_Layers https://docs.krita.org/en/reference_manual/layers_and_masks/filter_layers.html
+Redirect 301 /Filter_Masks https://docs.krita.org/en/reference_manual/layers_and_masks/filter_masks.html
+Redirect 301 /Group_Layers https://docs.krita.org/en/reference_manual/layers_and_masks/group_layers.html
+Redirect 301 /Layer_Styles https://docs.krita.org/en/reference_manual/layers_and_masks/layer_styles.html
+Redirect 301 /Paint_Layers https://docs.krita.org/en/reference_manual/layers_and_masks/paint_layers.html
+Redirect 301 /Local_Selection_Masks https://docs.krita.org/en/reference_manual/layers_and_masks/selection_masks.html
+Redirect 301 /Transformation_Masks https://docs.krita.org/en/reference_manual/layers_and_masks/transformation_masks.html
+Redirect 301 /Transparency_Masks https://docs.krita.org/en/reference_manual/layers_and_masks/transparency_masks.html
+Redirect 301 /Vector_Layers https://docs.krita.org/en/reference_manual/layers_and_masks/vector_layers.html
+
+#   Menu
+
+Redirect 301 /Category:Main_Menu https://docs.krita.org/en/reference_manual/main_menu.html
+
+Redirect 301 /Edit_Menu https://docs.krita.org/en/reference_manual/main_menu/edit_menu.html
+Redirect 301 /File_Menu https://docs.krita.org/en/reference_manual/main_menu/file_menu.html
+Redirect 301 /Help_Menu https://docs.krita.org/en/reference_manual/main_menu/help_menu.html
+Redirect 301 /Image_Menu https://docs.krita.org/en/reference_manual/main_menu/image_menu.html
+Redirect 301 /Layer_Menu https://docs.krita.org/en/reference_manual/main_menu/layers_menu.html
+Redirect 301 /Select_Menu https://docs.krita.org/en/reference_manual/main_menu/select_menu.html
+Redirect 301 /Settings_Menu https://docs.krita.org/en/reference_manual/main_menu/settings_menu.html
+Redirect 301 /Tools_Menu https://docs.krita.org/en/reference_manual/main_menu/tools_menu.html
+Redirect 301 /View_Menu https://docs.krita.org/en/reference_manual/main_menu/view_menu.html
+Redirect 301 /Window_Menu https://docs.krita.org/en/reference_manual/main_menu/window_menu.html
+
+#   Preferences
+
+Redirect 301 /Category:Preferences https://docs.krita.org/en/reference_manual/preferences.html
+
+Redirect 301 /Author_Settings https://docs.krita.org/en/reference_manual/preferences/author_settings.html
+Redirect 301 /Canvas_Input_Settings https://docs.krita.org/en/reference_manual/preferences/canvas_input_settings.html
+Redirect 301 /Canvas-only_Settings https://docs.krita.org/en/reference_manual/preferences/canvas_only_mode.html
+Redirect 301 /Color_Management_Settings https://docs.krita.org/en/reference_manual/preferences/color_management_settings.html
+Redirect 301 /Color_Selector_Settings https://docs.krita.org/en/reference_manual/preferences/color_selector_settings.html
+Redirect 301 /Display_Settings https://docs.krita.org/en/reference_manual/preferences/display_settings.html
+Redirect 301 /GMIC_filter_plugin https://docs.krita.org/en/reference_manual/preferences/g_mic_settings.html
+Redirect 301 /General_Settings https://docs.krita.org/en/reference_manual/preferences/general_settings.html
+Redirect 301 /Grid_Settings https://docs.krita.org/en/reference_manual/preferences/grid_settings.html
+Redirect 301 /Performance_Settings https://docs.krita.org/en/reference_manual/preferences/performance_settings.html
+Redirect 301 /Python_Plugin_Manager https://docs.krita.org/en/reference_manual/preferences/python_plugin_manager.html
+Redirect 301 /Shortcuts https://docs.krita.org/en/reference_manual/preferences/shortcut_settings.html
+Redirect 301 /Tablet_Settings https://docs.krita.org/en/reference_manual/preferences/tablet_settings.html
+
+#   Resources
+
+Redirect 301 /Category:Resource_Management https://docs.krita.org/en/reference_manual/resource_management.html
+
+Redirect 301 /Managing_Brush_Presets https://docs.krita.org/en/reference_manual/resource_management/paintoppresets.html
+Redirect 301 /Managing_Brush_Tips https://docs.krita.org/en/reference_manual/resource_management/resource_brushtips.html
+Redirect 301 /Managing_Gradients https://docs.krita.org/en/reference_manual/resource_management/resource_gradients.html
+Redirect 301 /Managing_Patterns https://docs.krita.org/en/reference_manual/resource_management/resource_patterns.html
+Redirect 301 /Managing_Workspaces https://docs.krita.org/en/reference_manual/resource_management/resource_workspace.html
+
+#   Tools
+
+Redirect 301 /Category:Toolbox https://docs.krita.org/en/reference_manual/tools.html
+
+
+Redirect 301 /Shape_Selection_Tool https://docs.krita.org/en/reference_manual/tools/shape_selection.html
+Redirect 301 /Shape_Handling_Tool https://docs.krita.org/en/reference_manual/tools/shape_selection.html
+Redirect 301 /Edit_Shapes_Tool https://docs.krita.org/en/reference_manual/tools/shape_edit.html
+Redirect 301 /Text_Tool https://docs.krita.org/en/reference_manual/tools/text.html
+Redirect 301 /Gradient_Editing_Tool https://docs.krita.org/en/reference_manual/tools/gradient_edit.html
+Redirect 301 /Pattern_Editing_Tool https://docs.krita.org/en/reference_manual/tools/pattern_edit.html
+Redirect 301 /Calligraphy https://docs.krita.org/en/reference_manual/tools/calligraphy.html
+Redirect 301 /Freehand_Brush_Tool https://docs.krita.org/en/reference_manual/tools/freehand_brush.html
+Redirect 301 /Straight_Line_Tool https://docs.krita.org/en/reference_manual/tools/line.html
+Redirect 301 /Rectangle_Tool https://docs.krita.org/en/reference_manual/tools/rectangle.html
+Redirect 301 /Ellipse_Tool https://docs.krita.org/en/reference_manual/tools/ellipse.html
+Redirect 301 /Polygon_Tool https://docs.krita.org/en/reference_manual/tools/polygon.html
+Redirect 301 /Polyline_Tool https://docs.krita.org/en/reference_manual/tools/polyline.html
+Redirect 301 /Path_Tool https://docs.krita.org/en/reference_manual/tools/path.html
+Redirect 301 /Freehand_Path_Tool https://docs.krita.org/en/reference_manual/tools/freehand_path.html
+Redirect 301 /Dynamic_Brush_Tool https://docs.krita.org/en/reference_manual/tools/dyna.html
+Redirect 301 /Multibrush_Tool https://docs.krita.org/en/reference_manual/tools/multibrush.html
+Redirect 301 /Crop_Tool https://docs.krita.org/en/reference_manual/tools/crop.html
+Redirect 301 /Move_Tool https://docs.krita.org/en/reference_manual/tools/move.html
+Redirect 301 /Transform_Toolhttps://docs.krita.org/en/reference_manual/tools/transform.html
+Redirect 301 /Measure_Tool https://docs.krita.org/en/reference_manual/tools/measure.html
+Redirect 301 /Fill_Tool https://docs.krita.org/en/reference_manual/tools/fill.html
+Redirect 301 /Gradient_Tool https://docs.krita.org/en/reference_manual/tools/gradient_draw.html
+Redirect 301 /Color_Selector_Tool https://docs.krita.org/en/reference_manual/tools/color_selector.html
+Redirect 301 /Colorize_Mask https://docs.krita.org/en/reference_manual/tools/colorize_mask.html
+Redirect 301 /Lazy_Brush https://docs.krita.org/en/reference_manual/tools/colorize_mask.html
+Redirect 301 /Grid_Tool https://docs.krita.org/en/reference_manual/tools/grid_tool.html
+Redirect 301 /Perspective_Grid_Tool https://docs.krita.org/en/reference_manual/tools/perspective_grid.html
+Redirect 301 /Smart_Patch_Tool https://docs.krita.org/en/reference_manual/tools/smart_patch.html
+Redirect 301 /Assistant_Tool https://docs.krita.org/en/reference_manual/tools/assistant.html
+Redirect 301 /Rectangular_Selection_Tool https://docs.krita.org/en/reference_manual/tools/rectangular_select.html
+Redirect 301 /Elliptical_Selection_Tool https://docs.krita.org/en/reference_manual/tools/elliptical_select.html
+Redirect 301 /Outline_Selection_Tool https://docs.krita.org/en/reference_manual/tools/outline_select.html
+Redirect 301 /Polygonal_Selection_Tool https://docs.krita.org/en/reference_manual/tools/polygonal_select.html
+Redirect 301 /Contiguous_Selection_Tool https://docs.krita.org/en/reference_manual/tools/contiguous_select.html
+Redirect 301 /Bezier_Curve_Selection_Tool https://docs.krita.org/en/reference_manual/tools/path_select.html
+Redirect 301 /Similar_Color_Selection_Tool https://docs.krita.org/en/reference_manual/tools/similar_select.html
+Redirect 301 /Zoom_Tool https://docs.krita.org/en/reference_manual/tools/zoom.html
+Redirect 301 /Pan_Tool https://docs.krita.org/en/reference_manual/tools/pan.html
+
+# General Concepts
+Redirect 301 /Category:General_Concepts https://docs.krita.org/en/general_concepts.html
+
+#   Color
+Redirect 301 /Category:Color https://docs.krita.org/en/general_concepts/colors.html
+
+Redirect 301 /Bit_Depth https://docs.krita.org/en/general_concepts/colors/bit_depth.html
+Redirect 301 /Color_Managed_Workflow https://docs.krita.org/en/general_concepts/colors/color_managed_workflow.html
+Redirect 301 /Mixing_Colors https://docs.krita.org/en/general_concepts/colors/color_mixing.html
+Redirect 301 /Color_Models https://docs.krita.org/en/general_concepts/colors/color_models.html
+Redirect 301 /Color_space_size https://docs.krita.org/en/general_concepts/colors/color_space_size.html
+Redirect 301 /Gamma_and_Linear https://docs.krita.org/en/general_concepts/colors/linear_and_gamma.html
+Redirect 301 /Profiling_and_Calibration https://docs.krita.org/en/general_concepts/colors/profiling_and_callibration.html
+Redirect 301 /Scene_Linear_Painting https://docs.krita.org/en/general_concepts/colors/scene_linear_painting.html
+Redirect 301 /Viewing_Conditions https://docs.krita.org/en/general_concepts/colors/viewing_conditions.html
+
+#   File Formats
+Redirect 301 /Category:File_Formats https://docs.krita.org/en/general_concepts/file_formats.html
+
+Redirect 301 /*.bmp https://docs.krita.org/en/general_concepts/file_formats/file_bmp.html
+Redirect 301 /*.csv https://docs.krita.org/en/general_concepts/file_formats/file_csv.html
+Redirect 301 /*.exr https://docs.krita.org/en/general_concepts/file_formats/file_exr.html
+Redirect 301 /*.gbr https://docs.krita.org/en/general_concepts/file_formats/file_gbr.html
+Redirect 301 /*.gif https://docs.krita.org/en/general_concepts/file_formats/file_gif.html
+Redirect 301 /*.gih https://docs.krita.org/en/general_concepts/file_formats/file_gih.html
+Redirect 301 /*.jpg https://docs.krita.org/en/general_concepts/file_formats/file_jpeg.html
+Redirect 301 /*.kpl https://docs.krita.org/en/general_concepts/file_formats/file_kpl.html
+Redirect 301 /*.kra https://docs.krita.org/en/general_concepts/file_formats/file_kra.html
+Redirect 301 /*.ora https://docs.krita.org/en/general_concepts/file_formats/file_ora.html
+Redirect 301 /*.pbm https://docs.krita.org/en/general_concepts/file_formats/file_pbgpm.html
+Redirect 301 /*.pgm https://docs.krita.org/en/general_concepts/file_formats/file_pbgpm.html
+Redirect 301 /*.ppm https://docs.krita.org/en/general_concepts/file_formats/file_pbgpm.html
+Redirect 301 /*.pdf https://docs.krita.org/en/general_concepts/file_formats/file_pdf.html
+Redirect 301 /*.png https://docs.krita.org/en/general_concepts/file_formats/file_png.html
+Redirect 301 /*.psd https://docs.krita.org/en/general_concepts/file_formats/file_psd.html
+Redirect 301 /*.svg https://docs.krita.org/en/general_concepts/file_formats/file_svg.html
+Redirect 301 /*.tiff https://docs.krita.org/en/general_concepts/file_formats/file_tif.html
+
+#   Projection
+
+Redirect 301 /Category:Projection https://docs.krita.org/en/general_concepts/projection.html
+
+Redirect 301 /Projection:_Orthographic_and_Oblique https://docs.krita.org/en/general_concepts/projection/orthographic_oblique.html
+Redirect 301 /Projection:_Axonometric https://docs.krita.org/en/general_concepts/projection/axonometric.html
+Redirect 301 /Projection:_Perspective https://docs.krita.org/en/general_concepts/projection/perspective.html
+Redirect 301 /Projection:_Practical_Uses https://docs.krita.org/en/general_concepts/projection/practical.html
+
+# Tutorials
+Redirect 301 /Category:Tutorials https://docs.krita.org/en/tutorials.html
+
+Redirect 301 /Clipping_Masks_and_Alpha_Inheritance https://docs.krita.org/en/tutorials/clipping_masks_and_alpha_inheritance.html
+Redirect 301 /Common-workflows https://docs.krita.org/en/tutorials/common_workflows.html
+Redirect 301 /Flat_Coloring https://docs.krita.org/en/tutorials/flat-coloring.html
+Redirect 301 /Inking https://docs.krita.org/en/tutorials/inking.html
+Redirect 301 /Saving_for_the_Web https://docs.krita.org/en/tutorials/saving-for-the-web.html
+Redirect 301 /Making_an_Azalea_with_the_transformation_masks https://docs.krita.org/en/tutorials/making_an_azalea_with_the_transformation_masks.html
+
+# Redirect 301 /External_Training_and_Tutorials
+
+Redirect 301 /Brush-tips:Animated_Brush https://docs.krita.org/en/tutorials/krita-brush-tips/animated_brushes.html
+Redirect 301 /Brush-tips:Bokeh https://docs.krita.org/en/tutorials/krita-brush-tips/bokeh-brush.html
+Redirect 301 /Brush-tips:Caustics https://docs.krita.org/en/tutorials/krita-brush-tips/caustics.html
+Redirect 301 /Brush-tips:Fur https://docs.krita.org/en/tutorials/krita-brush-tips/fur.html
+Redirect 301 /Brush-tips:Hair https://docs.krita.org/en/tutorials/krita-brush-tips/hair.html
+Redirect 301 /Brush-tips:Outline https://docs.krita.org/en/tutorials/krita-brush-tips/outline.html
+Redirect 301 /Brush-tips:Rainbow_Brush https://docs.krita.org/en/tutorials/krita-brush-tips/rainbow-brush.html
+Redirect 301 /Brush-tips:Sculpt-paint-brush https://docs.krita.org/en/tutorials/krita-brush-tips/sculpt-paint-brush.html
