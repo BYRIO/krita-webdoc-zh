@@ -1,1 +1,11 @@
 ErrorDocument 404 /404.html
+
+# Old mediawiki pages redirects.
+
+Redirect 301 /Main_Page https://docs.krita.org/en/index.html
+
+Redirect 301 /KritaFAQ https://docs.krita.org/en/KritaFAQ.html
+
+Redirect 301 /Contributors_Readme https://docs.krita.org/en/contributors_manual/krita_manual_readme.html
+
+Redirect 301 /Resources https://docs.krita.org/en/resources_page.html
