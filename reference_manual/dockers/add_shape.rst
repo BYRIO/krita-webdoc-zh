@@ -18,5 +18,6 @@ Add Shape
 
 A docker for adding KOffice shapes to a Vector Layers.
 
-.. warning::
+.. deprecated:: 4.0
+
     This got removed in 4.0, the :ref:`vector_library_docker` replacing it.

@@ -17,7 +17,7 @@ Perspective Grid Tool
 
 |toolperspectivegrid|
 
-.. warning
+.. deprecated:: 3.0
 
     Deprecated in 3.0, use the :ref:`assistant_perspective` instead.
 
