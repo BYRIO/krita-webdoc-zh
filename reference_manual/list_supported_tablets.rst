@@ -31,6 +31,7 @@ This is specifically about support on Windows, not Linux or OSX.
 
 .. list-table::
    :header-rows: 1
+   :widths: 1 2 1
 
    * - Brand
      - Model

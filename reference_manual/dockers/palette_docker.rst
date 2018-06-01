@@ -30,10 +30,10 @@ You can click on one and to load it into the docker, or click on import resource
 
 .. versionadded:: 4.0
 
-    * Double |mouseleft| a swatch will call up the edit window where you can change the color, the name, the id and whether it's a spot color. On a group this will allow you to set the group name. 
-    * |mouseleft| drag will allow you to drag and drop swatches and groups to order them.
-    * Pressing the :guilabel:`+` icon will allow you to add a new swatch.
-    * Pressing the Folder icon will allow you to add a new group.
+* Double |mouseleft| a swatch will call up the edit window where you can change the color, the name, the id and whether it's a spot color. On a group this will allow you to set the group name.
+* |mouseleft| drag will allow you to drag and drop swatches and groups to order them.
+* Pressing the :guilabel:`+` icon will allow you to add a new swatch.
+* Pressing the Folder icon will allow you to add a new group.
 
 The edit and new color dialogs ask for the following:
 

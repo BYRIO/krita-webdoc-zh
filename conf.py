@@ -235,10 +235,13 @@ htmlhelp_basename = 'documentationProjectNamedoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_engine = 'xelatex'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',
+    'maxlistdepth': '8',
+    'figure_align':'ht!',
 
     # The font size ('10pt', '11pt' or '12pt').
     #
@@ -246,7 +249,14 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+    'preamble': r'''
+\usepackage[export]{adjustbox}
+\let\oincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{
+    \oincludegraphics[#1,max width=\linewidth,max height=\textheight]{#2}
+}
+    ''',
+    'tableofcontents':'\sphinxtableofcontents',
 
     # Latex figure (float) alignment
     #
@@ -259,6 +269,11 @@ latex_elements = {
 latex_documents = [
     (master_doc, 'kritaManual.tex', project,
      author, 'manual'),
+]
+latex_show_pagerefs=True
+# copy latex scripts to build dir
+latex_additional_files = [
+    "latexImageMakefile",
 ]
 
 # -- Internationalization Options --------------------------------------------
