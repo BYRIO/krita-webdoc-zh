@@ -5,8 +5,7 @@ RewriteBase /en
 
 RewriteRule "^Main_Page" index.html [R=301]
 
-# It seems to think this is a cyclic redirect, which sort of makes sense, but also does not.
-# RewriteRule "^KritaFAQ" KritaFAQ.html [R=301]
+RewriteRule "^KritaFAQ$" KritaFAQ.html [R=301]
 
 RewriteRule "^Contributors_Readme" contributors_manual/krita_manual_readme.html [R=301]
 
