@@ -140,18 +140,12 @@ By clicking the **color buttons** below each mixer you can choose a palette of c
 Other Tips
 ----------
 
-**Q*:** "What a waste of time! This is digital painting! Why should I bother mixing colors at all!?" - *Strawman* Joe.
+Outside of making it easier to create smooth gradients, mixing has another benefit: It allows you create a cohesive piece.
 
-**A:** There's some truth to this; traditional painters often have a starting palette that's limited by the tubes/pans of paints that they own, which is further limited by availability and cost of paint. For digital painters, on the other hand, it's quick, easy, and totally free to click on Krita's **Advanced Color Selector** to pull up any color in your current color space. So why mix at all? 
+Limiting the amount of colors we use and then mixing tends to give a more cohesive palette, as we're not trying to do too much at once. This cohesive palette in turn means it will become easier to create a certain mood in an image. Sometimes, mixing in a little bit of accent color can also create unexpected results which in turn can be a little discovery for the audience to delight over as they discover the world of your image.
 
-Well... Because working within a limited palette and mixing almost always gives you *"better colors"*! Don't get me wrong - it's not that one color is inherently and objectively better than another. While there is certainly a time and place for bright and vivid illustration styles with lots of strong and saturated colors, mixing from a more limited palette results in *colors with depth, subtlety, and harmony* and helps artists to achieve a **color scheme**. Not only does painting with a color scheme help to get rid of dreaded "choice paralysis", it also sometimes helps to imbue your artwork with the sense of *emotion and intentionality* that we often admire in other great works of art. 
+What we can learn from this, is that the next time we select, say, gray, instead of reaching for a random or generic gray from the Advanced Color Selector, consider using one of Krita's many wonderful mixing tools to create an interesting and fitting gray from hues that are roughly complementary (opposite each other on the hue wheel).
 
-So, next time you need to paint some *gray*, instead of reaching for a random or generic gray from the Advanced Color Selector, consider using one of Krita's many wonderful mixing tools to *create an interesting and fitting gray* from hues that are roughly **complementary** (opposite each other on the color wheel).
-
------
-
-While on-canvas and off-canvas techniques are fundamentally different categories of mixing colors, they are **not** mutually exclusive at all! All of the mixing methods in this article have pros and cons; different tools can be useful for different situations, and combining various techniques can be extremely powerful and fun!
-
------
+While on-canvas and off-canvas techniques are fundamentally different categories of mixing colors, they are not mutually exclusive. All of the mixing methods in this article have pros and cons; different tools can be useful for different situations, and combining various techniques can be extremely powerful and fun!
 
 Finally, mixing colors will often go far better in a :ref:`higher bit-depth like 16bit <bit_depth>`, though it'll make the image take up much more working **memory** (RAM). Furthermore, using a :ref:`linear color space <linear_and_gamma>` can often give far better mixtures than a **gamma-corrected** one, though doing sketches and line art is easier to do in a gamma-corrected space.
