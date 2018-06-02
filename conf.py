@@ -89,7 +89,7 @@ language = 'en'
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-html_extra_path = ['.htaccess', 'url-router.html'] # copy over .htaccess file to each langaguge
+html_extra_path = ['.htaccess'] # copy over .htaccess file to each langaguge
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -330,7 +330,7 @@ else:
 epub_scheme = 'URL'
 
 # A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html', '.htaccess', '404.xhtml', 'url-router.html']
+epub_exclude_files = ['search.html', '.htaccess', '404.xhtml']
 
 epub_tocscope = 'includehidden'
 
