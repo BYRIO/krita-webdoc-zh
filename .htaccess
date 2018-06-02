@@ -1,9 +1,4 @@
-# ErrorDocument 404 /404.html
-# if the file or directory is missing, redirect to the correct language's 404 page
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule ([a-z][a-z][_]?[A-Z]?[A-Z]?)/.*$ /$1/404.html [L,NC]
+ErrorDocument 404 /404.html
 
 
 # Old mediawiki pages redirects.
