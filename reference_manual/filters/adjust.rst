@@ -76,15 +76,41 @@ Color Adjustment Curves
 This filter allows you to adjust each channel by manipulating the curves. You can even adjust the alpha channel and the lightness channel though this filter.
 This is used very often by artists as a post processing filter to slightly heighten the mood of the painting by adjust the overall color. For example a scene with fire breathing dragon may be made more red and yellow by adjusting the curves to give it more warmer look, similarly a snowy mountain scene can be made to look cooler by adjusting the blues and greens. The default shortcut for this filter is :kbd:`Ctrl + M` .
 
+.. versionchanged:: 4.1
+
+    Since 4.1 this filter can also handle Hue and Saturation curves.
+
 .. image:: /images/en/Color-adjustment-curve.png
+
+.. index:: ! Cross Channel Color Adjustment, Driving Adjustment by channel
+
+Cross-channel color adjustment
+------------------------------
+
+.. versionadded:: 4.1
+
+Sometimes, when you are adjusting the colors for an image, you want bright colors to be more saturated, or have a little bit of brightness in the purples.
+
+The Cross-channel color adjustment filter allows you to do this.
+
+At the top, there's two drop downs. The first one is to choose which :guilabel:`Channel` you wish to modify. The :guilabel:`Driver Channel` drop down is what channel you use to control which parts are modified.
+
+The curve, on the horizontal axis, represents the driver channel, while the vertical axis represent the channel you wish to modify.
+
+So if you wish to increase the saturation in the lighter parts, you pick :guilabel:`Saturation` in the first drop down, and :guilabel:`Lightness` as the driver channel. Then, pull up the right end to the top.
+
+If you wish to desaturate everything but the teal/blues, you select :guilabel:`Saturation` for the channel and :guilabel:`Hue` for the driver. Then put a dot in the middle and pull down the dots on either sides.
 
 Brightness/Contrast curves
 --------------------------
 
 This filter allows you to adjust the brightness and contrast of the image by adjusting the curves.
 
-.. note::
+.. deprecated:: 4.0
+
     These have been removed in Krita 4.0, because the Color Adjustment filter can do the same. Old files with brightness/contrast curves will be loaded as Color Adjustment curves
+
+.. index:: ! Color Balance
 
 Color Balance
 -------------
