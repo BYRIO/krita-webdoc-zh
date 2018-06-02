@@ -1,4 +1,4 @@
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([a-z][a-z])/ /$1/404.html [NC,R,L]
 
