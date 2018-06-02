@@ -26,7 +26,7 @@ Show Dockers
 Show Dockers
     Determines whether or not the dockers are visible.  This is a nice aid to cleaning up the interface and removing unnecessary "eye-ball clutter" when you are painting.  If you've got your brush and you know you're just going to be painting for awhile why not flip the dockers off?  You'd be amazed what a difference it makes while you're working.  However, if you know you're swapping out tools or working with layer or any of the other myriad things Krita lets you do then there's no point getting caught up in flipping the docks on and off.  Use you time wisely!
 
- .. note::
+ .. tip::
     
     This is a great candidate to add to the toolbar so you can just click the dockers on and off and don't even have to open the menu to do it. See :ref:`configure_toolbars` below for more.
 
@@ -66,7 +66,7 @@ To use, just type the :guilabel:`Action` into the Search box you want to assign/
 
 From this point on, whenever you press :kbd:`Ctrl + G`  you'll get a new :guilabel:`Group Layer`.  
 
-.. note::
+.. tip::
     Smart use of shortcuts can save you significant time and further streamline your workflow.
 
 Manage Resources

@@ -39,11 +39,11 @@ File Menu
     Export
         Additional formats that can be saved. Some of these formats may not be later imported or opened by Krita
 
-    Export as PDF
-        PDF export. Doesn't support multiple pages.
-
-    Import Animation Frames(3.0+)
+    Import Animation Frames
         Import frames for animation.
+        
+    Render Animation
+        Render an animation with FFMPEG. This is explained on the :ref:`render_animation` page.
 
     Save incremental version
         Save as a new version of the same file with a number attached.

@@ -21,6 +21,8 @@ New Window
     Creates a new window for Krita. Useful with multiple screens.
 New View
     Make a new view of the given document. You can have different zoom or rotation on these.
+Workspace
+    A convenient acces panel to the :ref:`resource_workspaces`.
 Close
     Close the current view.
 Close All

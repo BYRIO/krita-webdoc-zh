@@ -41,6 +41,9 @@ Edit
     Paste
         Pastes the copied buffer into the image as a new layer. :kbd:`Ctrl + V` 
 
+    Paste at Cursor
+        Same as :term:`paste`, but aligns the image to the cursor.
+
     Paste into new image
         Pastes the copied buffer into a new image. 
 
@@ -55,7 +58,7 @@ Edit
 
     Fill with pattern
         Fills the layer or selection with the active pattern.
-
+        
     Stroke Selected Shapes
         Strokes the selected vector shape with the selected brush, will create a new layer.
 

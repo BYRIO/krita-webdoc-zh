@@ -42,6 +42,8 @@ Import/Export
 
     Save Layer or Mask
         Saves the Layer or Mask as a separate image.
+    Save Vector Layer as SVG
+        Save the currently selected vector layer as an SVG.
     Save Group Layers
         Saves the top-level group layers as single-layer images.
     Import Layer
@@ -134,7 +136,5 @@ Rasterize Layer
     For making vectors into raster layers.
 Flatten Image
     Flatten all layers into one.
-Merge Selected Layers
-    Merge the layers that were selected with multi-selection in the Layer Docker.
 Layerstyle(2.9.5+)
     Set the PS-style layerstyle

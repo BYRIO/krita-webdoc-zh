@@ -39,9 +39,11 @@ Scale to New Size
     The resize function in any other program :kbd:`Ctrl + Alt + I`
 Offset Image
     Offset all layers.
-Size Canvas
+Resize Canvas
     Change the canvas size. Don't confuse this with Scale to new size.
 Image Split
     Splits the image.
+Wavelet Decompose
+    Does :ref:`wavelet_decompose` on the current layer.
 Separate Image
     Seperates the image into channels
