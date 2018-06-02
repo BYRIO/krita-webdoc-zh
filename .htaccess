@@ -3,7 +3,7 @@
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule "/([a-z][a-z][_]?[A-Z]?[A-Z]?)/.*" /$1/404.html [R=404, L, NC]
+RewriteRule /([a-z][a-z][_]?[A-Z]?[A-Z]?)/.* /$1/404.html [R=404, L, NC]
 
 
 
