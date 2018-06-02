@@ -1,7 +1,7 @@
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule "^([a-z][a-z]).*" /$1/404.html [NC,L]
+RewriteRule "^([a-z][a-z])/(.*)" "404.html" [NC,L]
 
 
 # Old mediawiki pages redirects.
