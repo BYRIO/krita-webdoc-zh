@@ -1,11 +1,10 @@
+RewriteBase /
+
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule (.*) 404.html/$1 [NC,L]
 
-
-# Old mediawiki pages redirects.
-RewriteBase /en
 
 RewriteRule "^Main_Page" index.html [R=301]
 
