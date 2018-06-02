@@ -1,7 +1,8 @@
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule "^(.*)" 404.html [NC,R,L]
+RewriteRule "^(.*)" 404.html [NC,L]
+
 
 # Old mediawiki pages redirects.
 RewriteBase /en
