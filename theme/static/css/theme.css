@@ -6081,7 +6081,7 @@ article ol li ul li {
 .wy-menu-vertical a {
     display: inline-block;
     line-height: 18px;
-    padding: .4045em 1.618em;
+    padding: 1em 1.5em;
     display: block;
     position: relative;
     font-size: 90%;
@@ -6108,35 +6108,28 @@ article ol li ul li {
 }
 
 .wy-side-nav-search {
-    display: block;
     width: 300px;
-    padding: .809em;
+    padding: 1em 1em 0 1em;
     z-index: 200;
     text-align: center;
-    padding: .809em;
     display: block;
     color: #fcfcfc;
     margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 0;
 }
 
 .wy-side-nav-language-selector {
-    padding-left: 1em;
     border-bottom: 1px solid #888888;
-    padding-bottom: 1.8em;
+    padding: 1.5em 0.85em;
 
 }
 
 select#language-selector-container {
-    width: 90%;
+    width: 100%;
     border-radius: 3px;
     background: none;
-    border: none;
     box-shadow: none;
     color: #3e3e3e;
-    padding: 0;
-    padding-top: 0.7em;
+    padding: 1em;
 }
 
 select#language-selector-container option {
