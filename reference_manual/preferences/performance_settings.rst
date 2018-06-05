@@ -30,9 +30,13 @@ Memory Limit
     This is the maximum space :program:`Krita` will reserve on your RAM on startup. It's both available in percentages and Bytes, so you can specify precisely. :program:`Krita` will not take up more space than this, making it safe for you to run an internet browser or music on the background.
 Internal Pool
     A feature for advanced computer users. This allows :program:`Krita` to organise the area it takes up on the virtual working desk before putting it's data on there. Like how a painter has a standard spot for their canvas, :program:`Krita` also benefits from giving certain data it uses it's place(a memory pool), so that it can find them easily, and it doesn't get lost amongst the other data(memory fragmentation). It will then also not have to spent time finding a spot for this data.
+
     Increasing this of course means there's more space for this type of data, but like how filling up your working desk with only one big canvas will make it difficult to find room for your paints and brushes, having a large internal pool will result in :program:`Krita` not knowing where to put the other non-specific data.
+
     On the opposite end, not giving your canvas a spot at all, will result in you spending more time looking for a place where you will put the new layer or that reference you just took out of the storage. This happens for :program:`Krita` as well, making it slower.
+
     This is recommended to be a size of one layer of your image, e.g. if you usually paint on the image of 3000x3000x8bit-ARGB, the pool should be something like 36 MiB.
+
     As :program:`Krita` does this on start-up, you will need to restart :program:`Krita` to have this change affect anything.
 Swap Undo After
     :program:`Krita` also needs to keep all the Undo states on the virtual desk(RAM). Swapping means that parts of the files on the virtual desk get sent to the virtual archive room. This allows :program:`Krita` to dedicate more RAM space to new actions, by sending old Undo states to the archive room once it hits this limit. This will make undoing a little slower, but this can be desirable for the performance of :program:`Krita` overall.
@@ -55,13 +59,14 @@ Multitreading
 Since 4.0, Krita supports multithreading for the animation cache and handling the drawing of brush tips when using the pixel brush.
 
 CPU Limit
-The amount of cores you want to allow Krita to use when multithreading.
+    The amount of cores you want to allow Krita to use when multithreading.
 Frame Rendering Clones Limit
-When rendering animations to frames, Krita multithreads by keeping a few copies of the image, with a maximum determined by the amount of cores your processor has. If you have a heavy animation file and lots of cores, the copies can be quite heavy on your machine, so in that case try lowering this value.
+    When rendering animations to frames, Krita multithreads by keeping a few copies of the image, with a maximum determined by the amount of cores your processor has. If you have a heavy animation file and lots of cores, the copies can be quite heavy on your machine, so in that case try lowering this value.
 
 Other
 ~~~~~
-
+Limit frames per second while painting.
+    This makes the canvas update less often, which means Krita can spend more time calculating other things. Some people find fewer updates unnerving to watch however, hence this is configurable.
 Debuglogging of OpenGL framerate
     Will show the canvas framerate on the canvas when active.
 Debug logging for brush rendering speed.
@@ -73,4 +78,43 @@ Enable Progress Reporting
 Performance logging
     This enables performance logging, which is then saved to the ``Log`` folder in your ``working directory``. Your working directory is where the auto save is saved at as well.
 
-    So for unnamed files, this is the $home folder in Linux, and the %TEMP% folder in windows.
+    So for unnamed files, this is the ``$home`` folder in Linux, and the ``%TEMP%`` folder in windows.
+
+Animation Cache
+---------------
+
+.. versionadded:: 4.1
+
+The animation cache is the space taken up by animation frames in the memory of the computer. A cache in this sense is a cache of precalculated images.
+
+Playing back a video at 25 FPS means that the computer has to precalculate 25 images per second of video. Now, video playing software is able to do this because it really focuses on this one single task. However, Krita as a painting program also allows you to edit the pictures. Because Krita needs to be able to do this, and a dedicated video player doesn't, Krita cannot do the same kind of optimizations as a dedicated video player can.
+
+Still, an animator does need to be able to see what kind of animation they are making. To do this properly, we need to decide how Krita will regenerate the cache after the animator makes a change. There's fortunately a lot of different options how we can do this. However, the best solution really depends on what kind of computer you have and what kind of animation you are making. Therefore in this tab you can customize the way how and when the cache is generated.
+
+Cache Storage Backend
+~~~~~~~~~~~~~~~~~~~~~
+
+In-memory
+    Animation frame cache will be stored in RAM, completely without any limitations. This is also the way it was handled before 4.1. This is only recommended for computers with huge amount of RAM and animations that must show full-canvas full resolution 6k at 25 fps. If you do not have a huge amount(say, 64GiB) of ram, do *not* use this option (and scale down your projects).
+
+    .. warning::
+
+        Please make sure your computer has enough RAM *above* the amount you requested in the general tab. Otherwise you might face system freezes.
+
+        * For 1 second of FullHD @ 25 FPS you will need 200 extra MiB of Memory
+        * For 1 second of 4K UltraHD@ 25 FPS, you will need 800 extra MiB of Memory.
+
+On-disk
+    Animation frames are stored in the hard disk in the same folder as the swap file. The cache is stored in a compressed way. A little amount of extra ram is needed.
+
+    Since data transfer speed of the hard drive is slow. You might want to limit the :guilabel:`Cached Frame Size` to be able to play your video at 25 fps. A limit of 2500 px is usually a good choice.
+
+Cache Generation Options
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Limit Cached Frame Size
+    Render scaled down version of the frame if the image is bigger than the provided limit. Make sure you enable this option when using On-Disk storage backend, because On-Disk storage is a little slow. Without the limit, there's a good chance that it will not be able to render at full speed. Lower the size to play back faster at the cost of lower resolution.
+Use Region Of Interest
+    We technically only need to use the section of the image that is in view. Region of interest represents that section. When the image is above the configurable limit, render only the currently visible part of it.
+Enable Background Cache Generation
+    This allows you to set whether the animation is cached for playback in the background(that is, when you're not using the computer). Then, when animation is cached when pressing play, this caching will take less long. However, turning off this automatic caching can save power by having your computer work less.

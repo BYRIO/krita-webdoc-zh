@@ -175,5 +175,8 @@ Enable Native File Dialog
 Maximum brush size
     This allows you to set the maximum brush size to a size of up to 10.000 pixels. Do be careful with using this, as a 10.000 size pixel can very quickly be a full gigabyte of data being manipulated, per dab. In other words, this might be slow.
 Recalculate animation cache in background.
-    This allows you to set whether the animation is cached for playback in the background. Then, when animation is cached when pressing play, this caching will take less long. However, turning off this automatic caching can save power by having your computer work less.
+    
+    .. versionchanged:: 4.1
+    
+        This is now in the :ref:`performance_settings` under :guilabel:`Animation Cache`.
 
