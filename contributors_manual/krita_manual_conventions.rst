@@ -8,6 +8,7 @@
 
    :license: GNU free documentation license 1.3 or later.
 
+
 .. _krita_markup_conventions:
 
 ========================================
@@ -130,7 +131,7 @@ footnote 2.
 
 [#]_ is a reference to footnote 3.
 
-Here is a citation reference: [CIT2002]_.
+Here is a citation reference: [CIT2002]_ .
 
 .. [CIT2002] This is the citation.  It's just like a footnote,
    except the label is textual.

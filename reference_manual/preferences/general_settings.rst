@@ -179,4 +179,4 @@ Recalculate animation cache in background.
     .. versionchanged:: 4.1
     
         This is now in the :ref:`performance_settings` under :guilabel:`Animation Cache`.
-
+    

@@ -9,6 +9,14 @@
 
    :license: GNU free documentation license 1.3 or later.
 
+
+.. Website shorthands. Sphinx/reStructuredText prefers it if you use shorthands when repeating websites.
+
+.. _phabricator : https://phabricator.kde.org
+.. _Manual Project Workboard : https://phabricator.kde.org/project/view/135/
+.. _repository : https://phabricator.kde.org/source/websites-docs-krita-org/
+.. _bugzilla : https://bugs.kde.org/   
+   
 .. _krita_manual_contributors_guide:
 
 ===============================
@@ -282,11 +290,4 @@ We are still trying to hash out a translation workflow. Please bear with us.
 Other
 -----
 
-For restructured text conventions, check :ref:`krita_markup_conventions`.
-
-.. Website shorthands. Sphinx/reStructuredText prefers it if you use shorthands when repeating websites.
-
-.. _phabricator : https://phabricator.kde.org
-.. _Manual Project Workboard : https://phabricator.kde.org/project/view/135/
-.. _repository : https://phabricator.kde.org/source/websites-docs-krita-org/
-.. _bugzilla : https://bugs.kde.org/
+For restructured text conventions, check :ref:`krita_markup_conventions` .

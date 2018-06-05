@@ -9,6 +9,7 @@
    :license: GNU free documentation license 1.3 or later.
 
 .. index:: Macro, Scripts
+
 .. _tools_menu:
 
 ==========
@@ -29,7 +30,7 @@ Recording
 
     The recording and macro features are unmaintained and buggy.
 
-Record a macro. You do this by pressing start, drawing something and then pressing stop. This feature can only record brush strokes. The resulting file is stored as a *.kritarec file.
+Record a macro. You do this by pressing start, drawing something and then pressing stop. This feature can only record brush strokes. The resulting file is stored as a \*.kritarec file.
 
 Macros
 ------
