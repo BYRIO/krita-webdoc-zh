@@ -94,8 +94,22 @@ Tilt Outline
 
 
 
-Show Outline When Painting
+While Painting...
+~~~~~~~~~~~~~~~~~
+
+Show Outline
     This option when selected will show the brush outline while a stroke is being made. If unchecked the brush outline will not appear during stroke making, it will show up only after the brush stroke is finished. This option works only when Brush Outline is selected as the Cursor Shape.
+    
+    .. versionchanged:: 4.1
+    
+        Used to be called "Show Outline When Painting"
+
+Use effective outline size
+    
+    .. versionadded:: 4.1
+    
+    This makes sure that the outline size will always be the maximum possible brush diameter, and not the current one as affected by sensors such as pressure. This makes the cursor a little less noisy to use.
+
 
 .. _window_settings:
 
@@ -175,6 +189,7 @@ Enable Native File Dialog
 Maximum brush size
     This allows you to set the maximum brush size to a size of up to 10.000 pixels. Do be careful with using this, as a 10.000 size pixel can very quickly be a full gigabyte of data being manipulated, per dab. In other words, this might be slow.
 Recalculate animation cache in background.
+    Krita will recalculate the cache when you're not doing anything.
     
     .. versionchanged:: 4.1
     
