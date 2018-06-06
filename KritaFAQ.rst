@@ -24,7 +24,7 @@
 Krita FAQ
 #########
 
-This page contains common problems people have with Krita
+This page contains common problems people have with Krita. Note that we assume that you are using the latest version of Krita. Please verify that to make sure.
 
 .. contents::
 
@@ -38,47 +38,21 @@ What is Krita?
 
 This is our vision for the development of Krita:
 
-    Krita is a free and open source cross-platform application that
-    offers an end-to-end solution for creating digital art files from
-    scratch. Krita is optimized for frequent, prolonged and focused use.
-
-    Explicitly supported fields of painting are illustrations, concept
-    art, matte painting, textures, comics and animations.
-
-    Developed together with users, Krita is an application that supports
-    their actual needs and workflow. Krita supports open standards and
-    interoperates with other applications
-    
-    
-
-Krita starts with an empty canvas and nothing changes when you try to draw or Krita shows a black or blank screen or Krita crashes when creating a document or Krita's menubar is hidden on a Windows system with an Intel GPU
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-* Update to Krita 3.3 or later:
-* Go to Settings/Configure Krita/Display, change Renderer to ANGLE and restart Krita. If this doesn't work, disable Canvas Graphics Acceleration and please also make a bug report about it.
-
-Krita freezes when saving to PNG or JPEG on OSX or macOS/ I cannot enable OpenGL on my mac
-------------------------------------------------------------------------------------------
-
-If the former, you probably have an AMD Radeon display chip and are
-running a version of Krita lower than 3.2. Disable opengl in Krita. If
-the latter, you've still got an AMD display chip in your mac and are
-running Krita 3.2 or 3.3. The problem is that Apple's AMD opengl drivers
-hang Krita 3.x when trying to save to a single-layer file format. No, we
-don' t know why, and we don't have the hardware to figure out why. But
-Krita 4.0, this problem has been solved because there Krita saves a copy
-of the image in the background.
+    Krita is a free and open source cross-platform application that offers an end-to-end solution for creating digital art files from scratch. Krita is optimized for frequent, prolonged and focused use.
+    Explicitly supported fields of painting are illustrations, concept art, matte painting, textures, comics and animations.
+    Developed together with users, Krita is an application that supports their actual needs and workflow. Krita supports open standards and interoperates with other applications
 
 Is it possible to use Krita in my own language, not English?
 ------------------------------------------------------------
 
-Unless you belong to a proud tribe of a minority language, YES it is
-POSSIBLE! You can easily do this by going into
+Krita should automatically use the system language. If that is not the case, please follow these steps:
 
 #. settings → switch application language. An small window will appear.
 #. click Primary language and select your language.
 #. click OK to close the window.
 #. restart krita and it will be displayed in your selected language!
+
+If this doesn't work, you might have to add a fall-back language as well. This is a bug, but we haven't found the solution yet.
 
 Does Krita have layer clip or clipping mask?
 --------------------------------------------
@@ -87,8 +61,8 @@ Krita has no clipping mask, but it has a clipping feature called
 inherit alpha. Let's see :ref:`this page <clipping_masks_and_alpha_inheritance>` and learn how to do
 clipping in Krita!
 
-OBS can't record the Krita openGL canvas
-----------------------------------------
+Windows: OBS can't record the Krita openGL canvas
+-------------------------------------------------
 
 Apparantly the workaround for this is to either...
 
@@ -97,8 +71,7 @@ Apparantly the workaround for this is to either...
    OBS, so capture the whole desktop instead of attempting to capture
    only Krita.
 
-*For Krita 3.3 or later:* You might be able to work around by using the
-ANGLE renderer instead of native OpenGL.
+You might also be able to work around the problem by using the ANGLE renderer instead of native OpenGL.
 
 Where are the configuration files stored?
 -----------------------------------------
@@ -113,32 +86,7 @@ Windows
 MacOS X
     :file:`$HOME/Library/Preferences/kritarc`
 
-The kritarc file is the configuration file.
-
-My resource disappeared with installing 3.0! Did Krita delete them?
--------------------------------------------------------------------
-
-Don't worry, Krita nor the installer know how to delete your
-brushes(unless you use the 'delete backup files' in the resource
-manager)
-
-Your old 2.9 brushes should be at
-
-Linux
-    :file:`home/.kde/share/krita`
-Windows
-    :file:`User\\AppData\\Roaming\\krita\\share\\apps\\krita\\`
-
-For 3.0, these should go to
-
-Linux
-    :file:`$HOME/.local/share/krita/`
-Windows
-    :file:`user\\Appdata\\Roaming\\krita\\` or :file:`%APPDATA%\\Roaming\\krita\\`
-OSX
-    :file:`~/Library/Application Support/Krita/`
-
-Just copy the files over!
+The kritarc file is the configuration file. Krita does not store settings in the Windows registry.
 
 Resetting Krita configuration
 -----------------------------
@@ -160,11 +108,19 @@ kritadisplayrc.
 If the config was causing a crash, don't delete but instead rename and
 send us the file so we can figure out what caused the crash.
 
-Krita tells me it can't find the configuration files and then closes, what should I do?
----------------------------------------------------------------------------------------
+Wher are my resources stored?
+-------------------------------------------------------------------
 
-First, search your filesystem for kritarc. If it's nowhere to be found,
-then that is the main problem.
+Linux
+    :file:`$HOME/.local/share/krita/`
+Windows
+    :file:`user\\Appdata\\Roaming\\krita\\` or :file:`%APPDATA%\\Roaming\\krita\\`
+OSX
+    :file:`~/Library/Application Support/Krita/`
+
+
+Krita tells me it can't find some files and then closes, what should I do?
+--------------------------------------------------------------------------
 
 Causes for this could be the following:
 
@@ -180,6 +136,7 @@ Causes for this could be the following:
 -  Some unzippers don't unpack our zipfiles correctly. The native ones
    on windows, OSX and most linux distributions should be just fine, and
    we recommend using them.
+-  You manually, using a file manager deleted or moved resources around, and Krita cannot find them anymore.
 
 What Graphics Cards does Krita support?
 ---------------------------------------
@@ -192,7 +149,7 @@ drivers on Linux. However, it works perfectly with the radeon free
 driver on linux for supported AMD GPU.
 
 *For Krita 3.3 or later:* Krita on Windows can use Direct3D 11 for
-graphics acceleration (through ANGLE).
+graphics acceleration (through ANGLE). This is enabled automatically on systems with an Intel GPU.
 
 I can't edit text from PSD files created by photoshop
 -----------------------------------------------------
@@ -226,8 +183,8 @@ starting a sketch in Krita add a new blank layer first thing they do
 memory, since a blank layer or a layer with a default color just takes
 one pixel worth of memory.
 
-Can I use Krita with sandboxie on Windows?
-------------------------------------------
+Windows: Can I use Krita with sandboxie?
+----------------------------------------
 
 No, this is not recommended. Sandboxie causes stuttering and freezes due
 to the way it intercepts calls for resources on disk.
@@ -240,14 +197,6 @@ indexed palettes. There are no plans to support indexed color images,
 though Krita can export to some indexed color image formats, such as
 GIF. However, Krita does not offer detailed control over pixel values.
 
-How do I export gifs with Krita?
---------------------------------
-
-Currently, Krita 3.0 doesn't have gif, apng or spritesheet export yet.
-Krita 3.1 does have :ref:`render_animation`.
-
-For big projects we recommend exporting your animation as a png
-sequence, and then inputtng that into a video editor.
 
 How can I produce a backtrace on Windows?
 -----------------------------------------
@@ -263,22 +212,8 @@ what set of instructions your computer was running when it was
 crashing(where the crash happened), making it very useful to figure out
 why the crash happened.
 
-.. topic:: For **Krita 3.1 or later**
 
-    The :ref:`Dr. Mingw debugger <dr_minw>` is bundled with Krita. Please visit the page :ref:`Dr. Mingw debugger <dr_minw>` for instructions on getting a backtrace with it.
-
-.. topic:: For **Krita 3.0**
-
-    first you need to install DrMingw, which is a debugger application:
-
-    https://github.com/jrfonseca/drmingw
-
-    Then you need a special version of Krita, one with debugging information. The latest development builds with all the latest bug fixed are here:
-
-    -  http://files.kde.org/krita/3/windows/debugbuilds/krita3-x64-dbg-latest.zip
-    -  http://files.kde.org/krita/3/windows/debugbuilds/krita3-x86-dbg-latest.zip
-
-    You can download the right file, unzip it and double-click on the krita link in the unzipped folder. If you now reproduce the crash, Windows will ask you whether you want to debug it; answer yes, and DrMingw will pop up and after some time show you a lot of text. You can paste that into your bug report.
+The :ref:`Dr. Mingw debugger <dr_minw>` is bundled with Krita. Please visit the page :ref:`Dr. Mingw debugger <dr_minw>` for instructions on getting a backtrace with it.
 
 
 Where can I find older versions of Krita?
@@ -286,9 +221,7 @@ Where can I find older versions of Krita?
 
 All older versions of Krita that are still available can be found here:
 
--  `Krita 3.0.builds <http://files.kde.org/krita/3>`_
--  `Krita 2.x.builds <http://files.kde.org/krita/>`_
--  `Very old builds <http://download.kde.org/stable/krita>`_
+-  `Very old builds <http://download.kde.org/Attic/krita>`_
 
 On Windows, the Krita User Interface is too small on my HiDPI screen.
 ---------------------------------------------------------------------
@@ -301,19 +234,8 @@ If you're using Windows, you can set the display scaling to1 150% or
 -  Check :guilabel:`Enable Hi-DPI support`
 -  Restart Krita
 
-I'm using MacOS Sierra and Krita won't start
---------------------------------------------
+You can also run change the toolbox icon size by right-clicking on the toolbox and selecting a size.
 
-We don't sign Krita binaries on OSX because we feel Apple already has
-more money than is good for them and in order to sign our binaries we
-have to give them money every year. In Sierra, Apple removed the
-“Anywhere” button in the security pane, making it even less obvious how
-to start Krita. Here's the trick: go to the krita app bundle in Finder
-and ctrl-click on it. Then Krita will start, and macOS will remember
-that. Or you can re-enable the button by executing the following line in
-your terminal:
-
-``sudo spctl --master-enable``
 
 I'm using Linux and Krita crashes on start
 ------------------------------------------
@@ -335,15 +257,17 @@ What tablets does Krita support?
 --------------------------------
 
 Krita isn’t much fun without a pressure sensitive tablet. If the tablet
-has been properly configured, Krita works with Wacom, Huion and other
-uc-logic based tablets, on Windows and Linux (look below for more
-information on Huion Linux support). N-Trig tablets should work too, but
-some setting up might be needed. Genius tablets are know to have
-problems. You can find a community curated list of tablets supported by
+has been properly configured, Krita should work out of the box. 
+
+On Windows, you need to either install the wintab drivers for your tablet,
+or enable the Windows 8 Pointer API option in Krita's settings.
+
+You can find a community curated list of tablets supported by
 krita :ref:`here <list_supported_tablets>`.
 
 If you're looking for information about tablets like the iPad or Android
 tablets, look :ref:`here <krita_android>`.
+
 
 What if your tablet is not recognized by Krita?
 -----------------------------------------------
@@ -374,10 +298,15 @@ We would like to see the full output of the following commands:
 Windows
 ~~~~~~~
 
-First check whether switching to the Windows 8 Pointer API makes a
-difference: Settings/Configure Krita/Tablet. Then, if you still have
-problems with Windows and your tablet, we cannot help you without a
-tablet log.
+First check whether your tablet's driver is correctly installed. Often,
+a driver update or a Windows update or the installation of Razer gaming
+mouse driver breaks tablets.
+
+Thencheck whether switching to the Windows 8 Pointer API makes a
+difference: Settings/Configure Krita/Tablet.
+
+Then, if you still have problems with Windows and your tablet, we cannot
+help you without a tablet log.
 
 #. Install
    `DebugView <http://technet.microsoft.com/en-us/sysinternals/bb896647.aspx>`_
@@ -390,6 +319,11 @@ tablet log.
 #. Go back to DebugView and save its output to a file. Attach this file
    to a bug report or paste using services like paste.kde.org.
 
+However, in 100% of the cases where Windows users have reported that their tablet
+didn't work over the past five years the problem has been a buggy driver or
+a broken driver installation and not a bug in Krita.
+   
+   
 How to fix a tablet offset on multiple screen setup on Windows
 --------------------------------------------------------------
 
@@ -430,7 +364,7 @@ automatically.
 Microsoft Surface Pro and NTrig
 -------------------------------
 
-Krita 3.3.0 supports the Windows Pointer API (Windows Ink) natively.
+Krita 3.3.0 and later supports the Windows Pointer API (Windows Ink) natively.
 Your Surface Pro or other n-trig enabled pen tablet should work out of
 the box with Krita after you enable Windows Ink in Settings/Configure
 Krita/Tablet.
@@ -447,67 +381,9 @@ http://tabletpro.net/
 
 See http://www.youtube.com/watch?v=WKXZgYqC3tI for instructions.
 
-How to make my Huion tablet work with Krita on Linux?
------------------------------------------------------
 
-This applies to Huion models: H610 (maybe others too? report your model
-here..)
-
-First, if you use a linux kernel version 3.13 or above, remove the buggy
-huion driver with this command line:
-
-``rmmod hid-huion``
-
-or, depending on your distribution:
-
-``modprobe -r hid-huion``
-
-Then build and install the `correct kernel driver <https://github.com/DIGImend/huion-driver>`_.
-
-(note that you’ll have to redo those steps after each kernel update,
-until this driver is included in mainline kernel.)
-
-Now you should have a working tablet in Krita and Gimp (sadly, it
-doesn’t work with current mypaint version, probably because of GTK3..)
-But as by default the whole tablet area is mapped to the whole screen,
-depending on your screen ratio you may want to adapt the active area of
-the tablet to have the same proportions.
-
-For this, first you need to install xinput-calibrator (check in your
-package manager it may be named a bit differently, with – or \_ in the
-middle…)
-
-Now, you’ll need the name or ID of your device, so list devices with
-this command line:
-
-``xinput_calibrator --list | grep H610``
-
-Then I noticed the huion report two different devices with the same
-name, just different ID. So to find out which is the one corresponding
-to the actual stylus tablet area, get devices values with this command
-line:
-
-``xinput_calibrator --device 10``
-
-(adapt id number the the values you found on previous step…)
-
-It will open a sort of calibration window, don’t click the crosses, just
-press any key to abort. Then you can see the default values of the
-device appeared in the console. One devices has much bigger max values
-(0 40000 0 25000), this is the one you should get the ID number. (in my
-case here was ID 10 )
-
-Then calculate the values to set the active area to the same ratio as
-screen.. For example, for a 1920×1080 screen, I did this operation:
-40000\*1080/1920=22500
-
-And finally set the calibration values (TopX BottomX TopY BottomY) like
-this:
-
-``xinput set-prop 10 “Evdev Axis Calibration” 0 40000 0 22500``
-
-**Weird stuff happens on Windows, like ripples, rings, squiggles or
-poltergeists**
+Weird stuff happens on Windows, like ripples, rings, squiggles or poltergeists
+------------------------------------------------------------------------------
 
 Windows comes with a lot of settings to make it work with a pen. Al
 these settings are annoying. This tool can help to set the settings
@@ -528,7 +404,7 @@ Or right-click on any docker titlebar or open space in any toolbar, and
 select Toolbox. It's the first option.
 
 Or check the Settings menu, it's got lots of interesting stuff, then go
-to the Dockers menu and... select toolbox.
+to the Dockers menu and select toolbox.
 
 Tool icons size is too big
 --------------------------
@@ -538,8 +414,8 @@ Right click the toolbox to set the size.
 Krita can't get maximized
 -------------------------
 
-This is due to the toolbox being too big, for example, when it's
-accidentally made 1-columns wide. Resize it to make it 2 columns wide.
+This happens when your dockers are placed in such a way that the window cannot
+be made less high. Rearrange your workspace.
 
 Resources
 =========
@@ -651,15 +527,6 @@ than the image resolution, it may feel that the result is blurry
 compared to the preview. See
 https://forum.kde.org/viewtopic.php?f=139&t=127269 for more info.
 
-Why is the zoom tool suddenly zooming to my cursor instead of to canvas?
-------------------------------------------------------------------------
-
-In Krita 3.0.1 we changed the default zooming mode to zoom to the cursor
-instead of to the canvas center as that was more intuitive for artists.
-we call this relative zoom mode.
-
-If you want to get the old behavior back, go to and change all 4(!)
-entries with into plain .
 
 License, rights and the Krita foundation
 ========================================
@@ -667,19 +534,12 @@ License, rights and the Krita foundation
 Who owns Krita?
 ---------------
 
-The Stichting Krita Foundation owns the Krita trademark.
-
-Is there professional support available for Krita?
---------------------------------------------------
-
-Yes, the Krita Foundation and Boudewijn Rempt Software offer support for
-Krita through the `development fund <https://krita.org/support-us/donations/>`_, sponsoring
-opportunities, consultancy and `dedicated development contracts <https://krita.org/support-us/commercial/>`_.
+The Stichting Krita Foundation owns the Krita trademark. The copyright on the source code is owned by everyone who has worked on the source code.
 
 Who and what is Kiki?
 ---------------------
 
-Kiki is a squirrel. She’s our mascot and has been designed by Tyson Tan.
+Kiki is a cybersquirrel. She’s our mascot and has been designed by Tyson Tan.
 We choose a squirrel when we discovered that ‘krita’ is the Albanian
 word for Squirrel.
 
@@ -712,19 +572,10 @@ freedom. Nobody is ever permitted to take it away.
 Can I get Krita for iPad? for Android?
 --------------------------------------
 
-Krita will probably not be available for iOS (iPad, iPhone, iPad Pro)
-any time soon because Apple's Appstore's terms and conditions add
-restrictions that are thought to be incompatible with free software
-licensed under the GNU Public License. And then there are problems
-actually building Krita and all its dependencies on iOS as well as
-problems getting Krita into the app store.
+Not at this point in time.
 
-As for Android, there are no licensing problems, and we would like to
-see a version for Android, but Krita is an enormous application and we
-haven't managed to build it for Android yet.
-
-Who translates Krita and are there translations available?
-----------------------------------------------------------
+Who translates Krita
+--------------------
 
 Krita is a `KDE application <http://www.kde.org/>`__ — and proud of it!
 That means that Krita’s translations are done by `KDE localization
@@ -732,64 +583,6 @@ teams <http://i18n.kde.org/>`__. If you want to help out, join the team
 for your language! There is another way you can help out making Krita
 look good in any language, and that is join the development team and fix
 issues within the code that make Krita harder to translate.
-
-The translations are easy to install on any linux distribution. On
-Windows they are bundled and you can set them via settings->change
-application language. On OSX, we are working to make them work similarly
-to windows, but there are a few bugs preventing the translations work
-correctly at the time of writing.
-
-What are Krita’s Development Goals?
------------------------------------
-
-Krita is primarily a painting program, although it has image processing
-capabilities. This means that Krita is intended for creative people who
-desire to paint and draw with computer software as they do with
-real-world tools in an art studio.
-
-If you are looking for a tool primarily to apply effects to existing
-images or photos, to catalog images, or to view images other software
-(such as Digikam) may be more suitable.If you want to work on collage,
-photo editing or print production work, Gimp might be more suitable.
-Ease of use and power as a painting application will always have a
-higher priority in Krita’s ongoing development.
-
-Would you like bug reports?
----------------------------
-
-Definitely. Please take care to include backtraces if you’ve got a
-crash, and if there’s an image that breaks Krita for you, try to attach
-the image to the report. If it’s too big, contact me (that’s ‘boud’) on
-irc: #krita, or directly via email. Adding new wishes to bugzilla isn’t
-terribly useful, I’m afraid. We have a lot on our TODO already, and to
-create a new feature, we need to engage in some deep interaction with
-you, so drop by on the forum, mailing or irc instead. You can report
-bugs at the KDE bug tracker. We try to reply to bug reports within a
-week.
-
-If you find signing up to KDE’s bugzilla too much of a bother, or aren’t
-sure you found a real bug, don’t hesitate, and drop by on the
-`forum <https://forum.kde.org/viewforum.php?f=136>`_ or on
-`IRC <https://krita.org/irc/>`_.
-
-Starting with Krita 3.1, we will have the :ref:`Dr. Mingw debugger <dr_minw>` built into Krita. Check out the
-instructions for debbugging with it.
-
-Can I join the fun?
--------------------
-
-Yes.The best thing you can do is use and enjoy Krita! Learn to use Krita
-and teach others. Create tutorials and sample files, create artwork to
-show off what Krita can do and spread the good word. And if you want to
-be more directly involved, well, I didn’t know any C++ when I started
-hacking on Krita and I managed. You can do it, too! Check the `Join Krita page <https://krita.org/get-involved/overview/>`_ for more
-information.
-
-And if you don’t feel like hacking C++ — well, there’s the manual that
-needs someone attending to it, a set of tutorials would be nice, we are
-everlastingly needing more artwork for interface elements, and finally,
-we really appreciate reports from people using it, telling me about
-their work flow and what hampers or helps them.
 
 Reference
 =========
