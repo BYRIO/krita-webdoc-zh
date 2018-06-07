@@ -26,7 +26,7 @@ Sessions
 
 When you work with multiple screens, a single window with a single workspace won't be enough. For multi monitor setups we instead can use sessions. Sessions allow us to store multiple windows, their positions, the monitor they were on and the documents that were open on them.
 
-You can access sessions from the workspace dropdown in the top toolbar.
+You can access sessions from the workspace dropdown in the top toolbar, and from :menuselection:`File --> Sessions`
 
 Primary Workspace Follows Focus
     This treats the workspace in the first window as the 'primary' workspace, and when you switch focus, it will switch the secondary windows to that primary workspace. This is useful when the secondary workspace is a very sparse workspace with few dockers, and the primary is one with a lot of different dockers.
