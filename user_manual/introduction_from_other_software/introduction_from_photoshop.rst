@@ -45,7 +45,7 @@ In Krita you can navigate your document using all these methods:
     
     .. note::
         
-        if you add  :kbd:`Alt` and so do a  :kbd:`Ctrl + Alt + Space` you’ll have a discrete zoom.}}
+        If you add :kbd:`Alt` and so do a :kbd:`Ctrl + Alt + Space` you’ll have a discrete zoom.
 
 Rotation
 ^^^^^^^^
@@ -96,7 +96,7 @@ Some other tips:
 
 You can scale selection. To do this, choose Select > Scale  (Note: also, in the Select menu there are more classical option to grow, shrink, feather, border, etc...)
 
-If you enable Show Global Selection Mask (Select menu) you can scale\rotate\trasform\move or paint on selection like on regular greyscale layer.
+If you enable Show Global Selection Mask (Select menu) you can scale/rotate/trasform/move or paint on selection like on regular greyscale layer.
 
 * :kbd:`Ctrl + H`: Show / Hide selection (same shortcut)
 * :kbd:`Ctrl + A`: Select All
@@ -122,7 +122,7 @@ The most common shortcuts are very similar in PS and Krita:
 Groups and Blending Mode (Composite Mode):
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The group blending mode in Krita has priority over child layers and overrides it. This can be surprising for PS users. On PS you can use groups to just clean your layer stack and keep blending mode of your layer compositing through all the stack.  In Krita the compositing will happen at first level inside the group, then taking into account the blending mode of the group itself.
+The group blending mode in Krita has priority over child layers and overrides it. This can be surprising for Photoshop users. On Photoshop you can use groups to just clean your layer stack and keep blending mode of your layer compositing through all the stack.  In Krita the compositing will happen at first level inside the group, then taking into account the blending mode of the group itself.
 Both system have pros and cons. Krita’s way is more predictable according to some artists,  compositing-wise. The PS way leads to a cleaner and better ordered layer stack visually wise. 
 
 Multi Layer Transform or Move
@@ -135,7 +135,7 @@ Clipping Masks
 
 Krita has no clipping mask, but there is a workaround involving layer groups and ‘inherit alpha’ (see the alpha icon). Place a layer with the shape you want to clip the other with at the bottom of a group and layers above with the ‘inherit alpha’ option. This will create the same effect as the “clipping mask” PS feature.
 
-This process of arrangin groups for inherit alpha can be done automatically by :kbd:`Ctrl + Shift + G` shortcut. It creates a group with base layer and a layer above it with inherit alpha alpha option checked by default.
+This process of arranging groups for inherit alpha can be done automatically by :kbd:`Ctrl + Shift + G` shortcut. It creates a group with base layer and a layer above it with inherit alpha option checked by default.
 
 Pass-through mode
 ^^^^^^^^^^^^^^^^^
@@ -156,29 +156,27 @@ Transform Masks
 Filter Masks
     Like adjustment layers, these can apply filters non-destructively to all layer types, including file and clone layers.
 
-Layerstyles
-^^^^^^^^^^^
+Layer styles
+^^^^^^^^^^^^
 
-You can apply photoshop layerstyles in Krita by rightclicking any given layertype and selecting ‘layerstyle’ from the rightclick menu. Krita can open and save ASL files, but not all layerstyle functionality is there yet.
+You can apply Photoshop layerstyles in Krita by right clicking any given layer type and selecting ‘layer style’ from the context menu. Krita can open and save ASL files, but not all layer style functionality is there yet.
 
 Other
 ^^^^^
 
 Layers and groups can be exported. See the ‘Layer’ top menu for this and many other options. 
 
-.. note:: Krita has at least 5 times more blending modes than PS. They are sorted by categories in the drop down menu. you can use the checkbox to add your most used to the Favorite categories.
+.. note:: Krita has at least 5 times more blending modes than PS. They are sorted by categories in the drop down menu. You can use the checkbox to add your most used to the Favorite categories.
 
 Paint tools
 ~~~~~~~~~~~
 
-This is Krita's strong point. There are many many paint tools and they have a lot of options.
+This is Krita's strong point. There are many paint tools and they have a lot of options.
 
 Tools
 ^^^^^
 
-In Krita, there is a totally different paradigm for defining what ‘tools’ are compared to PS. Unlike in PS, you will not find the brush, eraser, clone, blur tool, etc.
-Instead you will find the *way to trace* your strokes on the canvas: freehand, line, rectangle, circle, multiple brush, etc. When you have selected the ‘way to trace’ you can choose the *way to paint*: erasing / cloning / blurring, etc are all part of  *way it paint* managed by the brush-engines options. These brush engine options are saved into so called *presets*, which you can find on ‘Brush presets’. 
-You can fine tune, and build your own presets using the ‘Edit Brush Settings’ icon on the top tool bar. 
+In Krita, there is a totally different paradigm for defining what ‘tools’ are compared to PS. Unlike in PS, you will not find the brush, eraser, clone, blur tool, etc. Instead, you will find the *way to trace* your strokes on the canvas: freehand, line, rectangle, circle, multiple brush, etc. When you have selected the ‘way to trace’ you can choose the *way to paint*: erasing / cloning / blurring, etc are all part of  *way it paint* managed by the brush-engines options. These brush engine options are saved into so called *presets*, which you can find on ‘Brush presets’.  You can fine tune, and build your own presets using the ‘Edit Brush Settings’ icon on the top tool bar. 
 
 Erasing
 ^^^^^^^
@@ -189,7 +187,7 @@ Useful shortcuts
 ^^^^^^^^^^^^^^^^
 
 * :kbd:`Shift`:  Grow or Shrink the brush size (or :kbd:`[` and :kbd:`]`).
-* <kbd>/</kbd>: Switch last preset selected and current (ex: a pencil preset, and a eraser preset).
+* <kbd>/</kbd>: Switch last preset selected and current (ex: a pencil preset, and an eraser preset).
 * :kbd:`K` and :kbd:`L`:  increment Darker and Lighter value of active color
 * :kbd:`I` and :kbd:`O`: increment opacity plus or minus.
 * :kbd:`D`: Reset color to black/foreground and white/background
@@ -198,7 +196,7 @@ Useful shortcuts
 
 .. note::
 
-    Some people regard these shortcuts as somewhat unfortunate. The reason is that they are meant to be used during painting and left-:kbd:`shift` is at the opposite end of the keyboard from :kbd:`I`, :kbd:`M` and :kbd:`N`. So for a right-handed painter, this is very difficult to do while using the stylus with a right hand. Note that you can reassign any shortcut by using the shortcut configurator in :menuselection:`Settings --> Configure Shortcuts`.}}
+    Some people regard these shortcuts as somewhat unfortunate. The reason is that they are meant to be used during painting and left-:kbd:`shift` is at the opposite end of the keyboard from :kbd:`I`, :kbd:`M` and :kbd:`N`. So for a right-handed painter, this is very difficult to do while using the stylus with a right hand. Note that you can reassign any shortcut by using the shortcut configuration in :menuselection:`Settings --> Configure Shortcuts`.
 
 Stabilization / Path Smoothing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -232,12 +230,12 @@ If you don’t like the color outside your viewport go to: :menuselection:`Setti
 What Krita Has Over Photoshop
 -----------------------------
 
-As mentioned in the introduction, Krita is a specialized paint application. Therefore it also has many specialized tools for painting which are not found in more generalized image manipulation applications such as PS. Here is a short list of the most important ones.
+As mentioned in the introduction, Krita is a specialized paint application. Thus, it also has specialized tools for painting. Similar tools are not found in more generalized image manipulation applications such as PS. Here is a short list of the most important ones.
 
 Brush Engines
 ~~~~~~~~~~~~~
 
-Krita has a lot of different so called brush engines. These brush engines define various methods on how the pixels end up on your canvas. Brush engines with names like Grid, Particles, Sketch and others will bring you new experiences on how the  brushes work and a new landscape of possible results. You can start customising brushes by using the brush-settings editor, which is accesible via the toolbar, but it's much easier to just press :kbd:`F5`.
+Krita has a lot of different so called brush engines. These brush engines define various methods on how the pixels end up on your canvas. Brush engines with names like Grid, Particles, Sketch and others will bring you new experiences on how the  brushes work and a new landscape of possible results. You can start customizing brushes by using the brush-settings editor, which is accessible via the toolbar, but it's much easier to just press :kbd:`F5`.
 
 Tags for brush presets
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -247,7 +245,7 @@ This is very useful way to configure brush presets. Each brush can have any amou
 Settings curves
 ~~~~~~~~~~~~~~~
 
-You can set setting to pressure(speed\distance\tilt\random\etc) relation for each brush setting.
+You can set setting to pressure(speed/distance/tilt/random/etc) relation for each brush setting.
 
 .. image:: /images/en/Settings-curves.jpg
    :align: center
@@ -258,12 +256,12 @@ The Pop-up Palette
 .. image:: /images/en/Krita-popuppalette.png
    :align: center
 
-Easily to be found on |mouseright|, the pop-up palette allows you to quickly access brushes, a color history and a color selector within arm's reach. The brushes are determined by tag, and pressing the lower-right configure button calls a dropdown to change tags. This allows you to tag brushes in the preset docker by workflow, and quickly access the right brushes for the workflow you need for your image.
+Easily to be found on |mouseright|, the pop-up palette allows you to quickly access brushes, a color history and a color selector within arm's reach. The brushes are determined by tag, and pressing the lower-right configure button calls a drop-down to change tags. This allows you to tag brushes in the preset docker by workflow, and quickly access the right brushes for the workflow you need for your image.
 
 Transformations
 ~~~~~~~~~~~~~~~
 
-The Krita transformation tool can perform transformations on a group and affect children layers. There's several modes, like free, perspective, warp, the powerful cage and even liquefy.
+The Krita transformation tool can perform transformations on a group and affect child layers. There are several modes, like free, perspective, warp, the powerful cage and even liquefy.
 Furthermore, you can use transformation masks to apply transforms non-destructively to any layer type, raster, vector group, you name it.
 
 .. figure:: /images/en/Krita-transform-mask.png
@@ -275,7 +273,7 @@ Furthermore, you can use transformation masks to apply transforms non-destructiv
 Incremental Save
 ~~~~~~~~~~~~~~~~
 
-You can save your artwork with the pattern : myartworksname_001.kra , myartworksname_002.kra, myartworksname_003.kra  etc, by pressing a single key on the keyboard. Krita will do the incrementation of the final number if the pattern “_XXX” is recognized at the end of the file's name.
+You can save your artwork with the pattern : myartworksname_001.kra , myartworksname_002.kra, myartworksname_003.kra  etc, by pressing a single key on the keyboard. Krita will increment the final number if the pattern "_XXX" is recognized at the end of the file's name.
 
 .. image:: /images/en/Krita-incremental-saves.png
    :align: center
@@ -293,8 +291,8 @@ If you want to delete the white of the paper from a scanned artwork , you can us
 Many Blending Modes
 ~~~~~~~~~~~~~~~~~~~
 
-If you like using blending modes, Krita has a large number of them - over 70! You have plenty of room for experimentation. 
-A special system of favourite blending modes has been created to let you have fast access to the ones you use the most.
+If you like using blending modes, Krita has a many of them -- over 70! You have plenty of room for experimentation. 
+A special system of favorite blending modes has been created to let you have fast access to the ones you use the most.
 
 Painting Assistants
 ~~~~~~~~~~~~~~~~~~~
@@ -310,7 +308,7 @@ Krita has many painting assistants. This is a special type vector shapes with a 
 Multibrushes: Symmetry / Parallel / Mirrored / Snowflake
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Krita's multibrush tool allows you to paint with multiple brushes at the same time. Movements of the brushes other than the main brush is created by mirroring what you paint, or duplicating it by any number around any axis. They can also be used in parallel mode.
+Krita's Multibrush tool allows you to paint with multiple brushes at the same time. Movements of the brushes other than the main brush is created by mirroring what you paint, or duplicating it by any number around any axis. They can also be used in parallel mode.
 
 .. image:: /images/en/Krita-multibrush.png
    :align: center
@@ -323,15 +321,15 @@ The 'advanced color selector' docker offer you a wide choice of color selectors.
 .. image:: /images/en/Krita_Color_Selector_Types.png
    :align: center
 
-View dependant colorfilters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Using the lut docker, Krita allows you to have a seperate color correction filter per view. While this is certainly useful to people who do color correction in daily life, to the artist this allows for seeing a copy of the image in luminance grayscale, so that they instantly know the values of the image.
+View dependent color filters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Using the lut docker, Krita allows you to have a separate color correction filter per view. While this is certainly useful to people who do color correction in daily life, to the artist this allows for seeing a copy of the image in luminance grayscale, so that they instantly know the values of the image.
 
 .. figure:: /images/en/Krita-view-dependant-lut-management.png
    :align: center
    :figwidth: 800
 
-   Using the lut docker to change the colors per view
+   Using the LUT docker to change the colors per view
 
 HDR color painting
 ~~~~~~~~~~~~~~~~~~
@@ -347,17 +345,17 @@ This same LUT docker is the controller for painting with HDR colors. Using the L
 What Krita Does Not Have
 ------------------------
 
-Again, Krita is a digital paint application and PS is an image manipulation program with some painting features. This means that there are things you can do in PS that you cannot do in Krita. This section gives a short list of these features.
+Again, Krita is a digital paint application and Photoshop is an image manipulation program with some painting features. This means that there are things you can do in PS that you cannot do in Krita. This section gives a short list of these features.
 
 Filters
 ~~~~~~~
 
-Krita has a pretty impressive pack of filters available, but you will probably miss one or two of the special filters or color adjustment tools you use often in Photoshop. For example, there is no possibility to tweak a specific color in HSV adjustment.
+Krita has a pretty impressive pack of filters available, but you will probably miss one or two of the special filters or color adjustment tools you often use in Photoshop. For example, there is no possibility to tweak a specific color in HSV adjustment.
 
 Automatic healing tool
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Krita does not have an automatic healing tool. It does, however, have a so called clone tool which can be used to do healing although not automatically.
+Krita does not have an automatic healing tool. It does, however, have a so called clone tool which can be used to do a healing correction, although not automatically.
 
 Macro Recording
 ~~~~~~~~~~~~~~~
@@ -383,4 +381,4 @@ Conclusion
 ----------
 
 Using these tips you will probably be up to speed with Krita in a short time. If you find other things worth mentioning in this document we, the authors, would be interested in hearing about them. 
-Krita is developing fast so we believe that the list of things possible in PS but not in Krita will become shorter in time. We will maintain this document as this happens.
+Krita develops fast, so we believe that the list of things possible in Photoshop but not in Krita will become shorter in time. We will maintain this document as this happens.

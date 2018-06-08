@@ -26,7 +26,7 @@ Krita is primarily a raster graphics editing tool, which means that most of the 
 
 Vector graphics on the other hand use mathematics to describe a shape. Because it uses a formula, vector graphics can be resized to any size.
 
-On one hand, this makes vector graphics great for logos and banners. On the other hand, raster graphics are much easier to edit, so vectors tend to the be the domain of deliberate design, using a lot of precision.
+On one hand, this makes vector graphics great for logos and banners. On the other hand, raster graphics are much easier to edit, so vectors tend to be the domain of deliberate design, using a lot of precision.
 
 Tools for making shapes
 -----------------------
@@ -46,9 +46,9 @@ There is one last way to make vectors: The Vector Library docker.  It allows you
 Arranging Shapes
 ----------------
 
-A vector layer has it's own hierarchy of shapes, much like how the whole image has a hierarchy of layers. So shapes can be infront of one another. This can be modified with the arrange docker, or with the Select Shapes Tool.
+A vector layer has its own hierarchy of shapes, much like how the whole image has a hierarchy of layers. So shapes can be in front of one another. This can be modified with the arrange docker, or with the Select Shapes Tool.
 
-The arrange docker also allows you to group and ungroup shapes. It also allow you to precisely align shapes, for example, have them aligned to the center, or have an even spacing between all the shapes.
+The arrange docker also allows you to group and ungroup shapes. It also allows you to precisely align shapes, for example, have them aligned to the center, or have an even spacing between all the shapes.
 
 Editing shapes
 --------------
@@ -71,7 +71,7 @@ Stroke
 
 Strokes can be filled with the same things as fills.
 
-However, they can also be further changed. For example you can add dashes and and markers to the line.
+However, they can also be further changed. For example, you can add dashes and markers to the line.
 
 Coordinates
 ~~~~~~~~~~~

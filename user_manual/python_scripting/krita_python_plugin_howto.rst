@@ -20,18 +20,18 @@ How to make a Krita Python plugin
 
 You might have some neat scripts you have written in the Scripter Python runner, but maybe you want to do more with it and run it automatically for instance. Wrapping your script in a plugin can give you much more flexibility and power than running scripts from the Scripter editor.
 
-Okay, so even if you know python really well, there's some little details to getting Krita to recognise a python plugin. So this page will give an overview how to create the various types of python script unique to Krita.
+Okay, so even if you know python really well, there's some little details to getting Krita to recognize a python plugin. So this page will give an overview how to create the various types of python script unique to Krita.
 
 These mini-tutorials are written for people with a basic understanding of python, and in such a way to encourage experimentation instead of plainly copy and pasting code, so read the text carefully.
 
-Getting Krita to recognise your plugin
+Getting Krita to recognize your plugin
 --------------------------------------
 
 A script in Krita has two components - the script directory (holding your script's Python files) and a ".desktop" file that Krita uses to load and register your script. For Krita to load your script both of these must put be in the pykrita subdirectory of your Krita resources folder (on Linux  ~/.local/share/krita/pykrita). To find your resources folder start Krita and click the :menuselection:`Settings --> Manage Resources menu item`. This will open a dialog box. Click the button Open Resources Folder. This should open a file manager on your system at your Krita resources folder. See the `API <https://api.kde.org/extragear-api/graphics-apidocs/krita/libs/libkis/html/index.html>`_ docs under "Auto starting scripts".  If there is no pykrita subfolder in the Krita resources directory use your file manager to create one. 
 
 Scripts are identified by a file that ends in a .desktop extension that contain information about the script itself.
 
-Therefore, for each proper plug-in you will need to create a folder, and a desktop file.
+Therefore, for each proper plugin you will need to create a folder, and a desktop file.
 
 The desktop file should look as follows::
 
@@ -122,7 +122,7 @@ Creating an extension
     # And add the extension to Krita's list of extensions:
     Krita.instance().addExtension(MyExtension(Krita.instance())) 
 
-This code of course doesn't do anything. Typically, in createActions we add actions to Krita so we can access our script from the tools menu.
+This code of course doesn't do anything. Typically, in createActions we add actions to Krita, so we can access our script from the :guilabel:`Tools` menu.
 
 First, let's create an `action <https://api.kde.org/extragear-api/graphics-apidocs/krita/libs/libkis/html/classAction.html>`_. We can do that easily with `Window.createAction() <https://api.kde.org/extragear-api/graphics-apidocs/krita/libs/libkis/html/classWindow.html#a72ec58e53844076c1461966c34a9115c>`_. Krita will call createActions for every Window that is created and pass the right window object that we have to use.
 

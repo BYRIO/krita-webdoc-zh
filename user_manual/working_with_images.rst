@@ -54,10 +54,10 @@ software that initially made the file. So Krita can load and save
 groups, transparency masks and layer effects from PSD, but not load or
 save transform masks.
 
-Meta Data
----------
+Metadata
+--------
 
-Meta Data is information like the creation date, author, description and
+Metadata is information like the creation date, author, description and
 also information like DPI.
 
 Image size
@@ -78,7 +78,7 @@ equal to an Inch. This means the number of pixels your artwork has in a
 relative area of an Inch.
 
 **DPI** is the concern of the printer, and artists while creating
-artwork should keep **PPI** in mind. according to the **PPI** you have
+artwork should keep **PPI** in mind. According to the **PPI** you have
 set, the printers can decide how large your image should be on a piece
 of paper.
 
@@ -94,7 +94,7 @@ Some standards:
 300 PPI
     This is the minimum you should use for quality prints.
 600 PPI
-    The quality used for line-art for comics.
+    The quality used for line art for comics.
 
 Color depth
 ~~~~~~~~~~~
@@ -102,17 +102,15 @@ Color depth
 We went over color depth in the Color Management page. What you need to
 understand is that Krita has image color spaces, and layer color spaces,
 the latter which can save memory if used right. For example, having a
-lineart layer in greyscale can half the memory costs.
+line art layer in grayscale can half the memory costs.
 
 Image color space vs layer color space vs conversion.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Because there's a difference between image color space and layer color
-space, you can change only the image colour space in :menuselection:`Image --> Properties`
-which will leave the layers alone. But if you want to change the color
+space, you can change only the image color space in :menuselection:`Image --> Properties` which will leave the layers alone. But if you want to change the color
 space of the file including all the layers you can do it by going to
-Image > Convert Image Color Space this will will convert all the layers
-Colorspace as well.
+Image > Convert Image Color Space this will convert all the layers Color space as well.
 
 Author and Description
 ----------------------
@@ -129,16 +127,14 @@ while, and has a precision of +- 60 seconds. You can empty it in the
 document info dialog and of course by unzipping you .kra file and
 editing the meta-data there.
 
-You can edit these things in :menuselection:`File --> Document Information`, and for the
-author's information :menuselection:`Settings --> Configure Krita --> Author Information`.
-You can switch between profiles under :menuselection:`Settings --> Active Author Profile`.
+These things can be edited in :menuselection:`File --> Document Information`, and for the author's information :menuselection:`Settings --> Configure Krita --> Author Information`. Profiles can be switched under :menuselection:`Settings --> Active Author Profile`.
 
 Setting the canvas background color
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can set the canvas background color via :menuselection:`Image --> Image Background
 color and Transparency`. This allows you to turn the background color
-non-transparent and to change the color. Also useful for certain file
+non-transparent and to change the color. This is also useful for certain file
 formats which force a background color instead of transparency. PNG and
 JPG export use this color as the default color to fill in transparency
 if you do not want to export transparency.
@@ -154,13 +150,13 @@ Basic transforms
 There's some basic transforms available in the image menu.
 
 Shear Image
-    This will allow you to skew the whole image and it's layers.
+    This will allow you to skew the whole image and its layers.
 Rotate
-    This will allow you to rotate the image and all it's layers quickly.
+    This will allow you to rotate the image and all its layers quickly.
 Mirror Horizontal/Vertical
-    This will allow you to mirror the whole image with all it's layers.
+    This will allow you to mirror the whole image with all its layers.
 
-But there's more options than that...
+But there are more options than that...
 
 Cropping and resizing the canvas
 --------------------------------
@@ -215,12 +211,12 @@ Resizing the image
 :guilabel:`Scale Image to New Size` allows you to resize the whole image. Also,
 importantly, this is where you can change the resolution or *upres* your
 image. So for instance, if you were initially working at 72 PPI to block
-in large shapes and colors, images, etc.. and now you want to really get
-in a do some detail work at 300 or 400 PPI this is where you would make
+in large shapes and colors, images, etc... And now you want to really get
+in and do some detail work at 300 or 400 PPI this is where you would make
 the change.
 
 Like all other dialogs where a chain link appears, when the chain is
-linked the aspect ration is maintained. To unlink the chain, just click
+linked the aspect ratio is maintained. To disconnect the chain, just click
 on the links and the two halves will separate.
 
 .. image:: /images/en/Scale_Image_to_New_Size.png
@@ -239,26 +235,26 @@ textures. There's no combine functionality, but what you can do, if
 using colored output, is to set two of the channels to the addition
 :ref:`blending_modes`.
 
-For greyscale images in the RGB space, you can use the copy red, copy
+For grayscale images in the RGB space, you can use the copy red, copy
 green and copy blue blending modes, with using the red one for the red
 channel image, etc.
 
 Saving, Exporting and Opening Files
 -----------------------------------
 
-when Krita creates or opens a file, it has a copy of the file in memory,
+When Krita creates or opens a file, it has a copy of the file in memory,
 that it edits. This is part of the way how computers work: They make a
 copy of their file in the ram. Thus, when saving, Krita takes it's copy
 and copies it over the existing file. There's a couple of tricks you can
 do with saving.
 
 Save
-    Krita saves the current image in it's memory to a defined place on
+    Krita saves the current image in its memory to a defined place on
     the hard-drive. If the image hadn't been saved before, Krita will
     ask you where to save it.
 Save As
     Make a copy of your current file by saving it with a different name.
-    Krita will switch to the newly made file as it's active document.
+    Krita will switch to the newly made file as its active document.
 Open
     Open a saved file. Fairly straightforward.
 Export
@@ -268,7 +264,7 @@ Export
 Open Existing Document As Untitled Document
     This is a bit of an odd one, but it opens a file, and forgets where
     you saved it to, so that when pressing 'save' it asks you where to
-    save it. Also called 'import' in other programs.
+    save it. This is also called 'import' in other programs.
 Create Copy from Current Image
     Makes a new copy of the current image. Similar to Open Existing
     Document As Untitled Document, but then with already opened files.
@@ -279,4 +275,4 @@ Save Incremental Backup.
     Exports the current image as 'filename'\_XXX.kra.
 
 .. note::
-    Since Krita's file format is compressed data file, in case of corrupt or broken file you can open it with archive managers and extract the contents of the layers. This will help you to recover as much as possible data from the file. On windows you need to rename it to filename.zip to open it.
+    Since Krita's file format is compressed data file, in case of corrupt or broken file you can open it with archive managers and extract the contents of the layers. This will help you to recover as much as possible data from the file. On windows, you will need to rename it to filename.zip to open it.

@@ -41,7 +41,7 @@ them, like Layer styles, blending modes, transparency, filters and
 transforms. Krita takes all these layers in its layer stack, including
 the special effects and combines or composites together a final image.
 This is just one of the many digital image manipulation tricks that
-**Krita** has up it's sleeve!
+:program:`Krita` has up its sleeve!
 
 Usually, when you put one paint layer on top of another, the upper paint
 layer will be fully visible, while the layer behind it will either be
@@ -65,8 +65,8 @@ dragging and dropping from one document to another.
 
 These features save time and also help artists in maintaining the file
 with a layer stack which will be easy to understand for others who work
-on the same file. In addition to this layers and groups can both be
-labelled and filtered by colors, thus helping the artists to visually
+on the same file. In addition to these layers and groups can both be
+labeled and filtered by colors, thus helping the artists to visually
 differentiate them.
 
 To assign a color label to your layer or layer group you have to right
@@ -89,15 +89,9 @@ Types of Layers
 
 .. image:: /images/en/500px-Krita-types-of-layers.png
 
-The image above shows the various types of layers in `layer
-docker <Special:MyLanguage/Layers>`__, Each layer type has a different
-purpose for example all the vector elements can be only placed on a
-vector layer and similarly normal raster elements are mostly on the
-paint layer, `Layers and
-masks <Special:MyLanguage/category:Layers_and_Masks>`__ page contains
-more information about these types layers
+The image above shows the various types of layers in :ref:`layer_docker`, Each layer type has a different purpose for example all the vector elements can be only placed on a vector layer and similarly normal raster elements are mostly on the paint layer, :ref:`cat_layers_and_masks` page contains more information about these types layers.
 
-Now Let us see how these layers are composited in krita
+Now Let us see how these layers are composited in Krita.
 
 How are layers composited in Krita ?
 ------------------------------------
@@ -164,11 +158,7 @@ back and forth. You can go back to original image with a click of a
 button, Just hide the filter or mask you have your initial image.
 
 You can add various filters to a layer with Filter mask, or add Filter
-layer which will affect the whole image. You can transform the layers
-non-destructively by adding Transform masks, You can also hide portions
-of the layer by adding a Transparency mask instead of permanently
-erasing it and if you change your mind you can unhide this portion later
-at any point.
+layer which will affect the whole image. Layers can also be transformed non-destructively with the transformation masks, and even have portions temporarily hidden with a Transparenct Mask. Non-destructive effects like these are very useful when you change your mind later, or need to make a set of variations of an given image.
 
 .. note::
     You can merge all visible layers by selecting everything first :menuselection:`Layer --> Select --> Visible Layers`. Then Combine them all by merging :menuselection:`Layer --> Merge with Layer Below`.
@@ -179,14 +169,13 @@ shown in the image below) and the Plus icon on the layer docker.
 .. image:: /images/en/Layer-right-click.png
 
 You can also add a filter as a mask from filter dialog itself, by
-clicking on the Create Filter Mask button.
+clicking on the :guilabel:`Create Filter Mask` button.
 
 .. image:: /images/en/Filtermask-button.png
 
 All the filters and masks can also be applied over a group too, thus
 making it easy to non-destructively edit multiple layers at once. In the
-:ref:`category Layers and
-masks <cat_layers_and_masks>` you can read
+:ref:`category Layers and masks <cat_layers_and_masks>` you can read
 more about the individual types of layers and masks.
 
 :ref:`Layer Docker <layer_docker>` has more information about
