@@ -40,17 +40,17 @@ This is our vision for the development of Krita:
 
     Krita is a free and open source cross-platform application that offers an end-to-end solution for creating digital art files from scratch. Krita is optimized for frequent, prolonged and focused use.
     Explicitly supported fields of painting are illustrations, concept art, matte painting, textures, comics and animations.
-    Developed together with users, Krita is an application that supports their actual needs and workflow. Krita supports open standards and interoperates with other applications
+    Developed together with users, Krita is an application that supports their actual needs and workflow. Krita supports open standards and interoperates with other applications.
 
 Is it possible to use Krita in my own language, not English?
 ------------------------------------------------------------
 
 Krita should automatically use the system language. If that is not the case, please follow these steps:
 
-#. settings → switch application language. An small window will appear.
-#. click Primary language and select your language.
-#. click OK to close the window.
-#. restart krita and it will be displayed in your selected language!
+#. Settings --> Switch Application Language. A small window will appear.
+#. Click Primary language and select your language.
+#. Click OK to close the window.
+#. Restart krita and it will be displayed in your selected language!
 
 If this doesn't work, you might have to add a fall-back language as well. This is a bug, but we haven't found the solution yet.
 
@@ -61,14 +61,14 @@ Krita has no clipping mask, but it has a clipping feature called
 inherit alpha. Let's see :ref:`this page <clipping_masks_and_alpha_inheritance>` and learn how to do
 clipping in Krita!
 
-Windows: OBS can't record the Krita openGL canvas
+Windows: OBS can't record the Krita OpenGL canvas
 -------------------------------------------------
 
-Apparantly the workaround for this is to either...
+The possible workarounds for this is to do either of the following:
 
-#. Turn off OpenGL in settings → configure Krita → display.
-#. Or don't use the hardware accelerated mode(game recording mode) in
-   OBS, so capture the whole desktop instead of attempting to capture
+#. Turn off OpenGL in Settings --> Configure Krita --> Display.
+#. Or don't use the hardware accelerated mode (game recording mode) in
+   OBS, thus capturing the whole desktop instead of attempting to capture
    only Krita.
 
 You might also be able to work around the problem by using the ANGLE renderer instead of native OpenGL.
@@ -105,10 +105,10 @@ You can reset the Krita configuration in two ways:
 There can be two other files you might want to remove: kritaopenglrc and
 kritadisplayrc.
 
-If the config was causing a crash, don't delete but instead rename and
-send us the file so we can figure out what caused the crash.
+If the configuration was causing a crash, don't delete the mentioned file, but instead rename and
+send it to us in order for us to figure what caused the crash.
 
-Wher are my resources stored?
+Where are my resources stored?
 -------------------------------------------------------------------
 
 Linux
@@ -125,18 +125,18 @@ Krita tells me it can't find some files and then closes, what should I do?
 Causes for this could be the following:
 
 -  It might be that your download got corrupted and is missing
-   files(common with bad wifi and bad internet connection in general),
+   files (common with bad wifi and bad internet connection in general),
    in that case, try to find a better internet connection before trying
-   to download again. Krita should be around 80 to 100 mb big when
+   to download again. Krita should be around 80 to 100 mb in size when
    downloading.
--  It might be something went wrong during installation. Check if your
-   harddrive isn't full. If not, and the problem still occurs, there
+-  It might be that something went wrong during installation. Check if your
+   hard drive isn't full. If not, and the problem still occurs, there
    might be something odd going on with your device and it's recommended
-   to find an computer expert to diagnose what is going on.
+   to find a computer expert to diagnose what is the problem.
 -  Some unzippers don't unpack our zipfiles correctly. The native ones
    on windows, OSX and most linux distributions should be just fine, and
    we recommend using them.
--  You manually, using a file manager deleted or moved resources around, and Krita cannot find them anymore.
+-  You manually, using a file manager deleted or moved resources around, and thus Krita cannot find them anymore.
 
 What Graphics Cards does Krita support?
 ---------------------------------------
@@ -145,13 +145,13 @@ Krita can use OpenGL to accelerate painting and canvas zooming, rotation
 and panning. Nvidia and recent Intel GPUs give the best results. Make
 sure your OpenGL drivers support OpenGL 3.2 as the minimum. AMD/ATI
 GPU’s are known to be troublesome, especially with the proprietary
-drivers on Linux. However, it works perfectly with the radeon free
+drivers on Linux. However, it works perfectly with the Radeon free
 driver on linux for supported AMD GPU.
 
 *For Krita 3.3 or later:* Krita on Windows can use Direct3D 11 for
 graphics acceleration (through ANGLE). This is enabled automatically on systems with an Intel GPU.
 
-I can't edit text from PSD files created by photoshop
+I can't edit text from PSD files created by Photoshop
 -----------------------------------------------------
 
 There is no text support for psd file yet. The text will appear
@@ -160,7 +160,7 @@ rasterized and converted into paint layer.
 How much memory does my image take?
 -----------------------------------
 
-For simple images, that’s pretty simple: you mulitply width \* height \*
+For simple images, its easy to calculate: you multiply width \* height \*
 channels \* size of the channels (so, for a 1000×1000 16 bit integer
 rgba image: 1000 x 1000 x 4 x 2). You multiply this by the number of
 layers plus two (one for the image, one for the display). If you add
@@ -169,21 +169,18 @@ masks, filter layers or clone layers, it gets more complicated.
 Why do I get a checkerboard pattern when I use the eraser?
 ----------------------------------------------------------
 
-You’re probably used to Gimp or Photoshop. The background, that is
-default or first layer in these applications doesn’t have an alpha
-channel by default. so, on their background layer, the eraser paints in
+You’re probably used to Gimp or Photoshop. The default background or first layer in these applications doesn’t have an alpha channel by default. Thus, on their background layer, the eraser paints in
 the background color.
 
-In Krita, all layers have an alpha channel, so if you want to paint in
-the background color, you should do that, instead of erasing. You get
+In Krita, all layers have an alpha channel, if you want to paint in
+the background color, you should simply do it in a layer above the first one (Layer 1), that would prevent  you from erasing the white background color, making the checkerboard visible. You get
 the same effect in, say, gimp, if you create new image, add an alpha
-channel and then use the eraser tool. Most Krita users actually on
-starting a sketch in Krita add a new blank layer first thing they do
-(the INSert key is a useful shortcut here.) That doesn’t use extra
+channel and then use the eraser tool. Most Krita users will actually start a sketch in Krita by adding a new blank layer first before doing anything else.
+(the INSert key is a useful shortcut here). That doesn’t use extra
 memory, since a blank layer or a layer with a default color just takes
 one pixel worth of memory.
 
-Windows: Can I use Krita with sandboxie?
+Windows: Can I use Krita with Sandboxie?
 ----------------------------------------
 
 No, this is not recommended. Sandboxie causes stuttering and freezes due
@@ -194,8 +191,8 @@ Can krita work with 8 bit (indexed) images?
 
 No. Krita has been designed from the ground up to use real colors, not
 indexed palettes. There are no plans to support indexed color images,
-though Krita can export to some indexed color image formats, such as
-GIF. However, Krita does not offer detailed control over pixel values.
+although Krita can export to some indexed color image formats, such as
+GIF. However, it does not offer detailed control over pixel values.
 
 
 How can I produce a backtrace on Windows?
@@ -209,7 +206,7 @@ If you experience a crash on Windows, and can reproduce the crash, the
 bug report will be much more valuable if you can create a backtrace. A
 backtrace is somewhat akin to an airplane's blackbox, in that they tell
 what set of instructions your computer was running when it was
-crashing(where the crash happened), making it very useful to figure out
+crashing (where the crash happened), making it very useful to figure out
 why the crash happened.
 
 
@@ -219,32 +216,32 @@ The :ref:`Dr. Mingw debugger <dr_minw>` is bundled with Krita. Please visit the 
 Where can I find older versions of Krita?
 -----------------------------------------
 
-All older versions of Krita that are still available can be found here:
+All the older versions of Krita that are still available can be found here:
 
 -  `Very old builds <http://download.kde.org/Attic/krita>`_
 
-On Windows, the Krita User Interface is too small on my HiDPI screen.
----------------------------------------------------------------------
+On Windows, the Krita User Interface is too small on my HiDPI screen
+--------------------------------------------------------------------
 
-If you're using Windows, you can set the display scaling to1 150% or
-200%, and enable the experimental HiDPI support in the config:
+If you're using Windows, you can set the display scaling to 150% or
+200%, and enable the experimental HiDPI support in the configurations:
 
 -  On the menu, select :menuselection:`Settings --> Configure Krita`
 -  Switch to :guilabel:`Window`
 -  Check :guilabel:`Enable Hi-DPI support`
 -  Restart Krita
 
-You can also run change the toolbox icon size by right-clicking on the toolbox and selecting a size.
+You can also change the toolbox icon size by right-clicking on the toolbox and selecting a size.
 
 
 I'm using Linux and Krita crashes on start
 ------------------------------------------
 
-If you also see somethine like “QIODevice::seek: Invalid pos: -18” on
+If you also see something like “QIODevice::seek: Invalid pos: -18” on
 the command line, it's quite likely that at one point you had the Deepin
 file manager installed. That comes with some qimageio plugins that are
 completely and utterly broken. Krita's reference images docker scans
-your Pictures folder on startup, and if your Pictures folder. It reads
+your Pictures folder on startup. It reads
 the images using Qt's QImageIO class, which loads that Deepin plugin.
 `The issue is reported to Deepin <https://github.com/linuxdeepin/deepin-image-viewer/issues/2>`_, but the
 Deepin developers don't seem convinced that it makes sense to check
@@ -259,7 +256,7 @@ What tablets does Krita support?
 Krita isn’t much fun without a pressure sensitive tablet. If the tablet
 has been properly configured, Krita should work out of the box. 
 
-On Windows, you need to either install the wintab drivers for your tablet,
+On Windows, you need to either install the Wintab drivers for your tablet,
 or enable the Windows 8 Pointer API option in Krita's settings.
 
 You can find a community curated list of tablets supported by
@@ -285,27 +282,26 @@ We would like to see the full output of the following commands:
    #. Open a console application (e.g. Konsole on KDE)
    #. Set the amount of scrollback to 'unlimited' (for :program:`Konsole`: :menuselection:`Settings
       --> Edit Current Profile --> Scrolling --> Unlimited Scrollback`)
-   #. Start Krita by typing 'krita' and create any document :)
+   #. Start Krita by typing 'krita' and create any document
    #. Press :kbd:`Ctrl + Shift + T`, you will see a message box telling the logging
-      is started
+      has started
    #. Try to reproduce your problem
    #. The console is now filled with the log. Attach it to a bug report
-      or paste using services like paste.kde.org
 
-#. Attach all this data to a bugreport using public paste services like
+#. Attach all this data to a bug report using public paste services like
    paste.kde.org
 
 Windows
 ~~~~~~~
 
 First check whether your tablet's driver is correctly installed. Often,
-a driver update or a Windows update or the installation of Razer gaming
+a driver update, a Windows update or the installation of Razer gaming
 mouse driver breaks tablets.
 
-Thencheck whether switching to the Windows 8 Pointer API makes a
-difference: Settings/Configure Krita/Tablet.
+Then check whether switching to the Windows 8 Pointer API makes a
+difference: Settings --> Configure Krita --> Tablet.
 
-Then, if you still have problems with Windows and your tablet, we cannot
+If you still have problems with Windows and your tablet, then we cannot
 help you without a tablet log.
 
 #. Install
@@ -313,27 +309,26 @@ help you without a tablet log.
    from the official Microsoft site
 #. Start :program:`DebugView`
 #. Start :program:`Krita`
-#. Press :kbd:`Ctrl + Shift + T`, you will see a message box telling the logging is
-   started
+#. Press :kbd:`Ctrl + Shift + T`, you will see a message box telling the logging has started
 #. Try to reproduce your problem
 #. Go back to DebugView and save its output to a file. Attach this file
-   to a bug report or paste using services like paste.kde.org.
+   to a bug report or paste it using services like paste.kde.org.
 
 However, in 100% of the cases where Windows users have reported that their tablet
-didn't work over the past five years the problem has been a buggy driver or
-a broken driver installation and not a bug in Krita.
+didn't work over the past five years the problem has been either a buggy driver or
+a broken driver installation but not a bug in Krita.
    
    
 How to fix a tablet offset on multiple screen setup on Windows
 --------------------------------------------------------------
 
 If you see that your tablet pointer has an offset when working with
-Krita canvas, it might be highly probable, that Krita got incorrect
+Krita canvas, it might be highly probable that Krita got incorrect
 screen resolution from the system. That problem happens mostly when an
-external monitor is present and when either of monitor or a tablet was
+external monitor is present and when either the monitor or a tablet was
 connected after the system boot.
 
-Now there is a simple solution to fix this data manually.
+Now, there is a simple solution to fix this data manually.
 
 #. Lay you stylus aside
 #. Start Krita without using a stylus, that is using a mouse or a
@@ -341,7 +336,7 @@ Now there is a simple solution to fix this data manually.
 #. Press Shift key and hold it
 #. Touch a tablet with your stylus so Krita would recognize it
 
-You will see a special dialog asking for real screen resolution. Choose
+You will see a special dialog asking for the real screen resolution. Choose
 the correct value or enter it manually and press OK.
 
 If you have a dual monitor setup and only the top half of the screen is
@@ -357,24 +352,23 @@ the preferences. This should allow Krita to detect the correct settings
 automatically.
 
 .. warning::
-    this will reset your tablets configuration so you will need to recalibrate/reconfigure it.
+    This will reset your tablets configuration, thus you will need to recalibrate/reconfigure it.
 
 *For Krita 3.3 or later:* You can try to :ref:`enable “Windows 8+ Pointer Input” <tablet_settings>`, but some features might not work with it.
 
-Microsoft Surface Pro and NTrig
+Microsoft Surface Pro and N-Trig
 -------------------------------
 
 Krita 3.3.0 and later supports the Windows Pointer API (Windows Ink) natively.
-Your Surface Pro or other n-trig enabled pen tablet should work out of
-the box with Krita after you enable Windows Ink in Settings/Configure
-Krita/Tablet.
+Your Surface Pro or other N-Trig enabled pen tablet should work out of
+the box with Krita after you enable Windows Ink in Settings --> Configure Krita --> Tablet.
 
 Tablet Pro and the Surface Pro
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Unlike Wacom's Companion, the Surface line of tablets doesn't have
 working hardware buttons. Tablet Pro is a (non-free) utility that puts
-virtual buttons on screen. Krita 3.1 (currently in beta) will have
+virtual buttons on screen. Krita 3.1 and avobe will have
 predefined shortcut profiles to work with Tablet Pro.
 
 http://tabletpro.net/
@@ -385,9 +379,9 @@ See http://www.youtube.com/watch?v=WKXZgYqC3tI for instructions.
 Weird stuff happens on Windows, like ripples, rings, squiggles or poltergeists
 ------------------------------------------------------------------------------
 
-Windows comes with a lot of settings to make it work with a pen. Al
-these settings are annoying. This tool can help to set the settings
-correctly if you're using a tablet:
+Windows comes with a lot of settings to make it work with a pen. All
+these settings can be annoying. This tool can help you set the settings
+correctly when you're using a tablet:
 
 https://github.com/saveenr/Fix_My_Pen/releases
 
@@ -397,14 +391,14 @@ Toolbox
 Toolbox missing
 ---------------
 
-You either reset the workspace by pressing the right most button on the
-toolbar, the workspace switcher, and clicking a workspace from the list.
+You can reset the Workspace by pressing the right most button on the
+toolbar, the Workspace switcher, and click on a desired Workspace from the list.
 
-Or right-click on any docker titlebar or open space in any toolbar, and
+Or you can right-click on any docker title bar or open space in any toolbar, and
 select Toolbox. It's the first option.
 
-Or check the Settings menu, it's got lots of interesting stuff, then go
-to the Dockers menu and select toolbox.
+Also, you can check the Settings menu, it got lots of interesting stuff, then go
+to the Dockers menu and select Toolbox.
 
 Tool icons size is too big
 --------------------------
@@ -415,7 +409,7 @@ Krita can't get maximized
 -------------------------
 
 This happens when your dockers are placed in such a way that the window cannot
-be made less high. Rearrange your workspace.
+be made less high. Rearrange your Workspace.
 
 Resources
 =========
@@ -423,7 +417,7 @@ Resources
 Is there a way to restore a default brush that I have mistakenly overwritten with new settings to default?
 ----------------------------------------------------------------------------------------------------------
 
-Yes. First go to the resource folder, which is
+Yes. First go to the resource folder, which is in
 
 Linux
     :file:`$HOME/.local/share/krita/`
@@ -432,18 +426,18 @@ Windows
 OSX
     :file:`~/Library/Application Support/Krita/`
 
-You can easily do this by going into :menuselection:`settings --> manage resources --> open resource folder`.
+You can easily do this by going into :menuselection:`Settings --> Manage Resources --> Open Resource Folder`.
 
 Then go into the paintoppressets folder and remove the latest created
 file that you made of your preset.
 
-Then go back to the resources folder and edit the blacklist file to
-remove the previous paintop preset so Krita will load it. (Yes, it is a
+After that go back to the resources folder and edit the blacklist file to
+remove the previous paintoppreset so Krita will load it. (Yes, it is a
 bit of a convoluted system, but at the least you don't lose your
 brushes)
 
-How do I set favourite presets?
--------------------------------
+How do I set favorite presets?
+------------------------------
 
 Right-click a brush in the brush docker and assign it a tag. Then when
 clicking the lower-right settings icon you can pick you tag.
@@ -465,7 +459,7 @@ checklist.
 
 -  Something else is hogging the cpu.
 -  You are running Windows, and have 3rdparty security software like
-   sandboxie or total defender installed
+   Sandboxie or Total Defender installed
 -  you are working on images that are too big for your hardware
    (dimensions, channel depth or number of layers)
 -  you do not have canvas acceleration enabled
@@ -476,10 +470,10 @@ Slow start-up
 -------------
 
 You probably have too many resources installed. Deactivate some bundles
-under settings → manage resources
+under Settings --> Manage Resources.
 
 If you're using Windows and the portable zip file, Windows will scan all
-files everytime you start Krita. That takes ages. Either use the
+files every time you start Krita. That takes ages. Either use the
 installer or tell Microsoft Security Essentials to make an exception for
 Krita.
 
@@ -488,32 +482,32 @@ Slow Brushes
 
 -  Check if you accidentally turned on the stabilizer in the tool
    options docker.
--  Try another display filter like trilinear. settings → configure Krita
-   → display
+-  Try another display filter like trilinear. Settings --> Configure Krita
+   --> Display.
 -  Try a lower channel depth than 16-bit.
 -  For NVidia, try a 16-bit floating point color space.
 -  For AMD (Krita 2.9.10 and above), turn off the vector optimizations
-   that are broken on AMD CPUs. settings → configure Krita → performance
+   that are broken on AMD CPUs. Settings --> Configure Krita --> Performance.
 -  It's a fairly memory hungry program, so 2GB of ram is the minimum,
    and 4 gig is the preferable minimum.
--  Check that not something else is hogging your CPU
+-  Check that nothing else is hogging your CPU
 -  Check that Instant Preview is enabled if you're using bigger brushes
-   (for very small brushes, disabled)
--  Set brush precision to 3 or auto
--  Use a larger value for brush spacing
+   (but for very small brushes, make sure is disabled).
+-  Set brush precision to 3 or auto.
+-  Use a larger value for brush spacing.
 -  If all of this fails, record a video and post a link and description
    on the Krita forum.
--  check whether opengl is enabled, and if it isn't, enable it, or if it
-   is, and you'r on windows, try the Angle renderer. Or disable it.
+-  Check whether OpenGL is enabled, and if it isn't, enable it. If it
+   is enabled, and you are on Windows, try the Angle renderer. Or disable it.
 
-Slowdown after a while of working
----------------------------------
+Slowdown after a been working for a while
+-----------------------------------------
 
 Once you have the slowdown, click on the image-dimensions in the status
-bar. It will tell you how much Krita is using, and if it's hit the
-limit, whether it's started swapping. Swapping can slow down a program a
+bar. It will tell you how much Krita is using, if it has hit the
+limit, or whether it's started swapping. Swapping can slow down a program a
 lot, so either work on smaller images or turn up the maximum amount of
-ram in settings → configure Krita → performance
+ram in Settings --> Configure Krita --> Performance.
 
 Tools
 =====
@@ -528,7 +522,7 @@ compared to the preview. See
 https://forum.kde.org/viewtopic.php?f=139&t=127269 for more info.
 
 
-License, rights and the Krita foundation
+License, rights and the Krita Foundation
 ========================================
 
 Who owns Krita?
