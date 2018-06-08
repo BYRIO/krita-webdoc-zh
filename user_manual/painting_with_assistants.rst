@@ -45,10 +45,10 @@ Ellipse
 An assistant for drawing ellipses and circles.
 
 This assistant consists of three points: the first two are the axis of
-the ellipse, and the last one is to determine it's width.
+the ellipse, and the last one is to determine its width.
 
 Concentric Ellipse
-    The same an an ellipse, but allows for making ellipses that are
+    The same an ellipse, but allows for making ellipses that are
     concentric to each other.
 
 If you press shift while holding the first two handles, they will snap
@@ -228,28 +228,20 @@ Linear Perspective
 Logic of the vanishing point
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There's a little secret that perspective tutorials don't always tell
-you, and that's that a vanishing point is the point where any two
-parallel lines meet. This means that a 1 point perspective and 2 point
-perspective are virtually the same.
+There's a little secret that perspective tutorials don't always tell you, and that's that a vanishing point is the point where any two parallel lines meet. This means that a 1 point perspective and 2 point perspective are virtually the same.
 
-We can prove this via a little experiment. That good old problem:
-drawing a rail-road.
+We can prove this via a little experiment. That good old problem: drawing a rail-road.
 
 .. image:: /images/en/Assistants_vanishing_point_logic_01.png
 
 You are probably familiar
-with the problem: How to determine where the next beam is going to be,
-as perspective projection will make them look closer together.
+with the problem: How to determine where the next beam is going to be, as perspective projection will make them look closer together.
 
-Typically, the solution is to draw a line in the middle and then draw
-lines diagonally across. After all, those lines are parallel, meaning
-that the exact same distance is used.
+Typically, the solution is to draw a line in the middle and then draw lines diagonally across. After all, those lines are parallel, meaning that the exact same distance is used.
 
 .. image:: /images/en/Assistants_vanishing_point_logic_02.png
 
-But because they are parallel, we can use a vanishing point assistant instead, and we use the
-alignedment handles to align it to the diagonal of the beam, and to the
+But because they are parallel, we can use a vanishing point assistant instead, and we use the alignment handles to align it to the diagonal of the beam, and to the
 horizontal (here marked with red).
 
 That diagonal can then in turn be used to determine the position of the
@@ -257,10 +249,7 @@ beams:
 
 .. image:: /images/en/Assistants_vanishing_point_logic_03.png
 
-Because any given set of lines has a vanishing point(outside of the ones
-flat on the view-plane), there can be an infinite amount of vanishing
-points in a linear perspective. Therefore Krita allows you to set
-vanishing points yourself instead of forcing you to only use a few.
+Because any given set of lines has a vanishing point(outside of the ones flat on the view-plane), there can be an infinite amount of vanishing points in a linear perspective. Therefore, Krita allows you to set vanishing points yourself instead of forcing you to only use a few.
 
 Fish Eye perspective
 ~~~~~~~~~~~~~~~~~~~~

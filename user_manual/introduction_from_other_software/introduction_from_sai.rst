@@ -35,26 +35,26 @@ Zoom
 
 You can use the Overview docker in :menuselection:`settings --> dockers` to quickly navigate over your image.
 
-You can also put these commands on the toolbar, so it'll feel a little like Sai. Go to :menuselection:`settings --> configure Toolbars`. There's two toolbars, but we'll add to the file toolbar.
+You can also put these commands on the toolbar, so it'll feel a little like Sai. Go to :menuselection:`settings --> configure Toolbars`. There are two toolbars, but we'll add to the file toolbar.
 
-Then, you can type in something in the left column to search for it. So, for example, 'undo'. Then select the action 'undo freehand stroke' and drag it to the right. Select the action to the right, and click :menuselection:`change text`. There, toggle :menuselection:`hide text when toolbar shows action alongside icon` to prevent the action from showing the text. Then press OK. When done right, the undo should now be sandwiched between the save and the gradient icon.
+Then, you can type in something in the left column to search for it. So, for example, 'undo'. Then select the action 'undo freehand stroke' and drag it to the right. Select the action to the right, and click :menuselection:`change text`. There, toggle :menuselection:`hide text when toolbar shows action alongside icon` to prevent the action from showing the text. Then press OK. When done right, the :guilabel:`undo` should now be sandwiched between the save and the gradient icon.
 
-You can do the same for :guilabel:`Redo`, :guilabel:`Deselect`, :guilabel:`Invert Selection`, :guilabel:`zoom out`, :guilabel:`zoom in`, :guilabel:`reset zoom`, :guilabel:`rotate left`, :guilabel:`rotate right`, :guilabel:`mirror view` and perhaps :guilabel:`smoothing:basic` and :guilabel:`smoothing: stablizer` to get nearly all the functionality of Sai's topbar in Krita's topbar. (Though, on smaller screens this will cause all the things in the brushes toolbar to hide inside a drop down to the right, so you need to experiment a little).
+You can do the same for :guilabel:`Redo`, :guilabel:`Deselect`, :guilabel:`Invert Selection`, :guilabel:`zoom out`, :guilabel:`zoom in`, :guilabel:`reset zoom`, :guilabel:`rotate left`, :guilabel:`rotate right`, :guilabel:`mirror view` and perhaps :guilabel:`smoothing:basic` and :guilabel:`smoothing: stabilizer` to get nearly all the functionality of Sai's top bar in Krita's top bar. (Though, on smaller screens this will cause all the things in the brushes toolbar to hide inside a drop down to the right, so you need to experiment a little).
 
-:guilabel:`hide selection`, :guilabel:`reset rotation` are currently not available via the Toolbar configuration, you'll need to use the shortcuts :kbd:`Ctrl`+:kbd:`h` and :kbd:`5` to toggle these.
+:guilabel:`Hide Selection`, :guilabel:`Reset Rotation` are currently not available via the Toolbar configuration, you'll need to use the shortcuts :kbd:`Ctrl`+:kbd:`h` and :kbd:`5` to toggle these.
 
 .. note::
 
     Krita 3.0 currently doesn't allow changing the text in the toolbar, we're working on it.
 
-Rightclick color picker
-~~~~~~~~~~~~~~~~~~~~~~~
+Right click color picker
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can actually set this in :menuselection:`settings --> configure Krita --> canvas input settings --> alternate invocation`. Just double-click the entry that says :kbd:`ctrl` + |mouseleft| before 'pick foreground color from image' to get a window to set it to |mouseright|.
 
 .. note::
 
-    Krita 3.0 actually has a Paint-tool Sai-compatible input sheet shipped by default. Combine these with the shortcut sheet for Paint tool sai to get most of the functionality on familair hotkeys.
+    Krita 3.0 actually has a Paint-tool Sai-compatible input sheet shipped by default. Combine these with the shortcut sheet for Paint tool Sai to get most of the functionality on familiar hotkeys.
 
 Stabilizer
 ~~~~~~~~~~
@@ -64,7 +64,7 @@ This is in the tool options docker of the freehand brush. Use Basic Smoothing fo
 Transparency
 ~~~~~~~~~~~~~
 
-So one of the things that throws a lot of paint tool Sai users off is that Krita uses checkers to display transparency, which is actually not that uncommon. Still, if you want to have the canvas background to be white, this is possible. Just choose 'Background: As Canvas Color' in the new image dialogue and the image background will be white. You can turn it back to transparent via :menuselection:`image --> change image background color`. If you export a PNG or JPG, make sure to untick 'save transparency' and to make the background color white(it's black by default).
+So one of the things that throws a lot of Paint Tool Sai users off is that Krita uses checkers to display transparency, which is actually not that uncommon. Still, if you want to have the canvas background to be white, this is possible. Just choose 'Background: As Canvas Color' in the new image dialogue and the image background will be white. You can turn it back to transparent via :menuselection:`image --> change image background color`. If you export a PNG or JPG, make sure to uncheck 'save transparency' and to make the background color white(it's black by default).
 
 .. image:: /images/en/Krita-color-to-alpha.png
    :align: center
@@ -74,26 +74,26 @@ Like Sai, you can quickly turn a black and white image to black and transparent 
 Brush Settings
 ~~~~~~~~~~~~~~
 
-Another, somewhat amusing misconception is that Krita's brush engine is not very complex. After all, you can only change the Size, Flow and Opacity from the topbar.
+Another, somewhat amusing misconception is that Krita's brush engine is not very complex. After all, you can only change the Size, Flow and Opacity from the top bar.
 
-This is not quite true. It's rather that we don't have our brush settings in a docker but a dropdown on the toolbar. The easiest way to access this is with :kbd:`f5`. As you can see it's actually quite complex. We have more than a dozen brush engines, which are a type of brush you can make. The ones you are used to from Paint Tool Sai are the Pixel Brush(ink), The Color Smudge Brush(Brush) and the filter brush(dodge, burn).
+This is not quite true. It's rather that we don't have our brush settings in a docker but a drop-down on the toolbar. The easiest way to access this is with :kbd:`f5`. As you can see, it's actually quite complex. We have more than a dozen brush engines, which are a type of brush you can make. The ones you are used to from Paint Tool Sai are the Pixel Brush(ink), The Color Smudge Brush(Brush) and the filter brush(dodge, burn).
 
-A simple inking brush recipe for example is to take a pixel brush, untick the 'enable pen-settings' on opacity and flow, and untick everything but size from the option list. Then, go into brush-tip, pick autobrush from the tabs, and set the size to 25(right-click a blue bar if you want to input numbers), turn on anti-aliasing under the brush icon, and set fade to 0.9. Then, as a final touch, set spacing to 'auto' and the spacing number to 0.8.
+A simple inking brush recipe for example is to take a pixel brush, uncheck the 'enable pen-settings' on opacity and flow, and uncheck everything but size from the option list. Then, go into brush-tip, pick :ref:`auto_brush_tip` from the tabs, and set the size to 25(right-click a blue bar if you want to input numbers), turn on anti-aliasing under the brush icon, and set fade to 0.9. Then, as a final touch, set spacing to 'auto' and the spacing number to 0.8.
 
 You can configure the brushes in a lot of detail, and share the packs with others. Importing of packs and brushes can be done via the :menuselection:`settings --> manage resources`, where you can import .bundle files or .kpp files.
 
 Erasing
 ~~~~~~~
 
-Erasing is a blending mode in Krita, much like the transparency mode of Paint Tool Sai. It's activated with :kbd:`E` or you can select it from the Blending Mode dropdown...
+Erasing is a blending mode in Krita, much like the transparency mode of Paint Tool Sai. It's activated with :kbd:`E` or you can select it from the Blending Mode drop-down...
 
 Blending Modes
 ~~~~~~~~~~~~~~
 
 Krita has a lot of Blending modes, and thankfully all of Paint Tool Sai's are amongst them except binary. To manage the blending modes, each of them has a little check-box that you can tick to add them to the favorites.
 
-Multiple, Screen, Overlay and Normal are amongst the favourites.
-Krita's Luminosity is actually slightly different from Paint Tool Sai's and it replaces the relative brightness of a color with the relative brightness of the colour of the layer.
+Multiple, Screen, Overlay and Normal are amongst the favorites.
+Krita's Luminosity is actually slightly different from Paint Tool Sai's and it replaces the relative brightness of a color with the relative brightness of the color of the layer.
 
 Sai's Luminosity mode is actually the same as Krita's *Addition* or *linear dodge* mode. The Shade mode is the same as *Color Burn* and *Hard Mix* is the same as the lumi and shade mode.
 
@@ -101,7 +101,7 @@ Layers
 ~~~~~~
 
 Lock Alpha
-    This is the checkerbox icon next to every layer.
+    This is the checker box icon next to every layer.
 Clipping group
     For Clipping masks in Krita you'll need to put all your images in a single layer, and then press the 'a' icon, or press :kbd:`ctrl`+:kbd:`shift`+:kbd:`G`
 Ink layer
@@ -111,15 +111,15 @@ Masks
 Clearing a layer
     This is under :menuselection:`edit --> clear`, but you can also just press :kbd:`Del`.
 
-Mixing between two colours
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mixing between two colors
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you liked this docker in Paint Tool Sai, Krita's Digital Color Selector docker will be able to help you. Dragging the sliders will change how much of a colour is mixed in.
+If you liked this docker in Paint Tool Sai, Krita's Digital Color Selector docker will be able to help you. Dragging the sliders will change how much of a color is mixed in.
 
 What do you get extra when using Krita?
 ---------------------------------------
 
-More brush customisation
+More brush customization
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 You already met the brush settings editor. Sketch brushes, grid brushes, deform brushes, clone brushes, brushes that are textures, brushes that respond to tilt, rotation, speed, brushes that draw hatches and brushes that deform the colors. Krita's variety is quite big.
@@ -142,7 +142,7 @@ Circles, rectangles, paths, Krita allows you to draw these easily.
 Multibrush, Mirror Symmetry and Wrap Around
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These tools allow you to quickly paint a mirrored image, manadala or tiled texture in no time. Useful for backgrounds and abstract vignettes.
+These tools allow you to quickly paint a mirrored image, mandala or tiled texture in no time. Useful for backgrounds and abstract vignettes.
 
 .. image:: /images/en/Krita-multibrush.png
    :align: center
@@ -171,7 +171,7 @@ If you hold :kbd:`R` and press a spot on your drawing, Krita will select the lay
 Color Management
 ~~~~~~~~~~~~~~~~
 
-This allows you to prepare your work for print, or to do tricks with the Lut docker so you can diagnose your image better. For example, using the Lut docker to turn the colors greyscale in a separate view, so you can see the values instantly.
+This allows you to prepare your work for print, or to do tricks with the LUT docker so you can diagnose your image better. For example, using the LUT docker to turn the colors grayscale in a separate view, so you can see the values instantly.
 
 .. image:: /images/en/Krita-view-dependant-lut-management.png
    :align: center
@@ -195,7 +195,7 @@ With filters like color balance and curves you can make easy shadow layers. In f
 Pop-up palette
 ~~~~~~~~~~~~~~~
 
-This is the little circular thing that is by default on the right click. You can organise your brushes in tags, and use those tags to fill up the pop-up palette. It also keeps a little color selector and a color history, so you can switch brushes on the fly.
+This is the little circular thing that is by default on the right click. You can organize your brushes in tags, and use those tags to fill up the pop-up palette. It also keeps a little color selector and a color history, so you can switch brushes on the fly.
 
 .. image:: /images/en/Krita-popuppalette.png
    :align: center
@@ -207,7 +207,7 @@ What does Krita lack compared to Paint Tool Sai?
 * The selection source option for layers
 * Dynamic hard-edges for strokes(the fringe effect)
 * No mix-docker.
-* No Preset-tied stablizer.
+* No Preset-tied stabilizer.
 * No per-preset hotkeys.
 
 Conclusion

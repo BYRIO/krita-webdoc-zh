@@ -17,7 +17,7 @@
 Animation with Krita
 ====================
 
-Thanks to the 2015 kickstarter, :program:`Krita 3.0` now has animation. In
+Thanks to the 2015 Kickstarter, :program:`Krita 3.0` now has animation. In
 specific, :program:`Krita` has frame-by-frame raster animation. There's still a
 lot of elements missing from it, like tweening, but the basic workflow
 is there.
@@ -76,15 +76,10 @@ On the first tab, we type in a nice ratio like 1280x1024, set the dpi to
 72(we're making this for screens after all) and title the document
 'walkcycle'.
 
-In the second tab, we choose a nice background color, and set the
-background to canvas-color. This means that Krita will automatically
-fill in any transparent bits with the background color. This can be
-changed in :menuselection:`image --> image properties`. This seems to be most useful to
-people doing animation, as the layer you do animation on MUST be
-semi-transparent to get onion skinning working.
+In the second tab, we choose a nice background color, and set the background to canvas-color. This means that Krita will automatically fill in any transparent bits with the background color. You can change this in :menuselection:`image --> image properties`. This seems to be most useful to people doing animation, as the layer you do animation on MUST be semi-transparent to get onion skinning working.
 
 .. note::
-    Krita has a bunch of functionality for meta-data, starting at the create document screen. The title will be automatically used as a suggestion for saving and the description can be used by databases, or for you to leave comments behind. Not many people use it individually, but it can be useful for working in larger groups.
+    Krita has a bunch of functionality for meta-data, starting at the :guilabel:`create document` screen. The title will be automatically used as a suggestion for saving and the description can be used by databases, or for you to leave comments behind. Not many people use it individually, but it can be useful for working in larger groups.
 
 Then hit create!
 
@@ -113,7 +108,7 @@ the layer docker.
 
 .. image:: /images/en/Introduction_to_animation_04.png
 
-Use the straight line tool ( to draw a single horizontal line. This is
+Use the straight line tool to draw a single horizontal line. This is
 the ground.
 
 .. image:: /images/en/Introduction_to_animation_05.png
@@ -126,7 +121,7 @@ all!
 
 .. image:: /images/en/Introduction_to_animation_06.png
 
-We can make it animatable by adding a frame to the timeline. a frame in
+We can make it animatable by adding a frame to the timeline. |mouseright| a frame in
 the timeline to get a context menu. Choose New Frame
 
 .. image:: /images/en/Introduction_to_animation_07.png
@@ -210,7 +205,7 @@ there you can modify the colors and extremity of the coloring.
 Animating with multiple layers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Okay, our walkcycle is missing some hands, let's add them on a seperate
+Okay, our walkcycle is missing some hands, let's add them on a separate
 layer. So we make a new layer, and name it hands and...
 
 .. image:: /images/en/Introduction_to_animation_17.png
@@ -234,7 +229,7 @@ When you are done, select :menuselection:`File --> Export Animation`
 
 .. image:: /images/en/Introduction_to_animation_20.png
 
-It's recommended to save out your file as a png, and preferably in it's
+It's recommended to save out your file as a png, and preferably in its
 own folder. Krita can currently only export png sequences.
 
 .. image:: /images/en/Introduction_to_animation_21.png
@@ -259,7 +254,7 @@ frames and then go to File → Export → GIF
 
 Enjoy your walkcycle!
 
-.. note:: mediawiki
+.. note::
 
    Krita 3.1 has a render animation feature. If you're using the 3.1 beta, check out the :ref:`render_animation` page for more information!
 
@@ -277,9 +272,7 @@ And we'll use :menuselection:`Image --> Split Image to split up the sprite sheet
 
 The slices are even, so for a sprite sheet of 9 sprites, use 8 vertical slices and 0 horizontal slices. Give it a proper name and save it as png.
 
-Then, make a new canvas, and select File → Import Animation Frames. This
-will give you a little window. Select Add images. This should get you a
-file browser where you can select your images.
+Then, make a new canvas, and select :menuselection:`File --> Import Animation Frames`. This will give you a little window. Select :guilabel:`Add images`. This should get you a file browser where you can select your images.
 
 .. image:: /images/en/Animation_import_sprites.png
 
@@ -288,7 +281,7 @@ You can select multiple images at once.
 .. image:: /images/en/Animation_set_everything.png
 
 The frames are currently automatically
-ordered. You can set the ordering with the top-left two drop down boxes.
+ordered. You can set the ordering with the top-left two drop-down boxes.
 
 Start
     Indicates at which point the animation should be imported.
@@ -307,5 +300,4 @@ Reference
 ---------
 
 -  https://community.kde.org/Krita/Docs/AnimationGuiFeaturesList
--  `The source for the libre pixel cup male walk
-   cycle <http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles>`__
+-  `The source for the libre pixel cup male walkmediawiki cycle <http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles>`_

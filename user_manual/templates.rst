@@ -32,7 +32,7 @@ These templates are specifically designed for you to just get started with drawi
 European Bande Desinée Template.
  This one is reminiscent of the system used by for example TinTin or Spirou et Fantasio. These panels focus on wide images, and horizontal cuts.
 US-style comics Template.
- This one is reminiscent of of old DC and Marvel comics, such as Batman or Captain America. Nine images for quick story progression.
+ This one is reminiscent of old DC and Marvel comics, such as Batman or Captain America. Nine images for quick story progression.
 Manga Template.
  This one is based on Japanese comics, and focuses on a thin vertical gutter and a thick horizontal gutter, ensuring that the reader finished the previous row before heading to the next.
 Waffle Iron Grid

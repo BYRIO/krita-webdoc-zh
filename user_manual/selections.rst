@@ -16,18 +16,12 @@
 Selections
 ==========
 
-Selections allow you to pick a specific area of your artwork to change.
-There are many selection tools available that select in different ways.
-Once an area is selected most tools will stay inside that area. On that
-area you can draw or use gradients to quickly get colored and/or shaded
-shapes with hard edges.
+Selections allow you to pick a specific area of your artwork to change. There are many selection tools available that select in different ways. Once an area is selected, most tools will stay inside that area. On that area you can draw or use gradients to quickly get colored and/or shaded shapes with hard edges.
 
 Creating Selections
 -------------------
 
-The most common selection tools all exist at the bottom of the toolbox.
-Each tool selects things slightly differently. The links for each tool
-go into a more detailed description with how to use it.
+The most common selection tools all exist at the bottom of the toolbox. Each tool selects things slightly differently. The links for each tool go into a more detailed description with how to use it.
 
 .. csv-table::
 
@@ -64,58 +58,43 @@ your selection.
 Removing Selections
 -------------------
 
-If you want to delete the entire selection, the easiest way is de-select
-everything. :menuselection:`Select --> Deselect`. Shortcut :kbd:`Ctrl + Shift + A`.
+If you want to delete the entire selection, the easiest way is to deselect everything. :menuselection:`Select --> Deselect`. Shortcut :kbd:`Ctrl + Shift + A`.
 
 Display Modes
 -------------
 
-In the bottom left hand corner of the status bar there is a button to
-toggle how the selection is displayed. The two display modes are the
-following: (Marching) Ants and Mask. The red color with Mask can be
-changed in the preferences. You can edit the color under :menuselection:`Settings --> Configure Krita --> Display --> Selection Overlay`. If there is no selection,
+In the bottom left-hand corner of the status bar there is a button to toggle how the selection is displayed. The two display modes are the following: (Marching) Ants and Mask. The red color with Mask can be changed in the preferences. You can edit the color under :menuselection:`Settings --> Configure Krita --> Display --> Selection Overlay`. If there is no selection,
 this button will not do anything.
 
 .. image:: /images/en/Ants-displayMode.jpg
 
-Ants display mode (default) is best if you want to see the un-selected
-area.
+Ants display mode (default) is best if you want to see the areas that are not selected.
 
 .. image:: /images/en/Mask-displayMode.jpg
 
-Mask display mode is good if you are interested in seeing the various
-transparency levels for your selection. For example, you can create a
-selection with a gradient.
+Mask display mode is good if you are interested in seeing the various transparency levels for your selection. For example, you can create a selection with a gradient.
 
 Global Selection Mask (Painting a Selection)
 --------------------------------------------
 
-The global Selection Mask is your selection that appears on the layers
-docker. By default this is hidden, so you will need to make it visible
-:menuselection:`Select --> Show Global Selection Mask`.
+The global Selection Mask is your selection that appears on the layers docker. By default, this is hidden, so you will need to make it visible via :menuselection:`Select --> Show Global Selection Mask`.
 
 .. image:: /images/en/Global-selection-mask.jpg
 
 Once the global Selection Mask is shown, you will need to create a
 selection. The benefit of using this is that you can paint your
 selection using any of the normal painting tools. The information is
-saved as greyscale. You might want to switch to the Mask display mode if
-it is difficult to see the results.
+saved as grayscale. You might want to switch to the Mask display mode if it is difficult to see the results.
 
 Selection from layer transparency
 ---------------------------------
 
-You can create a selection based on a layer's transparency by
-right-clicking on the layer in the layer docker and selecting “Select
-Opaque” from the context menu.
+You can create a selection based on a layer's transparency by right-clicking on the layer in the layer docker and selecting “Select Opaque” from the context menu.
 
 Pixel and Vector Selection Types
 --------------------------------
 
-Vector selections allow you to modify your selection with vector anchor
-tools. Pixel selections allow you to modify selections with pixel
-information. They both have their benefits and disadvantages. You can
-convert one type of selection to another.
+Vector selections allow you to modify your selection with vector anchor tools. Pixel selections allow you to modify selections with pixel information. They both have their benefits and disadvantages. You can convert one type of selection to another.
 
 .. image:: /images/en/Vector-pixel-selections.jpg
 
@@ -123,12 +102,7 @@ When creating a selection, you can select what type of selection you
 want from the Mode in the selection tool options: Pixel or Vector.
 
 Vector selections can can modify as any other vector shape with the
-“Shape Handle” tool, if you try to paint on a vector selection it will
-be converted into a pixel selection. Pixel selections can be painted
-with any tool. You can also convert vector shapes to selection. In turn,
-vector selections can be made from vector shapes, and vector shapes can
-be converted to vector selections using the options in the selections
-menu. Krita will add a new vector layer for this shape.
+“Shape Handle” tool, if you try to paint on a vector selection it will be converted into a pixel selection. Pixel selections can be painted with any tool. You can also convert vector shapes to selection. In turn, vector selections can be made from vector shapes, and vector shapes can be converted to vector selections using the options in the selections menu. Krita will add a new vector layer for this shape.
 
 One of
 the most common reasons to use vector selections is that they give you
@@ -143,7 +117,7 @@ vector selection to get these benefits. Go to Select > Convert to Vector
 Selection.
 
 .. note::
-    If you have multiple levels of transparency when you convert a selection to vector, you will lose the grey values.
+    If you have multiple levels of transparency when you convert a selection to vector, you will lose the gray values.
 
 Common Shortcuts while Using Selections
 ---------------------------------------

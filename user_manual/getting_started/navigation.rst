@@ -34,7 +34,7 @@ As we've said before, the Krita interface is very malleable and the way that you
 - **A** -- Traditional '''File''' or action menu found in most windowed applications
 - **B** -- Toolbar - This is where you can choose your brushes, set parameters such as opacity and size and other settings.
 - **C** -- Sidebars for the Movable Panels/Dockers.  In some applications, these are known as Dockable areas. Krita also allows you to dock panels at the top and/or bottom as well.
-- **D** -- Status Bar - This space shows you prefered mode for showing selection i.e marching ants or mask mode, your selected brush preset, :ref:`Color Space <color_managed_workflow>`, image size and provides a convenient zoom control.
+- **D** -- Status Bar - This space shows you preffered mode for showing selection i.e marching ants or mask mode, your selected brush preset, :ref:`Color Space <color_managed_workflow>`, image size and provides a convenient zoom control.
 - **E** -- Floating Panel/Docker - These can be "popped" in and out of their docks at any time in order to see a greater range of options.  A good example of this would be the :ref:`brush_preset_docker` or the :ref:`palette_docker`
 
 Your canvas sits in the middle and unlike traditional paper or even most digital painting apps, Krita provides the artist with a scrolling canvas of infinite size (not that you'll need it of course!).  The standard navigation tools are as follows:
@@ -57,9 +57,9 @@ You can also find these under :menuselection:`View --> Canvas`
 Dockers
 -------
 
-Krita subdivides many of it's options into functional panels called Dockers (aka Docks).
-Dockers are small windows that can contain, for example, things like the layer stack, Color Palette or Brush Presets. Think of them as the painter's palette, or his water, or his brushkit.
-Dockers can be activated by choosing the :guilabel:`Settings` menu and the :guilabel:`Dockers` sub-menu.  There you will find a long list of available options. 
+Krita subdivides many of its options into functional panels called Dockers (aka Docks).
+
+Dockers are small windows that can contain, for example, things like the layer stack, Color Palette or Brush Presets. Think of them as the painter's palette, or his water, or his brushkit. They can be activated by choosing the :guilabel:`Settings` menu and the :guilabel:`Dockers` sub-menu.  There you will find a long list of available options. 
 
 Dockers can be removed by clicking the **x** in the upper-right of the docker-window.
 
@@ -87,7 +87,7 @@ Toolbars
 --------
 .. image:: /images/en/Krita_Toolbar.png
 
-Toolbars are where some of the important actions and menu's are placed so that they are readily and quickly available for the artist while painting.  
+Toolbars are where some of the important actions and menus are placed so that they are readily and quickly available for the artist while painting.  
 
 You can learn more about the Krita Toolbars and how to configure them in over in the Toolbars section of the manual.
 Putting these to effective use can really speed up the Artist's workflow, especially for users of Tablet-Monitors and Tablet-PCs.
@@ -103,9 +103,9 @@ Pop-up Palette
 .. image:: /images/en/Krita-popuppalette.png
    :align: center
 
-Pop-up Palette is an unique feature in Krita designed to increase productivity of the artist, It is a circular menu for quickly choosing brushes, foreground and background colors, recent colors while painting. To access the palette you have to just |mouseright| on the canvas. The palette will spawn at the place of the brush tip or cursor. 
+Pop-up Palette is a unique feature in Krita designed to increase productivity of the artist, It is a circular menu for quickly choosing brushes, foreground and background colors, recent colors while painting. To access the palette you have to just |mouseright| on the canvas. The palette will spawn at the place of the brush tip or cursor. 
 
-By tagging your brush presets you can add particular sets of brushes to this palette. for example If you add some inking brush presets to inking tag you can and change the tags to inking in the pop-up palette you'll get all the inking brushes in the palette. 
+By tagging your brush presets you can add particular sets of brushes to this palette. For example If you add some inking brush presets to inking tag you can and change the tags to inking in the pop-up palette you'll get all the inking brushes in the palette. 
 
 You can :ref:`tag <tag_management>` brush presets via the :ref:`brush_preset_docker`, check out the resource overview page to know more about tagging in general.
 

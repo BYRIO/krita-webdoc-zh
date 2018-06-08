@@ -59,19 +59,12 @@ This contains the **Preset Icon**, **Live Brush Preview**, the **Preset
 Name**, the **Engine** name, and several buttons for saving, renaming,
 and reloading.
 
-Krita's brush settings are stored into the meta data of a 200x200
+Krita's brush settings are stored into the metadata of a 200x200
 png(The KPP file), where the image in the png file becomes the preset
-icon. The icon is used everywhere in Krita, and is useful for
+icon. This icon is used everywhere in Krita, and is useful for
 differentiating brushes in ways that the live preview cannot.
 
-The live preview shows a stroke of the current brush as a little s-curve
-wiggle, with the pressure being non-existent on the left, and increasing
-to full pressure as it goes to the right. The live preview can thus show
-the effect of the Pressure, Drawing Angle, Distance, Fade and Fuzzy Dab
-sensors, but none of the others. For some brush engines it cannot show
-anything. For the color smudge, filter brush and clone tool, it shows a
-alternating line pattern because these brush engines use the pixels
-already on canvas to change their effect.
+The live preview shows a stroke of the current brush as a little s-curve wiggle, with the pressure being non-existent on the left, and increasing to full pressure as it goes to the right. It can thus show the effect of the Pressure, Drawing Angle, Distance, Fade and Fuzzy Dab sensors, but none of the others. For some brush engines it cannot show anything. For the color smudge, filter brush and clone tool, it shows an alternating line pattern because these brush engines use the pixels already on canvas to change their effect.
 
 After the preset name, there's a button for **renaming** the brush. This
 will save the brush as a new brush and blacklist the previous name.
@@ -88,28 +81,28 @@ things in a more mathematical way.
 
 For most artists the mathematical nature doesn't matter as much as the
 different textures and marks each brush engine, and each brush engine
-has it's own distinct flavor and use, and can be further customized by
+has its own distinct flavor and use, and can be further customized by
 modifying the options.
 
 Reloading
 '''''''''
 
 If you change a preset, an icon will appear behind the engine name. This
-is the reload button. You can use it to revert to the original brush
+is the :guilabel:`reload` button. You can use it to revert to the original brush
 settings.
 
 Saving a preset.
 ''''''''''''''''
 
-On the right, there's {MenuChoice\|Save New Preset}} and .
+On the right, there's :guibale:`Save New Preset` and :guilabel:`Overwrite Preset`.
 
 Overwrite Preset
-    This will only enable if there's any changes. Pressing this will
+    This will only enable if there are any changes. Pressing this will
     override the current preset with the new settings, keeping the name
     and the icon intact. It will always make a timestamped back up in
     the resources folder.
 Save New Preset
-    Will take the current preset and all it's changes and save it as a
+    Will take the current preset and all its changes and save it as a
     new preset. If no change was made, you will be making a copy of the
     current preset.
 
@@ -140,7 +133,7 @@ Clear Thumbnail
 The Icon Library
 ''''''''''''''''
 
-To make making presets icons faster, we added a icon library to Krita
+To make making presets icons faster, Krita got an icon library.
 
 .. image:: /images/en/Krita_4_0_Preset_Icon_Library_Dialog.png
 
@@ -149,12 +142,12 @@ you press OK it will load the resulting combination into the mini
 scratch pad and you can draw in the stroke.
 
 If you go to your resources folder(), there's a folder there called
-“preset\_icons”, and in this folder there's “tool\_icons” and
-“emblem\_icons”. You can add semi-transparent pngs here and Krita will
+"preset\_icons", and in this folder there are "tool\_icons" and
+"emblem\_icons". You can add semi-transparent pngs here and Krita will
 load those into the icon library as well so you can customize your icons
 even more!
 
-At the top right of the icon library, there's three sliders. They allow
+At the top right of the icon library, there are three sliders. They allow
 you to adjust the tool icon. The top two are the same Hue and Saturation
 as in HSL adjustment, ad the lowest slider is a super simple levels
 filter. This is done this way because the levels filter allows
@@ -167,7 +160,7 @@ Preset dialog and Krita will save the new brush.
 Section B - The Preset Chooser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The preset chooser is much the same like the preset docker and the
+The preset chooser is much the same as the preset docker and the
 preset dropdown on F6. It's unique in that it allows you to filter by
 engine and this is also where you can create brushes for an engine from
 scratch.
@@ -183,7 +176,7 @@ Underneath that there's a plus icon, which when pressed gives you the
 full list of Krita's engines. Selecting an engine from the list will for
 that engine.
 
-The trashcan icon does the same as it does in the preset docker: , or
+The trashcan icon does the same as it does in the preset docker: delete , or
 rather, blacklist a preset so it won't show up in the list.
 
 Section C - The Scratch pad
@@ -202,11 +195,11 @@ the Save New Preset dialog.
 
 The scratch pad has five buttons underneath it. These are in order for:
 
-#. showing the current brush image
+#. Showing the current brush image
 
-#. adding a gradient to the scratch pad(useful for smudge brushes)
-#. filling with the background color
-#. clearing everything on the scratch pad.
+#. Adding a gradient to the scratch pad(useful for smudge brushes)
+#. Filling with the background color
+#. Clearing everything on the scratch pad.
 
 Section D - The Options List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -250,7 +243,7 @@ easy to make thin strokes, but very difficult to make thick strokes.
 Conversely, someone who presses hard on their stylus naturally will have
 a hard time making thin strokes, but easily makes thick ones.
 
-Such a situation can be improve by using the curves to map pressure to
+Such a situation can be improved by using the curves to map pressure to
 output thinner lines or thicker ones.
 
 The brush settings curves even have quick curve buttons for these at the
@@ -262,17 +255,17 @@ Underneath the curve widget there's two more options:
 
 Share Curves across all settings
     This is for the list of sensors. Toggling this will make all the
-    sensors use the same curve. Untoggled, all toggled sensors will have
-    seperate curves.
+    sensors use the same curve. Unchecked, all checked sensors will have
+    separate curves.
 Curves Calculation Mode
     This indicates how the multiple values of the sensor curves are
     used. The curves always go from 0 to 1.0, so if one curve outputs
     0.5 and the other 0.7, then...
 
     Multiply
-        will multiply the two values, 0.5\*0.7 = 0.35
+        Will multiply the two values, 0.5\*0.7 = 0.35
     Addition
-        will add the the two to a maximum of 1.0, so 0.5+0.7 = 1.2,
+        Will add the two to a maximum of 1.0, so 0.5+0.7 = 1.2,
         which is then capped at 1.0.
     Maximum
         Will compare the two and pick the largest. So in the case of 0.5
@@ -318,7 +311,7 @@ Temporarily Save Tweaks to Preset (Dirty Presets)
 
 Eraser Switch Size
     This switches the brush to a separately stored size when using the
-    eraserE key.
+    :kbd:`E` key.
 Eraser Switch Opacity
     Same as above, but then with Eraser opacity.
 Instant Preview
@@ -362,20 +355,20 @@ Example: Making an inking brush
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Draw on the scratch pad to see what the current brush looks like. If
-   done correctly you should have a 5px wide brush that has pressure set
+   done correctly, you should have a 5px wide brush that has pressure set
    to opacity.
 #. Let us turn off the opacity first. Click on the
    :ref:`opacity <option_opacity_n_flow>`
    option in the right-hand list. The settings should now be changed to
    a big curve. This is the sensor curve.
-#. Untick the enable pen settings button.
+#. Uncheck the :guilabel:`enable pen settings` checkbox.
 #. Test on the scratch pad... there still seems to be something
    affecting opacity. This is due the
    :ref:`flow <option_opacity_n_flow>`
    option.
 #. Select the Flow option from the list on the right hand. Flow is like
    Opacity, except that Flow is per dab, and opacity is per stroke.
-#. Turn off the enable pen settings button here as well. Test again.
+#. Uncheck the :guilabel:`enable pen settings` checkbox here as well. Test again.
 #. Now you should be getting somewhere towards an inking brush. It is
    still too small however, and kinda grainy looking. Click :ref:`Brush Tip <option_brush_tip>` in the
    brush engine options.
@@ -386,16 +379,16 @@ Example: Making an inking brush
    to about 0.9. This'll give the *brush mask* a softer edge.
 #. If you test again, you'll notice the fade doesn't seem to have much
    effect. This has to do with the spacing of the dabs: The closer they
-   are together, the harder the line is. By default this is 0.1, which
+   are together, the harder the line is. By default, this is 0.1, which
    is a bit low. If you set it to 10 and test, you'll see what kind of
    effect spacing has. The
    :ref:`Auto <option_spacing>`
-   tickbox changes the way the spacing is calculated, and Auto Spacing
+   checkbox changes the way the spacing is calculated, and Auto Spacing
    with a value of 0.8 is the best value for inking brushes. Don't
    forget that you can use right-click to type in a value.
 #. Now, when you test, the fade seems to have a normal effect... except
    on the really small sizes, which look pixelly. To get rid of that,
-   tick the anti-aliasing check box. If you test again, the lines should
+   check the anti-aliasing check box. If you test again, the lines should
    be much nicer now.
 
 Saving the new Brush
@@ -418,14 +411,14 @@ You can further modify your inking brush by...
 
 Changing the amount of pressure you need to put on a brush to make it full size.
     To do this, select the :ref:`size <option_size>`
-    option, and press the pressuresensor from the list next to the curve. The curve should look like a straight line. Now if you want a brush that gets big with little pressure, tick on the curve to make a point, and drag the point to the upper-left. The more the point is to the upper-left, the more extreme the effect. If you want instead a brush that you have to press really hard on to get to full size, drag the dot to the lower-right. Such a brush is useful for fine details. Don't forget to save the changes to your brush when done.
+    option, and press the pressure sensor from the list next to the curve. The curve should look like a straight line. Now if you want a brush that gets big with little pressure, tick on the curve to make a point, and drag the point to the upper-left. The more the point is to the upper-left, the more extreme the effect. If you want instead a brush that you have to press really hard on to get to full size, drag the dot to the lower-right. Such a brush is useful for fine details. Don't forget to save the changes to your brush when done.
 Making the fine lines look even softer by using the flow option.
     To do this, select the flow option, and turn back on the enable pen settings check box. Now if you test this, it is indeed a bit softer, but maybe a bit too much. Click on the curve to make a dot, and drag that dot to the top-left, half-way the horizontal of the first square of the grid. Now, if you test, the thin lines are much softer, but the hard your press, the harder the brush becomes.
 
 Sharing Brushes
 ---------------
 
-Okay, so you've made a new brush and want to share it. There's several
+Okay, so you've made a new brush and want to share it. There are several
 ways to share a brush preset.
 
 The recommended way to share brushes and presets is by using the
@@ -438,7 +431,7 @@ be useful when importing and loading very old packs:
 Sharing a single preset
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-There's three types of resources a single preset can take:
+There are three types of resources a single preset can take:
 
 #. A Paintoppreset file: This is the preset proper, with the icon and
    the curves stored inside.
@@ -450,7 +443,7 @@ So when you have a brush that uses unique predefined tips for either
 brush tip or masked brush, or unique textures you will need to share
 those resources as well with the other person.
 
-To find those resources, go to .
+To find those resources, go to :menuselection:`Settings --> Manage Resources --> Open Resource Folder`.
 
 There, the preset file will be inside paintoppresets, the brush tips
 inside brushes and the texture inside patterns.
@@ -468,16 +461,16 @@ settings dropdown(f5) and then go to the “brush-tip” option. There,
 select predefined brush, and then the “import” button to call up the
 file dialog.
 
-Sharing via ZIP(old fashioned)
+Sharing via ZIP(old-fashioned)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sharing via ZIP should be replaced with resource bundles, but older
-brush packs are strored in zip files.
+brush packs are stored in zip files.
 
 Using a ZIP with the relevant files.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Go to to open the resource folder.
+#. Go to :menuselection:`Settings --> Manage Resources --> Open Resource Folder` to open the resource folder.
 #. Then, open up the zip file.
 #. Copy the brushes, paintoppresets and patterns folders from the zip
    file to the resource folder. You should get a prompt to merge the

@@ -30,7 +30,7 @@ Raster and Vector
 
 Even though Krita is primarily a raster based application, it has some vector editing capabilities as well. If you are new to Digital painting medium, it is necessary that you know the concepts of raster and vector.
 
-In digital imaging, a pixel (Picture Element) is a basic and lowest element of an Image. It is basically a grid of points each displaying specific color. Raster editing is manipulating and editing these pixels. For example when you take a 1-pixel brush which is colored black and painting on the white canvas in Krita you are actually changing the color of the pixel beneath your brush from white to black.When you zoom in and see a brush stroke you can notice many small squares with colors, these are pixels
+In digital imaging, a pixel (Picture Element) is a basic and lowest element of an Image. It is basically a grid of points each displaying specific color. Raster editing is manipulating and editing these pixels. For example when you take a 1-pixel brush which is colored black and painting on the white canvas in Krita you are actually changing the color of the pixel beneath your brush from white to black. When you zoom in and see a brush stroke you can notice many small squares with colors, these are pixels
 
 .. image:: /images/en/Pixels-brushstroke.png
    :align: center
@@ -49,14 +49,14 @@ Image
 
 The most important one is the **Image**.
 
-This is a individual copy of the image you opened or made via the file dialog, and where you edit your file. Krita can allow you to open the file as a new copy via the file menu, or to save it as a new file, or make an incremental save. An image contains layers, a colour space, a canvas size and meta-data such as creator, data created, and DPI. Krita can open multiple images at once, you can switch between them via the :guilabel:`window` menu.
+This is an individual copy of the image you opened or made via the file dialog, and where you edit your file. Krita can allow you to open the file as a new copy via the file menu, or to save it as a new file, or make an incremental save. An image contains layers, a color space, a canvas size and metadata such as creator, data created, and DPI. Krita can open multiple images at once, you can switch between them via the :guilabel:`window` menu.
 
 Because the image is a working copy of the image on the hard drive, you can do a lot of little saving tricks with it:
 
 New
  Makes a new image. When you press :menuselection:`save`, you make a new file on the hard drive.
 Open
- Makes an internal copy of an existing image. When you press :menuselection:`save` you will overwrite the original existing image with your working copy.
+ Makes an internal copy of an existing image. When you press :menuselection:`save`, you will overwrite the original existing image with your working copy.
 Open existing image as new
  Similar to Open, however, :menuselection:`save` will request you to specify a saving location: you're making a new copy. This is similar to :menuselection:`import` in other programs.
 Create Copy From Current Image
@@ -72,7 +72,7 @@ View
 ~~~~
 
 
-A view is the window onto your image. Krita allows you to have multiple views, and you can manipulate the view to zoom, rotate and mirror and modify the colour of the way you see an image without editing the image itself. This is very useful for artists, as changing the way they view the image is a common way to diagnose mistakes, like skewing to one side. Mirroring with :kbd:`m` makes such skewing easy to identify.
+A view is the window onto your image. Krita allows you to have multiple views, and you can manipulate the view to zoom, rotate and mirror and modify the color of the way you see an image without editing the image itself. This is very useful for artists, as changing the way they view the image is a common way to diagnose mistakes, like skewing to one side. Mirroring with :kbd:`m` makes such skewing easy to identify.
 
 
 If you have trouble drawing certain curves you will enjoy using rotation for drawing, and of course there is zooming in and out for precision and rough work.
@@ -120,7 +120,7 @@ When you create a new document in Krita for the first time you will see a rectan
 .. image:: /images/en/Canvas-krita.png
    :align: center
 
-When you save the painting as jpg , png etc or take a print out of the painting, only the content inside this area is taken into consideration. Anything beyond it is ignored. Krita does store information beyond this area, you just won't be able to see it.
+When you save the painting as jpg, png etc or take a print out of the painting, only the content inside this area is taken into consideration. Anything beyond it is ignored. Krita does store information beyond this area, you just won't be able to see it.
 This data is stored in the **Layers**.
 
 Layers and Compositing 
@@ -132,7 +132,7 @@ Like a landscape painter will first paint the sky and then the furthest away ele
 The layer stack is a way for you to separate elements of a drawing and manipulate the drawing order by showing you which layers are drawn when, and allowing you to change the order they are drawn in, and all sorts of other effects. This is called **Compositing**.
 
 
-This allows you to have line art above the colours, or trees before the mountains, and edit each without affecting the other.
+This allows you to have line art above the colors, or trees before the mountains, and edit each without affecting the other.
 
 
 Krita has many layer-types, each doing a slightly different thing:
@@ -195,7 +195,7 @@ Krita has :ref:`a LOT of different brush engines <category_brush_engines>`, all 
 For example, the pixel-brush engine is simple and allows you to do most of your basic work, but if you do a lot of painting, the color smudge brush engine might be more useful. Even though it's slower to use than the Pixel Brush engine, its mixing of colors allows you to work faster.
 
 
-If you want something totally different than that, the sketch brush engine helps with making messy lines, and the shape brush engine allows you to make big flats quickly. There are a lot of cool effects inside Krita's brush engines, so try them all out, and be sure to check the chapters on each.
+If you want something totally different from that, the sketch brush engine helps with making messy lines, and the shape brush engine allows you to make big flats quickly. There are a lot of cool effects inside Krita's brush engines, so try them all out, and be sure to check the chapters on each.
 
 
 You can configure these effects via the Brush Settings drop-down, which can be quickly accessed via :kbd:`f5`. These configurations can then be saved into presets, which you can quickly access with :kbd:`f6` or the Brush Presets docker.
@@ -240,7 +240,7 @@ Transparency
 Just like Red, Green and Blue, the computer can also store how transparent a pixel is. This is important for **compositing** as mentioned before. After all, there's no point in having multiple layers if you can't have transparency.
 
 
-Transparency is stored in the same way as colors, meaning that it's also a channel. We usually call this channel the **alpha channel** or **alpha** for short. The reason behind this is because the letter 'α' is used to represent it in programming.
+Transparency is stored in the same way as colors, meaning that it's also a channel. We usually call this channel the **alpha channel** or **alpha** for short. The reason behind this is that the letter 'α' is used to represent it in programming.
 
 
 Some older programs don't always have transparency by default. Krita is the opposite: it doesn't understand images that don't track transparency, and will always add a transparency channel to images. When a given pixel is completely transparent on all layers, Krita will instead show a checkerboard pattern, like the rose image to the left.
@@ -305,9 +305,9 @@ Examples of such operations are:
 
 
 Desaturate
- This makes all the pixels turn grey.
+ This makes all the pixels turn gray.
 Blur
- This averages the pixels with their neighbours, which removes sharp contrasts and makes the whole image look blurry.
+ This averages the pixels with their neighbors, which removes sharp contrasts and makes the whole image look blurry.
 Sharpen
  This increases the contrast between pixels that had a pretty high contrast to begin with.
 Color to Alpha
@@ -325,11 +325,11 @@ Krita has many more filters available: read about them :ref:`here <filters>`.
 
 Because many of these operations are per pixel, Krita allows you to use the filter as part of the :ref:`filter_brush_engine`.
 
-In most image manipulation software, these are separate tools, but Krita has it as a brush engine, allowing much more customisation than usual.
+In most image manipulation software, these are separate tools, but Krita has it as a brush engine, allowing much more customization than usual.
 
 This means you can make a brush that desaturates pixels, or a brush that changes the hue of the pixels underneath.
 
-Filter Layers, Filter Masks and Layerstyles 
+Filter Layers, Filter Masks and Layer Styles 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Krita also allows you to let the Filters be part of the layer stack, via :ref:`filter_layers` and :ref:`filter_masks`. Filter Layers affect all the layers underneath it in the same hierarchy. Transparency and transparency masks on Filter Layers affect where the layer is applied.
@@ -374,7 +374,7 @@ Furthermore, you can't apply the deform brush as a non-destructive mask.
 :ref:`transformation_masks`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Like filters, transforms can be applied as a non destructive operation that is part of the layer stack. Unlike filter and transparency masks however, transform masks can't be driven by a grayscale image, for technical reasons.
+Like filters, transforms can be applied as a non-destructive operation that is part of the layer stack. Unlike filter and transparency masks however, transform masks can't be driven by a grayscale image, for technical reasons.
 
 
 You can use transform masks to deform clone and file layers as well.
@@ -391,7 +391,7 @@ In 3.0, Krita got raster animation support. You can use the timeline, animation 
 Assistants, Grids and Guides 
 ----------------------------
 
-With all this technical stuff, you might forget that Krita is a painting program. Like how a illustrator in real life can have all sorts of equipment to make drawing easier, Krita also offers a variety of tools:
+With all this technical stuff, you might forget that Krita is a painting program. Like how an illustrator in real life can have all sorts of equipment to make drawing easier, Krita also offers a variety of tools:
 
 .. figure:: /images/en/Krita_basic_assistants.png
    :align: center
@@ -400,7 +400,7 @@ With all this technical stuff, you might forget that Krita is a painting program
 
 
 :ref:`grids_and_guides_docker`
- Very straightforward guiding tools which shows a grids or guiding lines that can be configured.
+ Very straightforward guiding tools which shows grids or guiding lines that can be configured.
 :ref:`snapping`
  You can snap to all sorts of things. Grids, guides, extensions, orthogonals, image centers and bounding boxes.
 :ref:`painting_with_assistants`
@@ -409,10 +409,10 @@ With all this technical stuff, you might forget that Krita is a painting program
 
 These guides are saved into Krita's native format, which means you can pick up your work easily afterwards.
 
-Customisation
+customization
 -------------
 
-This leads to the final concept: Customisation.
+This leads to the final concept: customization.
 
 
 In addition to rearranging the dockers according to your preferences, Krita provides and saves your configurations as :ref:`resource_workspaces`. This is the button at the top right.

@@ -45,7 +45,7 @@ Orthogonal (Vector Only)
     This allows you to snap to a horizontal or vertical line from
     existing vector objects’s nodes(Unless dealing with resizing the
     height or width only, in which case you can drag the cursor over the
-    path). This is useful for aligning object horizontically or
+    path). This is useful for aligning object horizontally or
     vertically, like with comic panels.
 
 .. image:: /images/en/Snap-node.png
@@ -58,7 +58,7 @@ Node (Vector Only)
 Extension (Vector Only)
     When we draw an open path, the last nodes on either side can be
     mathematically extended. This option allows you to snap to that. The
-    direction of the node depends on it's side handles in path editing
+    direction of the node depends on its side handles in path editing
     mode.
 
 .. image:: /images/en/Snap-intersection.png

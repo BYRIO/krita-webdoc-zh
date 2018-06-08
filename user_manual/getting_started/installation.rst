@@ -21,7 +21,7 @@ Windows
 -------
 
 Windows users can download the latest releases from our
-`website. <https://krita.org/download/krita-desktop>`__\ Click on 64bit
+`website. <https://krita.org/download/>`_ Click on 64bit
 or 32bit according to the architecture of your OS. Go to the
 `KDE <http://download.kde.org/stable/krita/>`__ download directory to
 get the portable zip-file version of Krita instead of the setup.exe
@@ -38,7 +38,7 @@ Many Linux distributions package the latest version of Krita. Sometimes
 you will have to enable an extra repository. Krita runs fine under on
 desktop: KDE, Gnome, LXDE -- even though it is a KDE SC application and
 needs the KDE libraries. You might also want to install the KDE
-systemsettings module and tweak the gui theme and fonts used, depending
+system settings module and tweak the gui theme and fonts used, depending
 on your distributions
 
 Nautilus/Nemo file extensions
@@ -87,18 +87,18 @@ from Ubuntu's app store.
 OpenSUSE
 ~~~~~~~~
 
-The most latest stable builds are available from KDE:Extra repo:
+The latest stable builds are available from KDE:Extra repo:
 
 -  http://download.opensuse.org/repositories/KDE:/Extra/
 
 .. note::
-   Krita is also in the official repos as *calligra-krita* , you can install it from Yast.
+   Krita is also in the official repos as *calligra-krita*, you can install it from Yast.
 
 Fedora
 ~~~~~~
 
-Krita is in the official repos as **calligra-krita** , you can install
-it by using packagekit (Add/Remove Software ) or by writing the command
+Krita is in the official repos as **calligra-krita**, you can install
+it by using packagekit (Add/Remove Software) or by writing the command
 below in terminal ``yum install calligra-krita`` Or
 ``dnf install calligra-krita`` if you are using fedora 22.
 
@@ -147,7 +147,7 @@ that might make the effort worth it:
 Of course, there are also disadvantages: when building from the current
 development source repository you also get all the unfinished features.
 It might mean less stability for a while, or things shown in the user
-interface that don't work. But in practice, there seldom is really bad
+interface that don't work. But in practice, there is seldom really bad
 instability, and if it is, it's easy for you to go back to a revision
 that does work.
 

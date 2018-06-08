@@ -51,8 +51,8 @@ Drivers and Pressure Sensitivity
 --------------------------------
 
 So you have bought a tablet, a real drawing tablet. And you wanna get it
-to work with Krita! so you plug in the USB cable, start up Krita and...
-it doesn’t work! Or well, you can make strokes, but that pressure
+to work with Krita! So you plug in the USB cable, start up Krita and...
+It doesn’t work! Or well, you can make strokes, but that pressure
 sensitivity you heard so much about doesn’t seem to work.
 
 This is because you need to install a program called a ‘driver’. Usually
@@ -99,17 +99,17 @@ Surface pro tablets need two drivers
 
 Certain tablets using n-trig, like the Surface Pro, have two types of
 drivers. N-trig by default only has Windows Ink drivers, but Krita
-requires Wintab-style drivers. Recommended to install both versions. See
+requires Wintab-style drivers. It is recommended to install both versions. See
 the FAQ for more info on this.
 
 .. note::
 
-   Since 3.3, Krita can use windows ink style drivers too, just go to :menuselection:`Settings --> Configure Krita --> Tablet Settings` and toggle the "windows 8+ pointer input" there.
+   Since 3.3, Krita can use windows ink style drivers too, just go to :menuselection:`Settings --> Configure Krita --> Tablet Settings` and toggle the "Windows 8+ pointer input" there.
 
 Windows 10 updates
 ~~~~~~~~~~~~~~~~~~
 
-Sometimes a windows 10 update can mess up tablet drivers. In that case,
+Sometimes a Windows 10 update can mess up tablet drivers. In that case,
 reinstalling the drivers should work.
 
 Broken Drivers
@@ -118,7 +118,7 @@ Broken Drivers
 Tablet drivers need to be made by the manufacturer. Sometimes, with
 really cheap tablets, the hardware is fine, but the driver is badly
 written, which means that the driver just doesn’t work well. We cannot
-do anything about this, sadly. You will have to sent a complaint to the
+do anything about this, sadly. You will have to send a complaint to the
 manufacturer for this, or buy a better tablet with better quality
 drivers.
 
@@ -166,10 +166,10 @@ Wacom Double Click Sensitivity (Straight starts of lines)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you experience an issue where the start of the stroke is straight,
-and have a wacom tablet, it could be caused by the wacom driver
+and have a wacom tablet, it could be caused by the Wacom driver
 double-click detection.
 
-To fix this, go to the wacom settings utility and lower the double click
+To fix this, go to the Wacom settings utility and lower the double click
 sensitivity.
 
 Supported Tablets
