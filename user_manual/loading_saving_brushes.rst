@@ -49,7 +49,7 @@ Tour of the brush settings dropdown
 
 .. image:: /images/en/Krita_4_0_Brush_Settings_Layout.svg
    :width: 800
-   
+
 The brush settings drop down is divided into six areas,
 
 Section A - General Information
@@ -64,7 +64,13 @@ png(The KPP file), where the image in the png file becomes the preset
 icon. This icon is used everywhere in Krita, and is useful for
 differentiating brushes in ways that the live preview cannot.
 
-The live preview shows a stroke of the current brush as a little s-curve wiggle, with the pressure being non-existent on the left, and increasing to full pressure as it goes to the right. It can thus show the effect of the Pressure, Drawing Angle, Distance, Fade and Fuzzy Dab sensors, but none of the others. For some brush engines it cannot show anything. For the color smudge, filter brush and clone tool, it shows an alternating line pattern because these brush engines use the pixels already on canvas to change their effect.
+The live preview shows a stroke of the current brush as a little s-curve
+wiggle, with the pressure being non-existent on the left, and increasing to
+full pressure as it goes to the right. It can thus show the effect of the
+Pressure, Drawing Angle, Distance, Fade and Fuzzy Dab sensors, but none of the
+others. For some brush engines it cannot show anything. For the color smudge,
+filter brush and clone tool, it shows an alternating line pattern because these
+brush engines use the pixels already on canvas to change their effect.
 
 After the preset name, there's a button for **renaming** the brush. This
 will save the brush as a new brush and blacklist the previous name.
@@ -303,10 +309,10 @@ Temporarily Save Tweaks to Preset (Dirty Presets)
     as long as this session of Krita is active. After that, the revert
     to default. Dirtied presets can be recognized by the icon in the
     top-left of the preset. 
-    
+
     .. figure:: /images/en/Krita_4_0_dirty_preset_icon.png
        :figwidth: 450
-        
+
        The icon in the top left of the first two presets indicate it is “Dirty”, meaning there's tweaks made to the preset.
 
 Eraser Switch Size

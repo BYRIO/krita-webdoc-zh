@@ -85,7 +85,7 @@ This is its correspondence with Time sheetL
 Once the vector functionality of Krita becomes better, I recommend you to use vector to finalize inbetweening.
 
 If you do the colors in Krita, please use Coloring group layer. If you do
-colors in other software, I recommend to export frames as \*.TGA files.
+colors in other software, I recommend to export frames as .TGA files.
 
 Resolution
 ----------
@@ -93,4 +93,3 @@ Resolution
 I made this template in 300 dpi because we have to print them to use them in traditional works which still fill an important role in Japanese Anime Studio. However, if you stick to digital, 150-120 dpi is enough to make animation. So you can decrease its resolution according to your need.
 
 Originally written by Saisho Kazuki, Japanese professional animator, and translated by Tokiedian, KDE contributor.
-

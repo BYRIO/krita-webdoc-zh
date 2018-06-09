@@ -6,7 +6,7 @@
 
    :authors: - Scott Petrovic
              - Wolthera van Hövell tot Westerflier <griffinvalley@gmail.com>
-             - Raghavendra Kamath <raghavendr.raghu@gmail.com>
+             - Raghavendra Kamath <raghu@raghukamath.com>
              - Boudewijn Rempt <boud@valdyas.org>
              - Alvin Wong
              - Dmitry Kazakov
@@ -302,12 +302,11 @@ Krita 3.3.0 and later supports the Windows Pointer API (Windows Ink) natively. Y
 Tablet Pro and the Surface Pro
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Unlike Wacom's Companion, the Surface line of tablets doesn't have working hardware buttons. Tablet Pro is a (non-free) utility that puts virtual buttons on screen. Krita 3.1 and avobe will have predefined shortcut profiles to work with Tablet Pro.
+Unlike Wacom's Companion, the Surface line of tablets doesn't have working hardware buttons. Tablet Pro is a (non-free) utility that puts virtual buttons on screen. Krita 3.1 and above will have predefined shortcut profiles to work with Tablet Pro.
 
 http://tabletpro.net/
 
 See http://www.youtube.com/watch?v=WKXZgYqC3tI for instructions.
-
 
 Weird stuff happens on Windows, like ripples, rings, squiggles or poltergeists
 ------------------------------------------------------------------------------
