@@ -29,18 +29,6 @@ This is referred to as the “drawing order”. So like the traditional artist, 
 
 Other things that a layer stack can do are blending the colors of different layers differently with blending modes, using a filter in the layer stack, or using a mask that allows you to make parts transparent.
 
-
-
-To fill lineart comfortably, it's best to take advantage of the layerstack. The layer stack is pretty awesome, and it's one of those features that make digital art super-convenient.
-
-In traditional art, it is not uncommon to first draw the full background before drawing the subject. Or to first draw a line art and then colour it in. Computers have a similar way of working.
-
-In programming, if you tell a computer to draw a red circle, and then afterwards tell it to draw a smaller yellow circle, you will see the small yellow circle overlap the red circle. Switch the commands around, and you will not see the yellow circle at all: it was drawn before the red circle and thus ‘behind’ it.
-
-This is referred to as the “drawing order”. So like the traditional artist, the computer will first draw the images that are behind everything, and layer the subject and foreground on top of it. The layer docker is a way for you to control the drawing order of multiple images, so for example, you can have your lineart drawn later than your colors, meaning that the lines will be drawn over the colors, making it easier to make it neat!
-
-Other things that a layer stack can do are blending the colors of different layers differently with blending modes, using a filter in the layer stack, or using a mask that allows you to make parts transparent.
-
 .. tip:: Programmers talk about transparency as ''Alpha'', which is because the 'a' symbol is used to present transparency in the algorithms for painting one color on top of another. Usually when you see the word ''Alpha'' in a graphics program, just think of it as affecting the transparency.
 
 Preparing your line-art

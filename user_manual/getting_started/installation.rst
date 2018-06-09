@@ -97,8 +97,7 @@ The latest stable builds are available from KDE:Extra repo:
 Fedora
 ~~~~~~
 
-Krita is in the official repos as **calligra-krita**, you can install
-it by using packagekit (Add/Remove Software) or by writing the following command in terminal.
+Krita is in the official repos as **calligra-krita**, you can install it by using packagekit (Add/Remove Software) or by writing the following command in terminal.
 
 ``dnf install krita``
 
