@@ -5,7 +5,7 @@
 .. metadata-placeholder
 
    :authors: - Wolthera van Hövell tot Westerflier <griffinvalley@gmail.com>
-             - Raghavendra Kamath <raghavendr.raghu@gmail.com>
+             - Raghavendra Kamath <raghu@raghukamath.com>
              - Scott Petrovic
              - Boudewijn Rempt <boud@valdyas.org>
              - Dmitry Kazakov <dimula73@gmail.com>
@@ -27,8 +27,8 @@ or 32bit according to the architecture of your OS. Go to the
 get the portable zip-file version of Krita instead of the setup.exe
 installer.
 
-.. warning:: 
-   Krita requires Windows Vista or newer. 
+.. warning::
+   Krita requires Windows Vista or newer.
    INTEL GRAPHICS CARD USERS: IF YOU SEE A BLACK OR BLANK WINDOW: UPDATE YOUR DRIVERS!
 
 Linux
@@ -67,7 +67,7 @@ Double click it, and enjoy Krita. (Or run it in the terminal with
  # open this terminal into the folder you have the appimage
  # make it executable''
  chmod a+x krita-3.0-x86_64.appimage
- 
+
  # run Krita!
  ./krita-3.0-x86_64.appimage
 
@@ -92,29 +92,37 @@ The latest stable builds are available from KDE:Extra repo:
 -  http://download.opensuse.org/repositories/KDE:/Extra/
 
 .. note::
-   Krita is also in the official repos as *calligra-krita*, you can install it from Yast.
+   Krita is also in the official repos, you can install it from Yast.
 
 Fedora
 ~~~~~~
 
 Krita is in the official repos as **calligra-krita**, you can install
-it by using packagekit (Add/Remove Software) or by writing the command
-below in terminal ``yum install calligra-krita`` Or
-``dnf install calligra-krita`` if you are using fedora 22.
+it by using packagekit (Add/Remove Software) or by writing the following command in terminal.
+
+``dnf install krita``
+
+You can also use the software center such as gnome software center or Discover to install Krita
 
 Debian
 ~~~~~~
 
-The latest version of Krita available in Debian is 2.6. Jessie (stable)
-has 2.8.5+dfsg-1+b2.
+The latest version of Krita available in Debian is 3.1.1.
+To install Krita type the following line in terminal
+
+``apt install krita``
+
 
 Arch
 ~~~~
 
 Arch Linux provides krita package in the Extra repository. You can
-install Krita by using the command below ``pacman -S krita`` You can
-install the most recent build of Krita using Yaourt repository with the
-help of command below ``yaourt -S krita-git``
+install Krita by using the following command
+
+``pacman -S krita``
+
+You can install the most recent build of Krita using an aur helper such as aurman.
+For example ``aurman -S krita-beta``
 
 OS X
 ----
