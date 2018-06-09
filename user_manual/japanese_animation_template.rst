@@ -85,7 +85,7 @@ This is its correspondence with Time sheetL
 Once the vector functionality of Krita becomes better, I recommend you to use vector to finalize inbetweening.
 
 If you do the colors in Krita, please use Coloring group layer. If you do
-colors in other software, I recommend to export frames as *.TGA files.
+colors in other software, I recommend to export frames as \*.TGA files.
 
 Resolution
 ----------
