@@ -94,7 +94,7 @@ settings.
 Saving a preset.
 ''''''''''''''''
 
-On the right, there's :guibale:`Save New Preset` and :guilabel:`Overwrite Preset`.
+On the right, there's :guilabel:`Save New Preset` and :guilabel:`Overwrite Preset`.
 
 Overwrite Preset
     This will only enable if there are any changes. Pressing this will

@@ -330,7 +330,7 @@ In most image manipulation software, these are separate tools, but Krita has it 
 This means you can make a brush that desaturates pixels, or a brush that changes the hue of the pixels underneath.
 
 Filter Layers, Filter Masks and Layer Styles 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Krita also allows you to let the Filters be part of the layer stack, via :ref:`filter_layers` and :ref:`filter_masks`. Filter Layers affect all the layers underneath it in the same hierarchy. Transparency and transparency masks on Filter Layers affect where the layer is applied.
 
