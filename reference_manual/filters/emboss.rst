@@ -19,7 +19,7 @@ Filters that are named by the traditional embossing technique.This filter genera
 Emboss Horizontal Only
 ----------------------
 
-Only embosses horizonal lines.
+Only embosses horizontal lines.
 
 Emboss in all Directions
 ------------------------

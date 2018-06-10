@@ -46,4 +46,4 @@ Image Split
 Wavelet Decompose
     Does :ref:`wavelet_decompose` on the current layer.
 Separate Image
-    Seperates the image into channels
+    Separates the image into channels

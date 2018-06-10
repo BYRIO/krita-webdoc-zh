@@ -61,7 +61,7 @@ Density
 Jitter Movement
     Jitters the spray area around for extra randomness.
 Gaussian Distribution
-    Focusses the particles to paint in the center instead of evenly random over the spray area.
+    Focuses the particles to paint in the center instead of evenly random over the spray area.
 
 .. _option_spray_shape:
 

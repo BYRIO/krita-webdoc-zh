@@ -38,7 +38,7 @@ Let's compare the following gradients in different spaces:
 .. image:: /images/en/color_category/Basiccolormanagement_gradientsin4spaces_nonmanaged.png 
 
 
-On the left we have an artefact-ridden color managed jpeg file with an ACES sRGBtrc v2 profile attached(or not, depending on mediawiki's mood, if not then you can see the exact different between the colors more clearly). This should give an approximation of the actual colors. On the right, we have a sRGB png that was converted in Krita from the base file.
+On the left we have an artifact-ridden color managed jpeg file with an ACES sRGBtrc v2 profile attached(or not, depending on mediawiki's mood, if not then you can see the exact different between the colors more clearly). This should give an approximation of the actual colors. On the right, we have a sRGB png that was converted in Krita from the base file.
 
 Each of the gradients are gradients from the max of a given channel. As you can see, the mid-tone of the ACES color space is much brighter than the mid-tone of the RGB colorspace, and this is because the primaries are further apart.
 

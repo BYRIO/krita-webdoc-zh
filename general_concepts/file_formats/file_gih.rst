@@ -35,7 +35,7 @@ Pressure
 Random
     This'll draw the images randomly. This is good for image-collections used in speedpainting as well as images that generate texture. Or perhaps more graphical symbols.
 Angle
-    This'll use the draging angle to determine with image to draw.
+    This'll use the dragging angle to determine with image to draw.
 
 When exporting a krita file as a .gih, you will also get the option to set the default spacing, the option to set the name(very important for looking it up in the UI) and the ability to choose whether or not to generate the mask from the colors.
 

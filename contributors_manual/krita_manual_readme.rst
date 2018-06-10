@@ -232,7 +232,7 @@ As with images, don't add text that you do not have permission to add. This mean
 Changing Pages
 ~~~~~~~~~~~~~~
 
-If you fully rewrite a page, as opossed to proofreading it, the resulting page should be reviewed.
+If you fully rewrite a page, as opposed to proofreading it, the resulting page should be reviewed.
 
 If you change a page because a feature has changed, and you have commit access, the change can be pushed without review(unless you feel more comfortable with a review), but you should add::
 

@@ -53,7 +53,7 @@ Swap File Location
 Advanced
 --------
 
-Multitreading
+Multithreading
 ~~~~~~~~~~~~~
 
 Since 4.0, Krita supports multithreading for the animation cache and handling the drawing of brush tips when using the pixel brush.

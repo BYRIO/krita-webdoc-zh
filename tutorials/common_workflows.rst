@@ -41,7 +41,7 @@ Often an artist for example a comic book colorist will need to take a pencil ske
 Preparing the lineart
 ^^^^^^^^^^^^^^^^^^^^^
 
-If your images has a white or other single-tone background, you can use either of the the following methods to prepare the art for coloring.:
+If your images has a white or other single-tone background, you can use either of the following methods to prepare the art for coloring.:
 
 Place the line-art at the top of the layer stack and set its layer blending mode to Multiply
 
@@ -62,7 +62,7 @@ Now select **Red** from the drop-down, Click on the top right node on the graph 
 .. image:: /images/en/common-workflows/Color-adjustment-02.png
     :alt: removing blue lines from scan step 2
 
-Now the whole drawing will have a blue overlay, zoom in and check if the blue pencil lines are still visible slightly, If you you still see them, then go to **Blue** Channel in the color adjustment and shift the top right node towards left a bit, Or enter a value around 190 ( one that removes the remaining rough lines) in the input box.
+Now the whole drawing will have a blue overlay, zoom in and check if the blue pencil lines are still visible slightly, If you still see them, then go to **Blue** Channel in the color adjustment and shift the top right node towards left a bit, Or enter a value around 190 ( one that removes the remaining rough lines) in the input box.
 
 .. image:: /images/en/common-workflows/Color-adjustment-03.png
     :alt: remove blue lines from scans step 3
@@ -107,7 +107,7 @@ The second method is to use the Flood fill tool to fill large parts of your line
 .. image:: /images/en/common-workflows/Floodfill-krita.png
     :alt: flood fill in krita
 
-Choose a color from color elector and just click on the area you want to fill the color. As we have expanded the fill with grow seclection the color will be filled slightly underneath the line-art thus giving us a clean fill.
+Choose a color from color elector and just click on the area you want to fill the color. As we have expanded the fill with grow selection the color will be filled slightly underneath the line-art thus giving us a clean fill.
 
 GMIC Colorise [Interactive]
 """""""""""""""""""""""""""

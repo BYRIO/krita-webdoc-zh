@@ -185,7 +185,7 @@ a\*
 b\*
     b\* in this case is a measurement of how yellow a color is versus how blue a color is.
 
-L\*a\*b\* is supossed to be a more comprehensible variety of XYZ and the most 'complete' of all color spaces. It's often used as an in between colour space in conversion, but even more as the correct color space to do color-balancing in. It's far easier to adjust the contrast and color tone in L*a*b*.
+L\*a\*b\* is supposed to be a more comprehensible variety of XYZ and the most 'complete' of all color spaces. It's often used as an in between colour space in conversion, but even more as the correct color space to do color-balancing in. It's far easier to adjust the contrast and color tone in L*a*b*.
 
 L\*a\*b\* is technically the same as Photoshop's LAB. Photoshop specifically uses CIELAB d50.
 

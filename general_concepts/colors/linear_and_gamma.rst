@@ -70,7 +70,7 @@ Red   1.0  0.0   0.0
 Green 0.0  1.0   0.0 
 ===== === ===== ==== 
 
-We then avarage these coordinates over three mixes:
+We then average these coordinates over three mixes:
 
 +-------+-----+------+------+------+-------+
 |       | Red | Mix1 | Mix2 | Mix3 | Green |
@@ -82,7 +82,7 @@ We then avarage these coordinates over three mixes:
 | Blue  | 0.0 | 0.0  |  0.0 |  0.0 |  0.0  |
 +-------+-----+------+------+------+-------+
 
-But to figure out how these colours look on screen, we first put the indvidual values through the TRC of the color-space we're working with:
+But to figure out how these colours look on screen, we first put the individual values through the TRC of the color-space we're working with:
 
 
 .. image:: /images/en/color_category/Basicreading3trcsv2.svg  

@@ -54,11 +54,11 @@ Tangent (Operator: tan() )
     Usage: ``tan(50)``
     Output: ``1.19``
 Arc Sine (Operator: asin() )
-    Inverse function of the sinus, gives you the angle which the sinus equals the argument.
+    Inverse function of the sine, gives you the angle which the sine equals the argument.
     Usage: ``asin(0.76)``
     Output: ``50``
 Arc Cosine (Operator: acos() )
-    Inverse function of the cosinus, gives you the angle which the cosinus equals the argument.
+    Inverse function of the cosine, gives you the angle which the cosine equals the argument.
     Usage: ``acos(0.64)``
     Output: ``50``
 Arc Tangent (Operator: atan() )

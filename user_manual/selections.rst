@@ -101,7 +101,7 @@ Vector selections allow you to modify your selection with vector anchor tools. P
 When creating a selection, you can select what type of selection you
 want from the Mode in the selection tool options: Pixel or Vector.
 
-Vector selections can can modify as any other vector shape with the
+Vector selections can modify as any other vector shape with the
 “Shape Handle” tool, if you try to paint on a vector selection it will be converted into a pixel selection. Pixel selections can be painted with any tool. You can also convert vector shapes to selection. In turn, vector selections can be made from vector shapes, and vector shapes can be converted to vector selections using the options in the selections menu. Krita will add a new vector layer for this shape.
 
 One of

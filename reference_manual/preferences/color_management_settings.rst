@@ -19,7 +19,7 @@ Color Management Settings
 .. image:: /images/en/Krita_Preferences_Color_Management.png
 
 Krita offers extensive functionality for color management, utilising `Little CMS <http://www.littlecms.com/>`_
-We describe Color Management in a more overal level here: :ref:`color_managed_workflow`.
+We describe Color Management in a more overall level here: :ref:`color_managed_workflow`.
 
 General
 -------

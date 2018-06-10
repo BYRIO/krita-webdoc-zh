@@ -17,7 +17,7 @@ Question
 
 Could you do a tutorial on how to recreate the look of light refracting in water?
 
-Sure, caustics, it’s not like it’s the most complicated effect known to CG graphics… Okay, so the first thing is that light effects never work in isolation: you need to be spot on with colors and other effects to make it work. So we first need to recreate the suroundings a bit.
+Sure, caustics, it’s not like it’s the most complicated effect known to CG graphics… Okay, so the first thing is that light effects never work in isolation: you need to be spot on with colors and other effects to make it work. So we first need to recreate the surroundings a bit.
 
 .. image:: /images/en/brush-tips/Krita-brushtips-caustics_01.png
     :alt: Background gradient for creating caustic effects
@@ -47,7 +47,7 @@ Take *sketch_ink_big*, and add pressure to the ‘line-width’ while setting �
 .. image:: /images/en/brush-tips/Krita-brushtips-caustics_05.png
     :alt: Set color blending mode the color dodge
 
-Set the brush blending mode to ‘Color Dodge’, and select the color of our caustics. Color dodge will cause a move towards white by applying special dodge color maths to our brush dabs instead of the ‘normal’ avaraging color maths.
+Set the brush blending mode to ‘Color Dodge’, and select the color of our caustics. Color dodge will cause a move towards white by applying special dodge color maths to our brush dabs instead of the ‘normal’ averaging color maths.
 
 Outside of pressure for making varying strokes, glowiness for the light and extra density, we also want to have the size of the line decrease the further away it is…
 
@@ -61,7 +61,7 @@ Then, use the assistant editor tool to add a perspective grid. It doesn’t need
 
 This will cause the brush to give smaller lines the further it registers on the perspective assistant.(It only works per single perspective assistant, making it not very good for chaining, but for our purpose this is good.)
 
-Then you start slowly building up your lines. (Make sure to make a copy of the layer)(The color dodge blending doesn’t work well on a seperate layer, so do it on one that also has the ground on it).
+Then you start slowly building up your lines. (Make sure to make a copy of the layer)(The color dodge blending doesn’t work well on a separate layer, so do it on one that also has the ground on it).
 
 .. image:: /images/en/brush-tips/Krita-brushtips-caustics_08.png
     :alt: painting the caustics

@@ -146,7 +146,7 @@ Or, rightclick the layer, go to layer properties, and untick ‘blue’. This wo
 Super-thin lines
 ----------------
 
-If you are interested in super-thin lines, it might be better to make your ink at double or even tripple the size you usually work at, and, only use a aliased pixel brush. Then, when the ink is finished, use the fill tool to fill in flats on a separate layer, split the layer via :menuselection:`Layer --> Split --> Layer Split`, and then resize to the original size.
+If you are interested in super-thin lines, it might be better to make your ink at double or even triple the size you usually work at, and, only use a aliased pixel brush. Then, when the ink is finished, use the fill tool to fill in flats on a separate layer, split the layer via :menuselection:`Layer --> Split --> Layer Split`, and then resize to the original size.
 
 .. image:: /images/en/inking/Inking_aliasresize.png
     :alt: aliased resize

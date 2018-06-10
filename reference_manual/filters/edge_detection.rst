@@ -24,7 +24,7 @@ Edge Detection
 
 .. versionadded:: 4.0
 
-A general edge detection filter that encapsulates all other filters. Edge detection filters that were seperate before 4.0 have been folded into this one. It is also available for filter layers and filter brushes.
+A general edge detection filter that encapsulates all other filters. Edge detection filters that were separate before 4.0 have been folded into this one. It is also available for filter layers and filter brushes.
 
 .. figure:: /images/en/Krita_4_0_edge_detection.png
    :align: center

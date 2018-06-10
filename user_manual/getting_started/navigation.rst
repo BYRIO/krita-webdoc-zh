@@ -34,7 +34,7 @@ As we've said before, the Krita interface is very malleable and the way that you
 - **A** -- Traditional '''File''' or action menu found in most windowed applications
 - **B** -- Toolbar - This is where you can choose your brushes, set parameters such as opacity and size and other settings.
 - **C** -- Sidebars for the Movable Panels/Dockers.  In some applications, these are known as Dockable areas. Krita also allows you to dock panels at the top and/or bottom as well.
-- **D** -- Status Bar - This space shows you preffered mode for showing selection i.e marching ants or mask mode, your selected brush preset, :ref:`Color Space <color_managed_workflow>`, image size and provides a convenient zoom control.
+- **D** -- Status Bar - This space shows you preferred mode for showing selection i.e marching ants or mask mode, your selected brush preset, :ref:`Color Space <color_managed_workflow>`, image size and provides a convenient zoom control.
 - **E** -- Floating Panel/Docker - These can be "popped" in and out of their docks at any time in order to see a greater range of options.  A good example of this would be the :ref:`brush_preset_docker` or the :ref:`palette_docker`
 
 Your canvas sits in the middle and unlike traditional paper or even most digital painting apps, Krita provides the artist with a scrolling canvas of infinite size (not that you'll need it of course!).  The standard navigation tools are as follows:

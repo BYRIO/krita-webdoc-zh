@@ -96,7 +96,7 @@ Some other tips:
 
 You can scale selection. To do this, choose Select > Scale  (Note: also, in the Select menu there are more classical option to grow, shrink, feather, border, etc...)
 
-If you enable Show Global Selection Mask (Select menu) you can scale/rotate/trasform/move or paint on selection like on regular greyscale layer.
+If you enable Show Global Selection Mask (Select menu) you can scale/rotate/transform/move or paint on selection like on regular greyscale layer.
 
 * :kbd:`Ctrl + H`: Show / Hide selection (same shortcut)
 * :kbd:`Ctrl + A`: Select All

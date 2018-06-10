@@ -83,7 +83,7 @@ You can create your own bundle from the resources of your choice. Click one the 
 .. image:: /images/en/Creating-bundle.png
 
 The left hand section is for filling up information about the Bundle like author name, website, email , bundle icon etc.
-the right hand side provides a list of available resources. Choose the type of resource you wish to add in to the bundle from the drop-down above and and add it to the bundle by selecting a resource and clicking on the arrow button.
+the right hand side provides a list of available resources. Choose the type of resource you wish to add in to the bundle from the drop-down above and add it to the bundle by selecting a resource and clicking on the arrow button.
 
 .. warning::
 

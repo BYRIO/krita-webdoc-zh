@@ -124,7 +124,7 @@ The default shortcut for this filter is :kbd:`Ctrl + B` .
 Desaturate
 ----------
 
-Image-wide dasaturation filter. Will make any image Greyscale.
+Image-wide desaturation filter. Will make any image Greyscale.
 Has several choices by which logic the colors are turned to grey. The default shortcut for this filter is :kbd:`Ctrl + Shift + U` .
 
 .. image:: /images/en/Desaturate-filter.png
@@ -135,10 +135,10 @@ Luminosity(ITU-R BT.709)
     Will turn the color to grey by using the appropriate amount of weighting per channel according to ITU-R BT.709.
 Luminosity(ITU-R BT.601)
     Will turn the color to grey by using the appropriate amount of weighting per channel according to ITU-R BT.601.
-Avarage
-    Will make an avarage of all channels.
+Average
+    Will make an average of all channels.
 Min
-    Substracts all from one another to find the grey value.
+    Subtracts all from one another to find the grey value.
 Max
     Adds all channels together to get a grey-value
 
@@ -155,7 +155,7 @@ The default shortcut for this filter is :kbd:`Ctrl + I` .
 Auto Contrast
 -------------
 
-Tries to adjust the constrast the universally acceptable levels.
+Tries to adjust the contrast the universally acceptable levels.
 
 .. index:: Hue, Saturation, Lightness, Value, Brightness, Chroma
 

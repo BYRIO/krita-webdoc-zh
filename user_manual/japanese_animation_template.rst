@@ -1,6 +1,6 @@
 .. meta::
    :description:
-        Detailed explaination on how to use the animation template.
+        Detailed explanation on how to use the animation template.
 
 .. metadata-placeholder
 

@@ -23,4 +23,4 @@ However, it does mean that jpeg should be used in certain cases. For images with
 
 But for images with a lot of sharp contrasts, like text and comic book styles, png is a much better choice despite a larger file size. For grayscale images, png and gif will definitely be more efficient.
 
-Because jpeg uses lossy compression, it is not adviced to save over the same jpeg multiple times. The lossy compression will cause the file to reduce in quality each time you save it. This is a fundamental problem with lossy compression methods. Instead use a lossless file format, or a working file format while you are working on the image.
+Because jpeg uses lossy compression, it is not advised to save over the same jpeg multiple times. The lossy compression will cause the file to reduce in quality each time you save it. This is a fundamental problem with lossy compression methods. Instead use a lossless file format, or a working file format while you are working on the image.

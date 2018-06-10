@@ -29,10 +29,10 @@ Sliders
 -------
 
 These change per color space.
-If you chose 16bit float or 32 bit float, these will go from 0 to 1.0, with the decimals deciding the the difference between colors.
+If you chose 16bit float or 32 bit float, these will go from 0 to 1.0, with the decimals deciding the difference between colors.
 
 Hex Color Selector
 ------------------
 
 This is only available for the color spaces with a depth of 8 bit.
-This allows you to input hex color codes, and receive the RGB, CMYK, LAB, XYZ or YCrCb equivelant, and the other way around!.
+This allows you to input hex color codes, and receive the RGB, CMYK, LAB, XYZ or YCrCb equivalent, and the other way around!

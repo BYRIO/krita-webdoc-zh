@@ -53,7 +53,7 @@ Group 1 had vermillion red, citron yellow and ultramarine blue to their disposal
    :align: center
 
 
-Group 2 had magenta red, citron yellow and cerulean blue. Magenta is a type of red that is closer to pink, opossed to vermillion, which is closer to orange. However, their green looks nice because cerulean is a much lighter blue.
+Group 2 had magenta red, citron yellow and cerulean blue. Magenta is a type of red that is closer to pink, opposed to vermillion, which is closer to orange. However, their green looks nice because cerulean is a much lighter blue.
 
 
 .. figure:: /images/en/color_category/Krita_2_9_colormanagement_group3.png
@@ -61,7 +61,7 @@ Group 2 had magenta red, citron yellow and cerulean blue. Magenta is a type of r
    :align: center
 
 
-Group 3 had vermillion red, citron yellow, edmerald green and cerulean blue. They didn't mix their green, and thus ended up with a purer colour.
+Group 3 had vermillion red, citron yellow, emerald green and cerulean blue. They didn't mix their green, and thus ended up with a purer colour.
 
 .. figure:: /images/en/color_category/Krita_2_9_colormanagement_group4.png
    :figwidth: 500
@@ -79,7 +79,7 @@ What is colour management?
 
 Color management is, dryly put, a set of systems that tries to have the same colour translate properly between color devices.
 
-It usually works by attempting to covert a colour to the reference colour space XYZ. XYZ is a coordinate system that has a spot for all colours that the avarage human eye can see.
+It usually works by attempting to covert a colour to the reference colour space XYZ. XYZ is a coordinate system that has a spot for all colours that the average human eye can see.
 
 From XYZ it can then be translated back into another device space, such as RGB(for screens), or CMYK(for printers).
 
@@ -140,7 +140,7 @@ That said, for artists it is also very useful to understand the working spaces. 
 
 Similarly, Krita, as a program intended to make images from scratch, doesn't really worry about assigning workspaces after having made the image. But because you are using the screen as a binocular to look at your image, and to pick colors, you can see your screen's device space as an input space to the image. Hence why profiling your monitor and giving the profile to Krita in the settings can help with preparing your work for print and future ventures in the long run.
 
-Overal, it is kinda useful to keep things like viewing conditions in the back of your mind. Many professional artists use a mid-grey color as their default canvas background because they find they create much more dynamic images due to having improved their viewing conditions. It is also why a lot of graphics programs, including Krita, come with a dark theme nowadays. (Though, of course this might also be because dark themes can be considered cool, who knows.)
+Overall, it is kinda useful to keep things like viewing conditions in the back of your mind. Many professional artists use a mid-grey color as their default canvas background because they find they create much more dynamic images due to having improved their viewing conditions. It is also why a lot of graphics programs, including Krita, come with a dark theme nowadays. (Though, of course this might also be because dark themes can be considered cool, who knows.)
 
 .. _icc_profiles:
 
@@ -211,7 +211,7 @@ For example, white, on our monitor is full red, full green and full blue. But it
 
 Black similarly, is brighter on a LCD display than a LED one, and incomparable with the black of a carefully sealed room.
 
-This means that there's potentially blacker blacks than screen black, and white whites than screen white. However, for simplicity's sake we still assign the black-point and the white-point to certain values. From there, we can determine whether a white is whiter than the white point, or a black black than the black-point.
+This means that there's potentially blacker blacks than screen black, and white whites than screen white. However, for simplicity's sake we still assign the black-point and the white-point to certain values. From there, we can determine whether a white is whiter than the white point, or a black blacker than the black-point.
 
 The LUT docker allows us to control this display-filter and modify the distortion. This is useful when we start modifying images that are made with scene referred values, such as HDR photos, or images coming out of a render engine.
 
@@ -323,7 +323,7 @@ Output
 
 Use the sRGB-elle-V2-srgbtrc.icc for going between inkscape, photoshop, painttool sai, illustrator, Gimp, mypaint, mangastudio, paintstorm studio, mypaint, artrage, scribus, etc. and Krita.
 
-If you are using a larger space via ICC, you will only be able to interchange it between Krita, Photoshop, Illustrator, GIMP 2.9, mangastudio and scribus. All others asume sRGB for your space, no matter what, because they don't have color management.
+If you are using a larger space via ICC, you will only be able to interchange it between Krita, Photoshop, Illustrator, GIMP 2.9, mangastudio and scribus. All others assume sRGB for your space, no matter what, because they don't have color management.
 
 If you are going between Krita and Blender, Nuke or Natron, use OCIO and set the input space to 'sRGB', but make sure to select the sRGB profile for icc when creating a new file.
 
@@ -365,7 +365,7 @@ So this one is tricky. You can use OCIO and ICC between programs, but recommende
 
 While game engines need to have optimised content, and it's recommended to stay within 8bit, future screens may have higher bitdepths, and when renderers will start supporting those, it may be beneficial to develop a workflow where the working-space files are rather unnecessarily big and you run some scripts to optimise them for your current render needs, making updating the game in the future for fancier screens less of a drag.
 
-Normal maps and heightmaps are officially supossed to be defined with a 'non-color data' working space, but you'll find that most engines will not care much for this. Instead, tell the game engine not to do any conversion on the file when importing.
+Normal maps and heightmaps are officially supposed to be defined with a 'non-color data' working space, but you'll find that most engines will not care much for this. Instead, tell the game engine not to do any conversion on the file when importing.
 
 Specular, glossiness, metalness and roughness maps are all based on linear calculations, and when you find that a certain material has a metalness of 0.3, this is 30% gray in a linear space. Therefore, make sure to tell the game engine renderer that this is a linear space image(or at the very least, should NOT be converted).
 

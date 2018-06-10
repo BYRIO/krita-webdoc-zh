@@ -112,4 +112,4 @@ Let's make an animated GIF. in the Render Animation dialog, change the :guilabel
 
 .. note::
     
-    OSX does not come with any software to play MP4 and MKV files. If you you use Chrome for your web browser, you can drag the video file into that and the video should play. Otherwise you will need to get a program like VLC to see the video.
+    OSX does not come with any software to play MP4 and MKV files. If you use Chrome for your web browser, you can drag the video file into that and the video should play. Otherwise you will need to get a program like VLC to see the video.

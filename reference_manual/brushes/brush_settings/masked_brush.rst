@@ -40,7 +40,7 @@ Masked brush is new feature that is only available in the :ref:`pixel_brush_engi
 :ref:`option_size`
     The size sensor option of the second tip.
 :ref:`option_opacity_n_flow`
-    The opacity and flow of the second tip. This is mapped to a sensor by default. Flow can be quite agressive on subtract mode, so it might be an idea to turn it off there.
+    The opacity and flow of the second tip. This is mapped to a sensor by default. Flow can be quite aggressive on subtract mode, so it might be an idea to turn it off there.
 :ref:`option_ratio`
     This affects the brush ratio on a given brush.
 :ref:`option_mirror`

@@ -42,7 +42,7 @@ There are some additions to Krita which makes getting a backtrace much easier on
     .. image:: /images/en/Mingw-explorer-path.png
     
 #. Find the file ``kritacrash.log`` (it might appear as simply ``kritacrash`` depending on your settings.) 
-#. Open the file with Notepad and scroll to the bottom, then scroll up to the first occurance of “Error occured on <time>” or the dashes.
+#. Open the file with Notepad and scroll to the bottom, then scroll up to the first occurrence of “Error occurred on <time>” or the dashes.
 
     .. figure:: /images/en/Mingw-crash-log-start.png
     
