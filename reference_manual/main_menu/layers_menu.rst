@@ -116,7 +116,7 @@ Split...
     Organizes the following actions:
 
     Split Alpha
-        Split the image transparency into a mask. This is useful when you wish to edit the transparency seperately.
+        Split the image transparency into a mask. This is useful when you wish to edit the transparency separately.
     Split Layer
         Split the layer into given color fields.
     Clones Array

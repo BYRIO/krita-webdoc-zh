@@ -38,7 +38,7 @@ Linear Interpolation (Default)
 Custom interpolation
     This allows you to set the section after the keyframe node as one that can be modified. |mouseleft| +dragging on the node allows you to drag out a handler node for adjusting the curving.
 
-So, for example, making a 100% opacity keyframe on frame 0 and and a 0% opacity one on frame 24 gives the following result:
+So, for example, making a 100% opacity keyframe on frame 0 and a 0% opacity one on frame 24 gives the following result:
 
 .. image:: /images/en/Ghost_linear.gif
 

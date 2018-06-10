@@ -34,7 +34,7 @@ Here you can pick the hsx model you'll be using.
 There's a small blurb explaining the characteristic of each model, but let's go into detail:
 
 HSV
-    Stands for Hue, Saturation, Value. Saturation determines the difference between white, grey, black and the most colorful color. Value in turn measures either the difference between black and white, or the difference between blakc and the most colorful color.
+    Stands for Hue, Saturation, Value. Saturation determines the difference between white, grey, black and the most colorful color. Value in turn measures either the difference between black and white, or the difference between black and the most colorful color.
 HSL
     Stands for Hue, Saturation, Lightness. All saturated colors are equal to 50% lightness. Saturation allows for shifting between grey and color.
 HSI
@@ -93,7 +93,7 @@ If your have set the docker size considerably smaller to save space, this option
 The size given here, is also the size of the Main Color Selector and the MyPaint Shade Selector when they are called with :kbd:`shift + I` and :kbd:`shift`+:kbd:`M`, respectively.
 
 Hide Pop-up on click
-    This allows you to let the pop-up selectors called with the above hotkeys to dissapear upon clicking them instead of having to leave the pop-up boundary. This is useful for faster working.
+    This allows you to let the pop-up selectors called with the above hotkeys to disappear upon clicking them instead of having to leave the pop-up boundary. This is useful for faster working.
 
 Shade selector
 --------------

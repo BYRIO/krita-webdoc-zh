@@ -353,6 +353,6 @@ To emit or create slots for objects that aren't standard python objects, you onl
 Conclusion
 ----------
 
-Okay, so that covers all the Krita specific details for creating python plugins. It doesn't handle how to parse the pixel data, or best practces with documents, but if you have a little bit of experience with python you should be able to start creating your own plugins.
+Okay, so that covers all the Krita specific details for creating python plugins. It doesn't handle how to parse the pixel data, or best practices with documents, but if you have a little bit of experience with python you should be able to start creating your own plugins.
 
 As always, read the code carefully and read the API docs for python, krita and QT carefully to see what is possible, and you'll get pretty far.

@@ -7,7 +7,7 @@
    :authors: - Lazlo Fazekas
    :license: GNU free documentation license 1.3 or later.
 
-.. index:: *.csv, CSV, Comma Seperated Values
+.. index:: *.csv, CSV, Comma Separated Values
 .. _file_csv:
 
 ======

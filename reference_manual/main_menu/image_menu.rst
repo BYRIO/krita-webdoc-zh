@@ -44,4 +44,4 @@ Size Canvas
 Image Split
     Splits the image.
 Separate Image
-    Seperates the image into channels
+    Separates the image into channels

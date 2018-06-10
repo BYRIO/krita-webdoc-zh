@@ -32,7 +32,7 @@ Texturing mode
     Multiply
         Uses alpha multiplication to determine the effect of the texture. Has a soft feel.
     Subtract
-        Uses substraction to determine the effect of the texture. Has a harsher, more texture feel.
+        Uses subtraction to determine the effect of the texture. Has a harsher, more texture feel.
 
     .. image:: /images/en/Krita_2_9_brushengine_texture_01.png
 

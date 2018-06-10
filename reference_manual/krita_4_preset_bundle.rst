@@ -80,7 +80,7 @@ The Dry Painting category is full set of brushes that appear like bristles. They
 Dry Painting Textured
 ---------------------
 
-Almost the same family as the previous one, exept this brush presets lay down a textured effect. They simulate this painting effects you can obtain with very thick painting on a brush caressing a canvas with a fabric texture. They help to build painterly background or add life in the last bright touch of colors.
+Almost the same family as the previous one, except this brush presets lay down a textured effect. They simulate this painting effects you can obtain with very thick painting on a brush caressing a canvas with a fabric texture. They help to build painterly background or add life in the last bright touch of colors.
 
 .. image:: /images/en/Krita4_g-brush-family.jpg
 

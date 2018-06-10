@@ -84,7 +84,7 @@ Miscellaneous
 -------------
 
 Color Channels in Color
-    This is supossed to determine what to do when only a single channel is selected in the channels docker, but it doesn't seem to work.
+    This is supposed to determine what to do when only a single channel is selected in the channels docker, but it doesn't seem to work.
 Enable Curve Anti-Aliasing
     This allows anti-aliasing on previewing curves, like the ones for the circle tool, or the path tool.
 Enable Selection Outline Anti-Aliasing

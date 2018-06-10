@@ -28,7 +28,7 @@ Activating composition
 Removing compositions
     The minus sign. Select a composition, and hit this button to remove it.
 Updating compositions
-    |mouseright| a composition to overwrite it with the the current configuration.
+    |mouseright| a composition to overwrite it with the current configuration.
 Rename composition
     |mouseright| a composition to rename it.
 

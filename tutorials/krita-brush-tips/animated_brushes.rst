@@ -1,6 +1,6 @@
 .. meta::
    :description lang=en:
-        A brief explaination about animated brushes and how to use them
+        A brief explanation about animated brushes and how to use them
 
 .. metadata-placeholder
    :authors: - Wolthera van Hövell tot Westerflier <griffinvalley@gmail.com>

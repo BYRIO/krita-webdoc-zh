@@ -56,7 +56,7 @@ Checks per pixel of which layer the pixel-value is highest/lowest, and then subt
 
    Left: **Normal**. Right: **Difference**.
 
-.. index:: ! Equivelance
+.. index:: ! Equivalence
 .. _bm_equivalence:
 
 Equivalence

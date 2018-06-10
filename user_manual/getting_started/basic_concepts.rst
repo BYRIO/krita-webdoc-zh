@@ -62,7 +62,7 @@ Open existing image as new
 Create Copy From Current Image
  Similar to :menuselection:`Open Existing Image as new` but with the currently selected image.
 Save incremental
- Allows you to quickly make a snapshot of the current image by making a new file with a versioning number added to it.
+ Allows you to quickly make a snapshot of the current image by making a new file with a version number added to it.
 
 These options are great for people doing production work, who need to switch between files quickly, or have backup files in case they do something extreme. Krita also has a file backup system in the form of auto-saves and back files and crash recovery. You can configure these in the general settings.
 

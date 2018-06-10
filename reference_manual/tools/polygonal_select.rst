@@ -39,4 +39,4 @@ Tool Options
 ------------
 
 Anti-aliasing
-    This toggles whether or not to give selections feathered edges. Some people preffer hard-jagged adges for their selections.
+    This toggles whether or not to give selections feathered edges. Some people prefer hard-jagged edges for their selections.

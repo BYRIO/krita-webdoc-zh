@@ -33,7 +33,7 @@ For this example, we'll be using the ghost lady also used to explain masks on th
    :width: 800
    :align: center 
 
-This image has the line art for the lady seperated from the background, and what's more, the background is made up of two layers: one main and one for the details. 
+This image has the line art for the lady separated from the background, and what's more, the background is made up of two layers: one main and one for the details. 
 
 First, select the colorize mask editing tool while having the lineart layer selected. |mouseleft| the canvas will add a colorize mask to the layer.
 You can also |mouseright| the line art layer, and then :guilabel:`Add --> Colorize Mask`. The line art will suddenly become really weird, this is the prefiltering which are filters through which we put the lineart to make the algorithm easier to use. The tool options overview below shows which options control that.
@@ -60,7 +60,7 @@ Because the colorize mask algorithm is slow, and we only need a part of our laye
    :width: 800
    :align: center
 
-Now the algorithm will be possibly a lot faster, allowing us to add strokes and press update in rapid succesion:
+Now the algorithm will be possibly a lot faster, allowing us to add strokes and press update in rapid succession:
 
 .. image:: /images/en/Krita_4_0_colorize_mask_usage_06.png
    :width: 800
@@ -74,7 +74,7 @@ To see the final result, disable :guilabel:`Edit Key Strokes` or toggle the seco
 
 If you want to edit the strokes again, re-enable :guilabel:`Edit Key Strokes`.
 
-Now, the colorize mask, being a mask, can also be added to a group of line art layers. It will then use the composition of the whole group as the line art. This is perfect for our background which has two seperate line art layers. It also means that the colorize mask will be disabled when added to a group with pass-through enabled, because those have no final composition. You can recognise a disabled colorize mask because it's name is striked through.
+Now, the colorize mask, being a mask, can also be added to a group of line art layers. It will then use the composition of the whole group as the line art. This is perfect for our background which has two separate line art layers. It also means that the colorize mask will be disabled when added to a group with pass-through enabled, because those have no final composition. You can recognise a disabled colorize mask because it's name is stricken through.
 
 To add a colorize mask to a group, select the group and {{MouseButton|left` the canvas with the Colorize Mask editing tool, or |mouseright| the layer to :menuselection:`Add --> Colorize Mask`.
 
@@ -96,7 +96,7 @@ Out final result looks like this:
    :width: 800
    :align: center
 
-Now we are done, |mouseright| the colorize mask and :menuselection:`Convert --> to Paint Layer`. Then, :menuselection:`Layer --> Split --> Split Layer`. This will give seperate color islands that you can easily edit:
+Now we are done, |mouseright| the colorize mask and :menuselection:`Convert --> to Paint Layer`. Then, :menuselection:`Layer --> Split --> Split Layer`. This will give separate color islands that you can easily edit:
 
 .. image:: /images/en/Krita_4_0_colorize_mask_usage_11.png
    :width: 800

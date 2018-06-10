@@ -59,7 +59,7 @@ This allows you to affect Angle of your brush-tip with Sensors.
 
 In the above example, several applications of the parameter.
 
-#. Drawing Angle -- A common one, usually used in combination with rake-type brushes. Especially effect because it does not rely on tablet-specific sensors. Sometimes, Tilt-Direction or Rotation is used to achieve a similar-more tablet focussed effect, where with Tilt the 0° is at 12 o'clock, Drawing angle uses 3 o'clock as 0°.
+#. Drawing Angle -- A common one, usually used in combination with rake-type brushes. Especially effect because it does not rely on tablet-specific sensors. Sometimes, Tilt-Direction or Rotation is used to achieve a similar-more tablet focused effect, where with Tilt the 0° is at 12 o'clock, Drawing angle uses 3 o'clock as 0°.
 #. Fuzzy -- Also very common, this gives a nice bit of randomness for texture.
 #. Distance -- With careful editing of the Sensor curve, you can create nice patterns.
 #. Fade -- This slowly fades the rotation from one into another.

@@ -68,7 +68,7 @@ And here's the only section of this tutorial that anyone cares about: pretty lin
 * Set line width to a higher value (ex.: 5), then turn line width dynamics on:
 
     * If you're a tablet user, just set this to Pressure (this should be selected by default so just turn on the Line Width dynamics). I can't check myself, but a tablet user confirmed to me that it works well enough with Draw Dynamically.
-    * If you're a mouse user hoping to to get variable line width, set the Line Width dynamics to Speed.
+    * If you're a mouse user hoping to get variable line width, set the Line Width dynamics to Speed.
 
 .. image:: /images/en/Krita-tutorial6-I.2-2.png
 

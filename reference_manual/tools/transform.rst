@@ -66,7 +66,7 @@ Warp allows you to deform the image by dragging from a grid or choosing the drag
 
    Free transform in action.
 
-There's warp options: Rigid, Afine and Similtude. These change the algorithm used to determine the strength of the deformation. The flexibility determines, how strong the effect of moving these point are.
+There's warp options: Rigid, Affine and Similtude. These change the algorithm used to determine the strength of the deformation. The flexibility determines, how strong the effect of moving these point are.
 
 Anchor Points
 ~~~~~~~~~~~~~

@@ -39,5 +39,5 @@ Displace
 Winding Fill
     This gives you the option to use a 'non-zero' fill rules instead of the 'even-odd' fill rule, which means that where normally crossing into the shape created transparent areas, it now will not.
 Hard Edge
-    Removes the ant-anliasing, to get a pixelized line.
+    Removes the anti-aliasing, to get a pixelized line.
 

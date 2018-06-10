@@ -28,7 +28,7 @@ Reference Documentation:
     * `Directives <http://docutils.sourceforge.net/docs/ref/rst/directives.html>`_
     * `Roles <http://docutils.sourceforge.net/docs/ref/rst/roles.html>`_
 Sphinx specific docs:
-    * `Sphinx' page on restrucutred text <http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_ -- This is useful for the specific sphinx directives and roles it uses to generate for example table of contents.
+    * `Sphinx' page on restructured text <http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_ -- This is useful for the specific sphinx directives and roles it uses to generate for example table of contents.
 
 There's between the official reStructuredText and the sphinx docs multiple ways to do things. This document specifies the suggested conventions to go with.
 
@@ -57,7 +57,7 @@ Each page should start with the following three things:
            :license: GNU free documentation license 1.3 or later.
 
 3. Indexing terms.
-    These are comma-seperated terms under which the page will be indexed in :ref:`genindex`. The generated index is quite useful for both pdf as well as people who are not sure what the exact name is of the term they are looking for. They are defined as following::
+    These are comma-separated terms under which the page will be indexed in :ref:`genindex`. The generated index is quite useful for both pdf as well as people who are not sure what the exact name is of the term they are looking for. They are defined as following::
 
         .. index:: Keyword, Keyword with Spaces, ! Main Definition Keyword
 
@@ -135,7 +135,7 @@ Here is a citation reference: [CIT2002]_.
 .. [CIT2002] This is the citation.  It's just like a footnote,
    except the label is textual.
 
-Citaton can also be referenced with `citation <CIT2002>`_
+Citation can also be referenced with `citation <CIT2002>`_
 
 We don't actually use footnotes in the manual due to the fact that it is a little bit too academical for our readers. However, we do collect documents and links that give a little bit more information on a topic at the end of a page. Sphinx has the ``.. seealso::`` directive for linking to external links, while reStructuredText suggests to use ``.. rubic:: Footnotes`` for specifically collecting footnotes as that plays nice with LaTeX.
 
@@ -182,7 +182,7 @@ You cannot do both ***emphasized and strong***, so take a pick.
 
 You can :sub:`subscript text` and :sup:`superscript text` by using ``:sub:`text``` and ``:sup:`text```
 
-However, use these super-sparingly! It is preffered to use the existing semantic markup in sphinx in any case, because that makes it easier for translators to make decisions about the nature of the text::
+However, use these super-sparingly! It is preferred to use the existing semantic markup in sphinx in any case, because that makes it easier for translators to make decisions about the nature of the text::
 
     :menuselection:`settings --> configure Krita`
     :guilabel:`File`
@@ -287,20 +287,20 @@ Defined as such::
 Definition Lists
 ~~~~~~~~~~~~~~~~
 
-A favourite! Definition lists are especially useful when dealing with ennumerating all the options in a docker and trying to add a simple explaination behind them.
+A favourite! Definition lists are especially useful when dealing with enumerating all the options in a docker and trying to add a simple explanation behind them.
 
 Definition
-    explaination.
+    explanation.
 Another option
-    Explaination.
+    Explanation.
 
 To make them.
     You can make them like this::
     
        Definition
-            explaination.
+            explanation.
        Another option
-           Explaination.
+           Explanation.
 
 Tables
 ------
@@ -352,7 +352,7 @@ Admonishments and asides.
 
 .. note::
 
-    Admonishments are sort of like a seperate section that the reader needs to pay attention to.
+    Admonishments are sort of like a separate section that the reader needs to pay attention to.
 
 Admonishments that can be used are the following(in order of seriousness):
 
@@ -426,9 +426,9 @@ The rubric directive is a heading directive that at first glance looks like "top
 Only use them when you think the subject is too minor to have a proper heading.
 
 Topic
-    When the text is seperated from the flow, so it goes into a different subject than the text itself is naturally going to.
+    When the text is separated from the flow, so it goes into a different subject than the text itself is naturally going to.
 Rubric
-    When the text isn't seperated from the flow, but it does not need a header either.
+    When the text isn't separated from the flow, but it does not need a header either.
 Admonishments
     Only when they fit semantically. This is especially necessary for the danger and warning admonishments, as seeing them too often can make users blind to them.
 
@@ -441,7 +441,7 @@ Multi-line code snippets are done by ending the previous section with ``::``, wh
 
     This is a paragraph, and we define a preformated snippet like so::
 
-        Be sure to add a white space and a tab afterwards befor starting the snippet.
+        Be sure to add a white space and a tab afterwards before starting the snippet.
 
 You can also use the ``.. code::`` directive. If you add the language name after it, it'll do the appropriate syntax highlighting::
 

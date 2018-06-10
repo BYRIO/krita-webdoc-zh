@@ -85,4 +85,4 @@ bad monitors
 ;multi-monitor setup
     when using several monitors, and specially in mirror mode where both monitor have the same content, you can't have this content color-managed for both screen profiles. In such case, calibrating both screens to match sRGB profile (or another standard for high-end monitors if they both support it) can be a good solution.
 soft-proofing
-    when you need to match an exact rendering context for soft-proofing, calibrating can help getting closer to the expected result. Though switching through several monitor calibration and profiles should be done extremely carefuly.
+    when you need to match an exact rendering context for soft-proofing, calibrating can help getting closer to the expected result. Though switching through several monitor calibration and profiles should be done extremely careful.

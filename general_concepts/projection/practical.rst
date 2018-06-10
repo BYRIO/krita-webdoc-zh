@@ -46,7 +46,7 @@ One more, for the road…
 .. image:: /images/en/category_projection/projection_animation_06.gif 
    :align: center
 
-Here you can see that the the misalignment of the vanishing point to the projection plane causes skewing which was then fixed by Krita’s transform tools, technically it’s of course correct, but what is correct doesn’t always look good. (I also mess up the position of the shoulder for a good while if you look closely.)
+Here you can see that the misalignment of the vanishing point to the projection plane causes skewing which was then fixed by Krita’s transform tools, technically it’s of course correct, but what is correct doesn’t always look good. (I also mess up the position of the shoulder for a good while if you look closely.)
 
 .. image:: /images/en/category_projection/projection_image_40.png 
    :align: center

@@ -66,7 +66,7 @@ Fade
 
     .. image:: /images/en/Krita_2_9_brushengine_brushtips_default_3.png
 
-(With fade seperately horizontal and vertical)
+(With fade separately horizontal and vertical)
 
 Angle
     This changes the angle a which the brush is at.

@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../reference_manual/preferences/python_plugin_manager.rst:22
 msgid ""
-"The python plugin manager can be accesed from :menuselection:`Settings "
+"The python plugin manager can be accessed from :menuselection:`Settings "
 "--> Configure Krita --> Python Plugin Manager`. It allows you decide "
 "which of the Python Plugins are active."
 msgstr ""

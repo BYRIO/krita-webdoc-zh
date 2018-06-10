@@ -98,7 +98,7 @@ Open krita and automatically open the given template(s). This allows you to, for
 
    ``krita --template BD-EuroTemplate.desktop BD-EuroTemplate.desktop``
 
-   This opens the European BD template twice, in seperate documents.
+   This opens the European BD template twice, in separate documents.
 
 Start up
 --------

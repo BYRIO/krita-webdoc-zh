@@ -7,7 +7,7 @@
    :authors: - Wolthera van Hövell tot Westerflier <griffinvalley@gmail.com>
    :license: GNU free documentation license 1.3 or later.
 
-.. index:: Color, HDR, High Dynamic Range, Scene Linear, Scene Reffered, Scene Linear Painting
+.. index:: Color, HDR, High Dynamic Range, Scene Linear, Scene Referred, Scene Linear Painting
 .. _scene_linear_painting:
 
 =====================

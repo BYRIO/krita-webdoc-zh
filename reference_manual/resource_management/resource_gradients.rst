@@ -103,7 +103,7 @@ You can also set the blending. The first is the interpolation mode:
 #. Curved - This causes the mix to ease-in and out faster. 
 #. Sine - Uses a sine function. This causes the mix to ease in and out slower.
 #. Sphere, increasing - This puts emphasis on the later color during the mix.
-#. Sphere, descreasing - This puts emphasis on the first color during the mix.
+#. Sphere, decreasing - This puts emphasis on the first color during the mix.
 
 Finally, there's the model:
 

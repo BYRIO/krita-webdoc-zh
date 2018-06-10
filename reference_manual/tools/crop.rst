@@ -28,7 +28,7 @@ Grow
 Applies to
     Lets you apply the crop to the entire image or only to the active layer. When you are ready, hit the Crop button and the crop will apply to your image.
 Decoration
-    Help you make a composition by showing showing you lines that divide up the screen. You can for example show thirds here, so you can crop your image according to the Rule of Thirds.
+    Help you make a composition by showing you lines that divide up the screen. You can for example show thirds here, so you can crop your image according to the Rule of Thirds.
 
 Continuous Crop
 ---------------

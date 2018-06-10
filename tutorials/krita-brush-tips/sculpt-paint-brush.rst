@@ -29,7 +29,7 @@ Then, the trick is to go into **Opacity**, untoggle **Pressure** from the sensor
 This'll make the color rate decrease and turn it into a smudge brush as the stroke continues:
 
 .. image:: /images/en/brush-tips/Painter-sculpt-brush-02.png
-    :alt: remove pressure from oppacity parameter and add fade.
+    :alt: remove pressure from opacity parameter and add fade.
 
 The **Fade** sensor will base the stroke length on brush size. The **Distance** sensor will base it on actual pixels, and the **Time** on actual seconds.
 
@@ -45,7 +45,7 @@ Of course, this'll make the stroke distance longer to get to smudging, so we go 
 .. image:: /images/en/brush-tips/Painter-sculpt-brush-04.png
     :alt: opacity parameter in the rbush setting
 
-Just adjust the fade-length by |mouseright| on the slider bar. You can then input a number. In the screenshot, I have 500, but the sweet spot seems to be somewhere betwen 150 and 200.
+Just adjust the fade-length by |mouseright| on the slider bar. You can then input a number. In the screenshot, I have 500, but the sweet spot seems to be somewhere between 150 and 200.
 
 Now, you'll notice that on the start of a stroke, it might be a little faded, so go into **Color Rate** and turn off the **Enable Pen Settings** there.
 
