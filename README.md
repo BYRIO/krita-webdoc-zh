@@ -15,3 +15,7 @@ Krita官方目前没有给出翻译工作的官方工作流程，未来可能会
 翻译工作前置知识：
 > https://phabricator.kde.org/source/websites-docs-krita-org/#
 > https://docs.krita.org/en/contributors_manual/krita_manual_readme.html
+
+### 我们的工作流
+
+初始状态的 zh-Hans 文件夹是英文源码的克隆。请新建自己的分支，在编辑器中同时打开英文源文件和位于 zh-Hans 文件夹下的相同文件对照修改，这与Crowdin相比有些不便。pull request 来提交更改。
